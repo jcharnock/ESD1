@@ -1,0 +1,6 @@
+15:18:53 **** Clean-only build of configuration Nios II for project l2_assembly_software ****
+make clean 
+[l2_assembly_software clean complete]
+
+15:18:53 Build Finished (took 211ms)
+

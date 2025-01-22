@@ -1,5 +1,5 @@
 Analysis & Synthesis report for assembly_demo
-Wed Jan 22 12:26:29 2025
+Wed Jan 22 14:32:55 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -171,10 +171,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 163. Port Connectivity Checks: "nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic"
 164. Port Connectivity Checks: "nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0"
 165. Post-Synthesis Netlist Statistics for Top Partition
-166. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
-167. Elapsed Time Per Partition
-168. Analysis & Synthesis Messages
-169. Analysis & Synthesis Suppressed Messages
+166. Elapsed Time Per Partition
+167. Analysis & Synthesis Messages
+168. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -200,7 +199,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jan 22 12:26:29 2025           ;
+; Analysis & Synthesis Status     ; Successful - Wed Jan 22 14:32:55 2025           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; assembly_demo                                   ;
 ; Top-level Entity Name           ; assembly_demo                                   ;
@@ -1197,15 +1196,6 @@ Encoding Type:  One-Hot
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |assembly_demo|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_rf_wr_data[1]                                                                                                                                                                                                                                                                              ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |assembly_demo|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_dst_regnum[4]                                                                                                                                                                                                                                                                              ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |assembly_demo|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_router:router|src_channel[2]                                                                                                                                                                                                                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[2]                                                       ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][0]                                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[0]                                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][0]                                                     ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]                                        ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[3]                           ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 64 LEs               ; 24 LEs                 ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]                                                ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 52 LEs               ; 20 LEs                 ; Yes        ; |assembly_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -4162,44 +4152,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 
 
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; arriav_ff             ; 85                                       ;
-;     CLR               ; 6                                        ;
-;     ENA               ; 30                                       ;
-;     ENA CLR           ; 24                                       ;
-;     ENA CLR SLD       ; 2                                        ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; arriav_lcell_comb     ; 113                                      ;
-;     extend            ; 2                                        ;
-;         7 data inputs ; 2                                        ;
-;     normal            ; 111                                      ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 4                                        ;
-;         2 data inputs ; 27                                       ;
-;         3 data inputs ; 19                                       ;
-;         4 data inputs ; 13                                       ;
-;         5 data inputs ; 25                                       ;
-;         6 data inputs ; 22                                       ;
-; boundary_port         ; 141                                      ;
-;                       ;                                          ;
-; Max LUT depth         ; 3.00                                     ;
-; Average LUT depth     ; 1.57                                     ;
-+-----------------------+------------------------------------------+
-
-
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:02     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -4208,7 +4167,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Jan 22 12:25:58 2025
+    Info: Processing started: Wed Jan 22 14:32:28 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off assembly_demo -c assembly_demo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -4506,7 +4465,7 @@ Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "nios
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "nios_system:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: C:/Users/eec9960/Documents/ESD1/Demos/demo2/assembly_demo/nios_system/synthesis/submodules/altera_reset_controller.v Line: 220
 Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "nios_system:u0|altera_reset_controller:rst_controller_001" File: C:/Users/eec9960/Documents/ESD1/Demos/demo2/assembly_demo/nios_system/synthesis/nios_system.v Line: 326
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2025.01.22.12:26:16 Progress: Loading sld4d493ea7/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2025.01.22.14:32:44 Progress: Loading sld4d493ea7/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -4534,7 +4493,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/eec9960/Documents/ESD1/Demos/demo2/assembly_demo/assembly_demo.vhd Line: 25
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 66 registers lost all their fanouts during netlist optimizations.
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -5122,10 +5080,10 @@ Info (21057): Implemented 1731 device resources after synthesis - the final reso
     Info (21061): Implemented 1557 logic cells
     Info (21064): Implemented 144 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 583 warnings
-    Info: Peak virtual memory: 5009 megabytes
-    Info: Processing ended: Wed Jan 22 12:26:29 2025
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 5010 megabytes
+    Info: Processing ended: Wed Jan 22 14:32:55 2025
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+

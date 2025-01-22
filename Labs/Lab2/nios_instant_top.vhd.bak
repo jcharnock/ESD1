@@ -1,0 +1,10 @@
+/* Lab 2 Top Level 
+Instantiates NIOS system component. */
+
+ENTITY nios_instant_top is
+  port (
+    CLOCK_50  : in  std_logic;
+    KEY       : in  std_logic_vector(3 downto 0);
+    SW        : in  std_logic_vector(9 downto 0);
+    LEDR      : out std_logic_vector(9 downto 0));
+end entity nios_instant_top;
