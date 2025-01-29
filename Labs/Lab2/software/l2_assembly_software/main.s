@@ -6,19 +6,20 @@
   ori \reg, \reg, %lo(\addr)
 .endm
 
+ # array number tracker
+ .equ N, (Aend - Astart) / 4
+
  .equ pushbuttons, 0x11010
  .equ switches, 0x11020
  .equ hex0, 0x11000
 
- .equ hex_0, 0x003F
- .equ hex_2, 0x005B
- .equ hex_3, 0x004F
- .equ hex_4, 0x0066
- .equ hex_5, 0x006D
- .equ hex_6, 0x007D
- .equ hex_7, 0x0007
- .equ hex_8, 0x007F
- .equ hex_9, 0x006F
+ .equ max, 0x09
+ .equ min, 0x00
+
+ .equ sw0Mask, 0x01
+ .equ pb1Mask, 0x02
+ .equ pbCheck, 0x0D
+ .equ swCheck, 0x0D
 
  .global main
 
@@ -27,3 +28,75 @@
 	movia r2, switches
 	movia r3, pushbuttons
 	movia r4, hex0
+	# array position counter
+    movia r5, Astart
+    # array start position
+    movia r6, Astart
+    # array end position
+    addi r7, r6, 9
+
+    #initialize hex0 t0 0
+    ldbio r14, 0(r6)
+    stbio r14, 0(r4)
+
+loop:
+    # load pushbutton register values
+    ldbio r13, 0(r3)
+    # check to see if pushbutton is pressed (active low?)
+	andi r15, r13, pb1Mask
+	# store for pushbutton comparison
+	#stbio r15, 0(r16)
+	#go to switchCheck if button is pushed
+    beq r15, r0, switchCheck
+    # not pressed go back to loop
+	br loop
+
+switchCheck:
+    # load value of switches
+    ldbio r12, 0(r2)
+    # run the countDown code if switch equal to 0
+    andi r15, r12, sw0Mask
+    beq r15, r0, minCheck
+    # run the maxCheck code if all passes
+    br maxCheck
+
+maxCheck:
+    # load the new value of the seven segment display + 1 if array position != 9 (stored in r8)
+    bne r5, r7, countUp
+    # array equal to 9 then go back to zero
+    br loop
+
+minCheck:
+    # load the new value of the seven segment display - 1 if array position != 0 (stored in r7)
+    bne r5, r6, countDown
+    # array equal to 0 then go back to nine
+    br loop
+
+countUp:
+    # increment hex display by 1 and N position by 1
+    addi r5, r5, 1
+    ldbio r14, 0(r5)
+    stbio r14, 0(r4)
+    br checkHold
+
+countDown:
+    # decrement hex display by 1 and N position by 1
+    subi r5, r5, 1
+    ldbio r14, 0(r5)
+    stbio r14, 0(r4)
+    br checkHold
+
+checkHold:
+	# load current button values if button is still equal to 0 then return to loop else stay until passing
+	ldbio r13, 0(r3)
+	andi r15, r13, pb1Mask
+	beq r15, r0, checkHold
+	br loop
+
+# 0 through 9 in SSD
+Astart:
+    .byte 0x40, 0x79, 0x24, 0x30, 0x19, 0x12, 0x02, 0x78, 0x00, 0x10
+Aend:
+    .end
+
+.end

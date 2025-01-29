@@ -1,4 +1,0 @@
-
- .text
-
- .equ pushbuttons, 0x11010

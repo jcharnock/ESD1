@@ -1,0 +1,89 @@
+
+.text
+
+.macro MOVIA reg, addr
+  movhi \reg, %hi(\addr)
+  ori \reg, \reg, %lo(\addr)
+.endm
+
+ # array number tracker
+ .equ N, (Aend - Astart) / 4
+
+ .equ pushbuttons, 0x11010
+ .equ switches, 0x11020
+ .equ hex0, 0x11000
+
+
+ .equ hex_0, 0xC0
+/*
+ .equ hex_1, 0x0006
+ .equ hex_2, 0x005B
+ .equ hex_3, 0x004F
+ .equ hex_4, 0x0066
+ .equ hex_5, 0x006D
+ .equ hex_6, 0x007D
+ .equ hex_7, 0x0007
+ .equ hex_8, 0x007F
+ .equ hex_9, 0x006F
+ */
+
+ .global main
+
+ main:
+ 	# use r12 for switch data, r13 for pushbutton data, r14 for hex0
+	movia r2, switches
+	movia r3, pushbuttons
+	movia r4, hex0
+    #movi, r5, N
+    #movia, r6, Astart
+    addi r7 r0 0x0C
+
+    # store r2 with hex_0 value and push to r4 (hex display)
+    stbio r2, 0(r7)
+    ldbio r4, 0(r2)
+
+ /*
+loop:
+    #load pushbutton register values
+    ldbio r13, 0(r3)
+    #check to see if pushbutton is pressed (active low?)
+    beq r13, r0, switchCheck
+    # if not pressed go back to loop
+    br loop
+
+switchCheck:
+    # load value of switches
+    ldbio r12, 0(r2)
+    # run the countDown code if switch equal to 0
+    beq r12,r0,minCheck
+    # else run the maxCheck code
+    br maxCheck
+
+maxCheck:
+    # if loading the value of hex0 results in hex_9 then do not increment
+    ldbio r14, 0(r4)
+    beq r14, hex_9, loop
+    # else load the new value of the seven segment display + 1
+    br countUp
+
+minCheck:
+    # if loading the value of hex0 results in hex_9 then do not increment
+    ldbio r14, 0(r4)
+    beq r14, hex_0, loop
+    # else load the new value of the seven segment display - 1
+
+countUp:
+    # increment hex display by 1
+    # code here
+    br loop
+
+countDown:
+    # decrement hex display by 1
+    #code here
+    br loop
+*/
+
+Astart:
+    .word 0x003F, 0x0006, 0x005B, 0x004F, 0x0066, 0x006D, 0x007D, 0x0007, 0x007F, 0x006F
+Aend:
+    .end

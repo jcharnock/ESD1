@@ -1,6 +1,0 @@
-
- .text
-
- .equ pushbuttons, 0x11010
- .equ switches, 0x11020
- .equ hex0, 0x11000
