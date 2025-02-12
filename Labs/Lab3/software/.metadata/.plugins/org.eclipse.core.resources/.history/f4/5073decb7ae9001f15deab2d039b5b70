@@ -1,0 +1,54 @@
+
+#include "system.h"
+
+const uint32 ssdValues[9] = {0x0040, 0x0079, 0x0024, 0x0030, 0x0019, 0x0012, 0x0002, 0x0078, 0x0000, 0x0010};
+
+void main(){
+    
+    unsigned char *switchesBase_ptr    = (unsigned char *) SWITCHES_BASE;
+    unsigned char *ledsBase_ptr        = (unsigned char *) LEDS_BASE;
+    unsigned char *pushbuttonsBase_ptr = (unsigned char *) PUSHBUTTONS_BASE;
+	unsigned char *hex0Base_ptr        = (unsigned char *) HEX0_BASE;
+    volatile unsigned char pushbutton;
+    volatile bool slideswitch;
+    int N;
+    
+    while(1){
+        
+        # read in switch and pushbutton data
+        pushbutton = *pushbuttonsBase_ptr;
+        slideswitch = *switchesBase_ptr;
+        # check if button is pressed
+        if((pushbutton & 0x0002) == 0){
+            
+            # read in slideswitch value, if zero decrement
+            # else increment
+            if((slideswitch & 0x0001) == 0){
+                # if array position is 9 then break to main
+                # else increment by 1 and and write to LEDs
+                if (N == 0){
+                    return;
+                }
+                else {
+                    N += 1;
+                    *hex0Base_ptr = ssdValues[N];
+                }
+            }
+            else {
+                # if array position is 0 then break to main
+                # else decrement by 1 and write to LEDs
+                if (N == 9){
+                    return;
+                }
+                else {
+                    N -= 1;
+                    *hex0Base_ptr = ssdValues[N];
+                }
+            }
+            # hold until button is released
+            while((pushbutton & 0x02) == 0){}
+        }
+                        
+    }
+    
+}

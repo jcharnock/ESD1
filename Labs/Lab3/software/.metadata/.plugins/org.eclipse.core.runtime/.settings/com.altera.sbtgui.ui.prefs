@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=S\:\\ESD1\\Labs\\Lab3\\software\\lab3_interrupt_software
+newSoftwareExampleWizardPage.sopcinfoFile=S\:\\ESD1\\Labs\\Lab3\\nios_system.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=S\:\\ESD1\\Labs\\Lab3\\software\\lab3_interrupt_software_bsp

@@ -1,0 +1,57 @@
+17:43:37 **** Build of configuration Nios II for project lab3_interrupt_software ****
+make all 
+Info: Building ../lab3_interrupt_software_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_interrupt_software_bsp/
+[BSP build complete]
+Info: Compiling l3_proceedure.c to obj/default/l3_proceedure.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_interrupt_software_bsp//HAL/inc -I../lab3_interrupt_software_bsp/ -I../lab3_interrupt_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/l3_proceedure.o l3_proceedure.c
+Info: Linking lab3_interrupt_software.elf
+nios2-elf-g++  -T'../lab3_interrupt_software_bsp//linker.x' -msys-crt0='../lab3_interrupt_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_interrupt_software_bsp/   -Wl,-Map=lab3_interrupt_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o lab3_interrupt_software.elf obj/default/l3_proceedure.o -lm -msys-lib=m
+nios2-elf-insert lab3_interrupt_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11060 --timestamp 1739388701 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "S:/ESD1/Labs/Lab3" --jdi ../..//output_files/lab3_interrupt.jdi --sopcinfo S:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp/../../nios_system.sopcinfo
+Info: (lab3_interrupt_software.elf) 15 KBytes program size (code + initialized data).
+Info:                               10052 Bytes free for stack + heap.
+Info: Creating lab3_interrupt_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_interrupt_software.elf >lab3_interrupt_software.objdump
+[lab3_interrupt_software build complete]
+17:43:44 **** Incremental Build of configuration Nios II for project lab3_interrupt_software ****
+make all 
+Info: Building ../lab3_interrupt_software_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_interrupt_software_bsp/
+[BSP build complete]
+[lab3_interrupt_software build complete]
+17:46:52 **** Incremental Build of configuration Nios II for project lab3_interrupt_software ****
+make all 
+Info: Building ../lab3_interrupt_software_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_interrupt_software_bsp/
+[BSP build complete]
+Info: Compiling l3_proceedure.c to obj/default/l3_proceedure.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_interrupt_software_bsp//HAL/inc -I../lab3_interrupt_software_bsp/ -I../lab3_interrupt_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/l3_proceedure.o l3_proceedure.c
+Info: Linking lab3_interrupt_software.elf
+nios2-elf-g++  -T'../lab3_interrupt_software_bsp//linker.x' -msys-crt0='../lab3_interrupt_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_interrupt_software_bsp/   -Wl,-Map=lab3_interrupt_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o lab3_interrupt_software.elf obj/default/l3_proceedure.o -lm -msys-lib=m
+nios2-elf-insert lab3_interrupt_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11060 --timestamp 1739388701 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "S:/ESD1/Labs/Lab3" --jdi ../..//output_files/lab3_interrupt.jdi --sopcinfo S:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp/../../nios_system.sopcinfo
+Info: (lab3_interrupt_software.elf) 15 KBytes program size (code + initialized data).
+Info:                               10044 Bytes free for stack + heap.
+Info: Creating lab3_interrupt_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_interrupt_software.elf >lab3_interrupt_software.objdump
+[lab3_interrupt_software build complete]
+17:49:17 **** Incremental Build of configuration Nios II for project lab3_interrupt_software ****
+make all 
+Info: Building ../lab3_interrupt_software_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_interrupt_software_bsp/
+[BSP build complete]
+Info: Compiling l3_proceedure.c to obj/default/l3_proceedure.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_interrupt_software_bsp//HAL/inc -I../lab3_interrupt_software_bsp/ -I../lab3_interrupt_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/l3_proceedure.o l3_proceedure.c
+Info: Linking lab3_interrupt_software.elf
+nios2-elf-g++  -T'../lab3_interrupt_software_bsp//linker.x' -msys-crt0='../lab3_interrupt_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_interrupt_software_bsp/   -Wl,-Map=lab3_interrupt_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o lab3_interrupt_software.elf obj/default/l3_proceedure.o -lm -msys-lib=m
+nios2-elf-insert lab3_interrupt_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11060 --timestamp 1739388701 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "S:/ESD1/Labs/Lab3" --jdi ../..//output_files/lab3_interrupt.jdi --sopcinfo S:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp/../../nios_system.sopcinfo
+Info: (lab3_interrupt_software.elf) 15 KBytes program size (code + initialized data).
+Info:                               10044 Bytes free for stack + heap.
+Info: Creating lab3_interrupt_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_interrupt_software.elf >lab3_interrupt_software.objdump
+[lab3_interrupt_software build complete]
+17:49:59 **** Incremental Build of configuration Nios II for project lab3_interrupt_software ****
+make all 
+Info: Building ../lab3_interrupt_software_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_interrupt_software_bsp/
+[BSP build complete]
+[lab3_interrupt_software build complete]

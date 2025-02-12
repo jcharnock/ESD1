@@ -1,0 +1,76 @@
+
+#include "io.h"
+#include <stdio.h>
+#include "system.h"
+#include "alt_types.h"
+#include "sys/alt_irq.h"
+#include "altera_avalon_timer_regs.h"
+#include "altera_avalon_timer.h"
+
+typedef   signed char   sint8;              // signed 8 bit values
+typedef unsigned char   uint8;              // unsigned 8 bit values
+typedef   signed short  sint16;             // signed 16 bit values
+typedef unsigned short  uint16;             // unsigned 16 bit values
+typedef   signed long   sint32;             // signed 32 bit values
+typedef unsigned long   uint32;             // unsigned 32 bit values
+typedef         float   real32;             // 32 bit real values
+
+const unsigned char ssdValues[10] = {0x40, 0x79, 0x24, 0x30, 0x19, 0x12, 0x02, 0x78, 0x00, 0x18};
+
+unsigned char *switchesBase_ptr    = (unsigned char *) SWITCHES_BASE;
+unsigned char *ledsBase_ptr        = (unsigned char *) LEDS_BASE;
+unsigned char *pushbuttonsBase_ptr = (unsigned char *) PUSHBUTTONS_BASE;
+unsigned char *hex0Base_ptr        = (unsigned char *) HEX0_BASE;
+
+int main(){
+    
+	unsigned char pushbutton;
+	unsigned char slideswitch;
+    int N = 0;
+    // set to 0 at start
+    *hex0Base_ptr = ssdValues[0];
+    
+    while(1){
+        
+        // read in switch and pushbutton data
+        pushbutton = *pushbuttonsBase_ptr;
+        slideswitch = *switchesBase_ptr;
+        // check if button is not pressed
+        if ((pushbutton & 0x0002) == 0){
+        	while((pushbutton & 0x0002) == 0){
+        		pushbutton = *pushbuttonsBase_ptr;
+        		if ((pushbutton & 0x0002) == 1) break;
+        	}
+        // wait for button to be released
+            
+            // read in slideswitch value, if zero decrement
+            // else increment
+            if((slideswitch & 0x0001) == 0){
+                // if array position is 9 then break to main
+                // else increment by 1 and and write to LEDs
+                if (N == 0){
+                	*hex0Base_ptr = ssdValues[0];
+                }
+                else {
+                    N += 1;
+                    *hex0Base_ptr = ssdValues[N];
+                }
+            }
+            else {
+                // if array position is 0 then break to main
+                // else decrement by 1 and write to LEDs
+                if (N == 9){
+                	*hex0Base_ptr = ssdValues[10];
+                }
+                else {
+                    N -= 1;
+                    *hex0Base_ptr = ssdValues[N];
+                }
+            }
+            // hold until button is released
+
+        }
+                        
+    }
+
+}
