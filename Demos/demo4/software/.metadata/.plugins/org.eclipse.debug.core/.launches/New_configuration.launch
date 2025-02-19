@@ -3,7 +3,7 @@
 <stringAttribute key="byteStreamDeviceCableName" value="DE-SoC on localhost [USB-1]"/>
 <stringAttribute key="byteStreamDeviceDeviceID" value="2"/>
 <stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
-<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="59904"/>
+<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="58236"/>
 <booleanAttribute key="downloadProgram" value="true"/>
 <stringAttribute key="elfFile" value="S:\ESD1\Demos\demo4\software\custom_component\custom_component.elf"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value=""/>

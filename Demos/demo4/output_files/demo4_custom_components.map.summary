@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Feb 12 19:07:26 2025
+Analysis & Synthesis Status : Successful - Wed Feb 19 18:29:37 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : demo4_custom_components
 Top-level Entity Name : custom_component_demo
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 917
+Total registers : 1732
 Total pins : 16
 Total virtual pins : 0
-Total block memory bits : 267,344
+Total block memory bits : 286,464
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
