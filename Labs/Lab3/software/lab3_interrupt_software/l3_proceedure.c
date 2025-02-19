@@ -63,9 +63,7 @@ void timer_isr(void *context) {
     //clear timer interrupt
     *uintTimerBase_Ptr = 0;
 
-    current_val = *ledsBase_ptr; /* read the leds */
-    
-    *ledsBase_ptr = current_val + 1;  /* change the display */
+    *ledsBase_ptr ^= *ledsBase_ptr; /* read the leds */
 
     return;
 }

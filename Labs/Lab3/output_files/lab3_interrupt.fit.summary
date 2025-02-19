@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Feb 12 17:03:58 2025
+Fitter Status : Successful - Wed Feb 19 12:17:17 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : lab3_interrupt
 Top-level Entity Name : lab3_interrupt
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 768 / 32,070 ( 2 % )
-Total registers : 1083
+Logic utilization (in ALMs) : 771 / 32,070 ( 2 % )
+Total registers : 1089
 Total pins : 30 / 457 ( 7 % )
 Total virtual pins : 0
 Total block memory bits : 267,264 / 4,065,280 ( 7 % )

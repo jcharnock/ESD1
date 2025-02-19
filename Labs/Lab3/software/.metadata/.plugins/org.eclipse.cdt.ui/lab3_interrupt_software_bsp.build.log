@@ -1,6 +1,6 @@
-17:43:32 **** Incremental Build of configuration Nios II for project lab3_interrupt_software_bsp ****
+12:25:44 **** Build of configuration Nios II for project lab3_interrupt_software_bsp ****
 make all 
 [BSP build complete]
 
-17:43:33 Build Finished (took 736ms)
+12:25:45 Build Finished (took 1s.348ms)
 

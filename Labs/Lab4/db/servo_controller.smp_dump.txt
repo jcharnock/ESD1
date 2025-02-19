@@ -1,0 +1,7 @@
+
+State Machine - |servo_controller_top|servo_controller:funct_unit|current_state
+Name current_state.int_l current_state.sweep_l current_state.int_r current_state.sweep_r 
+current_state.sweep_r 0 0 0 0 
+current_state.int_r 0 0 1 1 
+current_state.sweep_l 0 1 0 1 
+current_state.int_l 1 0 0 1 

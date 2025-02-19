@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out_wave_top",
+					"strict" : false
+				},
+				{
+					"name" : "irq_top",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50_top",
+					"strict" : false
+				},
+				{
+					"name" : "reset_top",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

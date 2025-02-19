@@ -13,7 +13,7 @@ ENTITY lab3_interrupt is
     KEY       : in  std_logic_vector(3 downto 0);
     SW        : in  std_logic_vector(9 downto 0);
     HEX0      : out std_logic_vector(6 downto 0);
-	 LEDS      : out std_logic_vector(7 downto 0)
+	 LEDR      : out std_logic_vector(7 downto 0)
 	 );
 end entity lab3_interrupt;
 
@@ -71,7 +71,7 @@ begin
 		port map (
 			clk_clk            => cLOCK_50,            --         clk.clk
 			reset_reset_n      => reset_n,      --       reset.reset_n
-			leds_export        => LEDS,        --        leds.export
+			leds_export        => LEDR,        --        leds.export
 			hex0_export        => HEX0,        --        hex0.export
 			switches_export    => sw_d2(7 downto 0),    --    switches.export
 			pushbuttons_export => KEY  -- pushbuttons.export

@@ -1,9 +1,9 @@
-17:49:59 **** Incremental Build of configuration Nios II for project lab3_interrupt_software ****
+12:26:02 **** Incremental Build of configuration Nios II for project lab3_interrupt_software ****
 make all 
 Info: Building ../lab3_interrupt_software_bsp/
 C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_interrupt_software_bsp/
 [BSP build complete]
 [lab3_interrupt_software build complete]
 
-17:50:00 Build Finished (took 1s.46ms)
+12:26:03 Build Finished (took 1s.200ms)
 

@@ -1382,7 +1382,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1394,7 +1394,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1406,7 +1406,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1418,7 +1418,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1430,7 +1430,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1442,7 +1442,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1454,7 +1454,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1466,7 +1466,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1478,7 +1478,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1490,7 +1490,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1502,7 +1502,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1514,7 +1514,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1526,7 +1526,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1538,7 +1538,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1550,7 +1550,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1562,7 +1562,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1574,7 +1574,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1586,7 +1586,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1598,7 +1598,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1610,7 +1610,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1622,7 +1622,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1634,7 +1634,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1646,7 +1646,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1658,7 +1658,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1670,7 +1670,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1682,7 +1682,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1694,7 +1694,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1706,7 +1706,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1718,7 +1718,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1730,7 +1730,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1742,7 +1742,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1754,7 +1754,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1766,7 +1766,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1778,7 +1778,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1790,7 +1790,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1802,7 +1802,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1814,7 +1814,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1826,7 +1826,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1838,7 +1838,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1850,7 +1850,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1862,7 +1862,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1874,7 +1874,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1886,7 +1886,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1898,7 +1898,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1910,7 +1910,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1922,7 +1922,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1934,7 +1934,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1946,7 +1946,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1958,7 +1958,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1970,7 +1970,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1996,7 +1996,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2008,7 +2008,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2034,7 +2034,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2046,7 +2046,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2058,7 +2058,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2070,7 +2070,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2082,7 +2082,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2094,7 +2094,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2106,7 +2106,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2118,7 +2118,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2130,7 +2130,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2142,7 +2142,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2154,7 +2154,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2166,7 +2166,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2178,7 +2178,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2190,7 +2190,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2202,7 +2202,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2214,7 +2214,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2226,7 +2226,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2238,7 +2238,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2250,7 +2250,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2262,7 +2262,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2274,7 +2274,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2286,7 +2286,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2298,7 +2298,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2310,7 +2310,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2322,7 +2322,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2334,7 +2334,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2346,7 +2346,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2358,7 +2358,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2370,7 +2370,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2382,7 +2382,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2394,7 +2394,7 @@
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/Labs/Lab3/software/lab3_interrupt_software_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/lab3/software/lab3_interrupt_software_bsp"/>
 						<entry kind="includePath" name="/lab3_interrupt_software_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>

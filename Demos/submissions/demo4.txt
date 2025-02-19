@@ -1,0 +1,1 @@
+To my understanding of the code, the LED values are drawn from a address value that is between 0 and 6 that are tied to switches 0 to 2. If any of the switches beyond switch 2 (which would put it past address 6) are flipped, the jtag writes a error code to the nios console because it is out of range. 

@@ -1,0 +1,73 @@
+# //  ModelSim SE-64 2019.2 Apr 17 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 14:55:16 on Feb 19,2025
+# vcom -reportprogress 300 -93 -work work ../servo_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity servo_controller
+# -- Compiling architecture arch of servo_controller
+# End time: 14:55:16 on Feb 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 14:55:16 on Feb 19,2025
+# vcom -reportprogress 300 -93 -work work ../servo_controller_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity servo_controller_tb
+# -- Compiling architecture arch of servo_controller_tb
+# End time: 14:55:16 on Feb 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" servo_controller_tb 
+# Start time: 14:55:16 on Feb 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "servo_controller(arch)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.servo_controller_tb(arch)#1
+# Loading work.servo_controller(arch)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: eec9960  Hostname: GOL-1360-05  ProcessID: 20280
+#           Attempting to use alternate WLF file "./wlft1ttdhn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1ttdhn
+# ** Error: (vish-4016) Invalid radix value: update.
+# Usage: radix [-binary | -octal | -decimal | -hexadecimal | -unsigned | -ascii | -time] [-enumnumeric | -enumsymbolic | -showbase | -symbolic]
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Note: ********* begin test *************
+#    Time: 0 ns  Iteration: 0  Instance: /servo_controller_tb
+# ** Note: ********* min and max written to register *************
+#    Time: 13 us  Iteration: 0  Instance: /servo_controller_tb
+# End time: 15:40:08 on Feb 19,2025, Elapsed time: 0:44:52
+# Errors: 4, Warnings: 2
