@@ -1,1 +1,7 @@
 5CSEMA5F31C6
+bytes: 32768
+
+
+irq not appearing as edge for pb
+new component integration
+double check pseudo of c main figure out how to pull switch value from register to split into digits for leds
