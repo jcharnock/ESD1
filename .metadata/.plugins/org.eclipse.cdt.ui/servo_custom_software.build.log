@@ -1,0 +1,25 @@
+17:37:06 **** Incremental Build of configuration Nios II for project servo_custom_software ****
+make all 
+Info: Building ../servo_custom_software_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../servo_custom_software_bsp/
+[BSP build complete]
+Info: Compiling l5_main.c to obj/default/l5_main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../servo_custom_software_bsp//HAL/inc -I../servo_custom_software_bsp/ -I../servo_custom_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/l5_main.o l5_main.c
+l5_main.c: In function 'pushbutton_isr':
+l5_main.c:34:12: warning: variable 'max_hunds' set but not used [-Wunused-but-set-variable]
+     uint32 max_hunds, max_tens, max_ones = 0;
+            ^
+l5_main.c:51:12: warning: 'val_min' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   min_ones = val_min % 10;
+            ^
+Info: Linking servo_custom_software.elf
+nios2-elf-g++  -T'../servo_custom_software_bsp//linker.x' -msys-crt0='../servo_custom_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../servo_custom_software_bsp/   -Wl,-Map=servo_custom_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o servo_custom_software.elf obj/default/l5_main.o -lm -msys-lib=m
+nios2-elf-insert servo_custom_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11078 --timestamp 1740594879 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "S:/ESD1/Labs/Lab5" --jdi ../..//output_files/servo_custom.jdi --sopcinfo S:/ESD1/Labs/Lab5/software/servo_custom_software_bsp/../../nios_system.sopcinfo
+Info: (servo_custom_software.elf) 16 KBytes program size (code + initialized data).
+Info:                             10160 Bytes free for stack + heap.
+Info: Creating servo_custom_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source servo_custom_software.elf >servo_custom_software.objdump
+[servo_custom_software build complete]
+
+17:37:08 Build Finished (took 1s.909ms)
+
