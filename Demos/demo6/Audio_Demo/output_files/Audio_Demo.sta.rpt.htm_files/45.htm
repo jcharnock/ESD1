@@ -1,0 +1,2416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Signal Integrity Metrics (Fast 1100mv 85c Model)</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Pin</TH>
+<TH>I/O Standard</TH>
+<TH>Board Delay on Rise</TH>
+<TH>Board Delay on Fall</TH>
+<TH>Steady State Voh at FPGA Pin</TH>
+<TH>Steady State Vol at FPGA Pin</TH>
+<TH>Voh Max at FPGA Pin</TH>
+<TH>Vol Min at FPGA Pin</TH>
+<TH>Ringback Voltage on Rise at FPGA Pin</TH>
+<TH>Ringback Voltage on Fall at FPGA Pin</TH>
+<TH>10-90 Rise Time at FPGA Pin</TH>
+<TH>90-10 Fall Time at FPGA Pin</TH>
+<TH>Monotonic Rise at FPGA Pin</TH>
+<TH>Monotonic Fall at FPGA Pin</TH>
+<TH>Steady State Voh at Far-end</TH>
+<TH>Steady State Vol at Far-end</TH>
+<TH>Voh Max at Far-end</TH>
+<TH>Vol Min at Far-end</TH>
+<TH>Ringback Voltage on Rise at Far-end</TH>
+<TH>Ringback Voltage on Fall at Far-end</TH>
+<TH>10-90 Rise Time at Far-end</TH>
+<TH>90-10 Fall Time at Far-end</TH>
+<TH>Monotonic Rise at Far-end</TH>
+<TH>Monotonic Fall at Far-end</TH>
+</TR>
+</thead><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_CLK</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_CKE</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_ADDR[0]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_ADDR[1]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_ADDR[2]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_ADDR[3]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_ADDR[4]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_ADDR[5]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_ADDR[6]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_ADDR[7]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_ADDR[8]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_ADDR[9]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_ADDR[10]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_ADDR[11]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_ADDR[12]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_BA[0]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_BA[1]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_CS_N</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_CAS_N</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_RAS_N</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_WE_N</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_UDQM</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_LDQM</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >AUD_DACDAT</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >AUD_XCK</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >FPGA_I2C_SCLK</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >LEDR[0]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >LEDR[1]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >LEDR[2]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >LEDR[3]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >LEDR[4]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >LEDR[5]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >LEDR[6]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >LEDR[7]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[4]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[5]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[6]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[7]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[8]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[9]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[10]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[11]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[12]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[13]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[14]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[15]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[16]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[17]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[18]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[19]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[20]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[21]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[22]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[23]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[24]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[25]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[26]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[27]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[28]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[29]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[30]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[31]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[32]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[33]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[34]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[35]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_DQ[0]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_DQ[1]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_DQ[2]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_DQ[3]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_DQ[4]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_DQ[5]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_DQ[6]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_DQ[7]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_DQ[8]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_DQ[9]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_DQ[10]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_DQ[11]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_DQ[12]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_DQ[13]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >DRAM_DQ[14]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >DRAM_DQ[15]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >AUD_ADCLRCK</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >AUD_BCLK</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >AUD_DACLRCK</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >FPGA_I2C_SDAT</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[0]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+<TD >2.75 V</TD>
+<TD >0.000213 V</TD>
+<TD >2.79 V</TD>
+<TD >-0.0324 V</TD>
+<TD >0.139 V</TD>
+<TD >0.119 V</TD>
+<TD >4.42e-10 s</TD>
+<TD >4.33e-10 s</TD>
+<TD >No</TD>
+<TD >Yes</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[1]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0805 V</TD>
+<TD >0.358 V</TD>
+<TD >0.156 V</TD>
+<TD >3.01e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >GPIO_0[2]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000247 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0711 V</TD>
+<TD >0.204 V</TD>
+<TD >0.181 V</TD>
+<TD >4.55e-10 s</TD>
+<TD >4.49e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >GPIO_0[3]</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000242 V</TD>
+<TD >2.86 V</TD>
+<TD >-0.0814 V</TD>
+<TD >0.36 V</TD>
+<TD >0.156 V</TD>
+<TD >3e-10 s</TD>
+<TD >4.34e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >altera_reserved_tdo</TD>
+<TD >2.5 V</TD>
+<TD >0 s</TD>
+<TD >0 s</TD>
+<TD >2.75 V</TD>
+<TD >0.000219 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0938 V</TD>
+<TD >0.339 V</TD>
+<TD >0.156 V</TD>
+<TD >3.08e-10 s</TD>
+<TD >4.29e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+<TD >2.75 V</TD>
+<TD >0.000219 V</TD>
+<TD >2.85 V</TD>
+<TD >-0.0938 V</TD>
+<TD >0.339 V</TD>
+<TD >0.156 V</TD>
+<TD >3.08e-10 s</TD>
+<TD >4.29e-10 s</TD>
+<TD >No</TD>
+<TD >No</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

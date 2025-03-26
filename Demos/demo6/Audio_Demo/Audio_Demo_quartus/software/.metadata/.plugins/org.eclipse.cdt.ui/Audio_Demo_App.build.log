@@ -1,0 +1,13 @@
+23:58:14 **** Build of configuration Nios II for project Audio_Demo_App ****
+make all 
+Info: Building ../Audio_Demo_App_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Audio_Demo_App_bsp/
+[BSP build complete]
+Info: Compiling audio_demo.c to obj/default/audio_demo.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Audio_Demo_App_bsp//HAL/inc -I../Audio_Demo_App_bsp/ -I../Audio_Demo_App_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/audio_demo.o audio_demo.c
+audio_demo.c:14:38: fatal error: altera_avalon_timer_regs.h: No such file or directory
+compilation terminated.
+make: *** [obj/default/audio_demo.o] Error 1
+
+23:58:15 Build Finished (took 529ms)
+
