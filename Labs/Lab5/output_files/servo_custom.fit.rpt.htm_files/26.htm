@@ -1,0 +1,974 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Control Signals</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Name</TH>
+<TH>Location</TH>
+<TH>Fan-Out</TH>
+<TH>Usage</TH>
+<TH>Global</TH>
+<TH>Global Resource Used</TH>
+<TH>Global Line Name</TH>
+<TH>Enable Signal Source Name</TH>
+</TR>
+</thead><tbody><TR >
+<TD >CLOCK_50</TD>
+<TD >PIN_AF14</TD>
+<TD >1065</TD>
+<TD >Clock</TD>
+<TD >yes</TD>
+<TD >Global Clock</TD>
+<TD >GCLK6</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >altera_internal_jtag~TCKUTAP</TD>
+<TD >JTAG_X0_Y2_N3</TD>
+<TD >175</TD>
+<TD >Clock</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >altera_internal_jtag~TMSUTAP</TD>
+<TD >JTAG_X0_Y2_N3</TD>
+<TD >27</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >key0_d3[0]</TD>
+<TD >FF_X43_Y4_N40</TD>
+<TD >19</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|altera_reset_controller:rst_controller|merged_reset~0</TD>
+<TD >MLABCELL_X34_Y6_N12</TD>
+<TD >3</TD>
+<TD >Async. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|altera_reset_controller:rst_controller|r_early_rst</TD>
+<TD >FF_X34_Y6_N22</TD>
+<TD >33</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|altera_reset_controller:rst_controller|r_sync_rst</TD>
+<TD >FF_X34_Y6_N5</TD>
+<TD >762</TD>
+<TD >Async. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_HEX0:hex0|always0~2</TD>
+<TD >MLABCELL_X52_Y10_N36</TD>
+<TD >9</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_HEX0:hex1|always0~0</TD>
+<TD >LABCELL_X53_Y11_N6</TD>
+<TD >7</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_HEX0:hex2|always0~0</TD>
+<TD >LABCELL_X51_Y11_N36</TD>
+<TD >8</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_HEX0:hex4|always0~0</TD>
+<TD >MLABCELL_X52_Y11_N33</TD>
+<TD >7</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_HEX0:hex5|always0~0</TD>
+<TD >LABCELL_X51_Y11_N54</TD>
+<TD >8</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|r_ena~0</TD>
+<TD >LABCELL_X37_Y5_N48</TD>
+<TD >1</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|td_shift[0]~2</TD>
+<TD >LABCELL_X2_Y3_N54</TD>
+<TD >21</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|wdata[1]~0</TD>
+<TD >LABCELL_X2_Y3_N30</TD>
+<TD >9</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|write_stalled~1</TD>
+<TD >MLABCELL_X3_Y3_N30</TD>
+<TD >5</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|fifo_rd~1</TD>
+<TD >LABCELL_X45_Y7_N54</TD>
+<TD >9</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|fifo_wr</TD>
+<TD >FF_X46_Y7_N11</TD>
+<TD >15</TD>
+<TD >Clock enable, Write enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|ien_AE~0</TD>
+<TD >LABCELL_X45_Y7_N15</TD>
+<TD >3</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state|_~2</TD>
+<TD >LABCELL_X45_Y7_N6</TD>
+<TD >8</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state|_~0</TD>
+<TD >LABCELL_X46_Y7_N0</TD>
+<TD >6</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|r_val~0</TD>
+<TD >LABCELL_X46_Y7_N3</TD>
+<TD >10</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|read_0</TD>
+<TD >FF_X40_Y7_N56</TD>
+<TD >16</TD>
+<TD >Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|wr_rfifo</TD>
+<TD >LABCELL_X42_Y7_N57</TD>
+<TD >14</TD>
+<TD >Clock enable, Write enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|mem_used[1]~1</TD>
+<TD >LABCELL_X46_Y8_N57</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_0_s1_agent_rsp_fifo|mem_used[1]~1</TD>
+<TD >LABCELL_X48_Y9_N57</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_003|altera_merlin_arbitrator:arb|top_priority_reg[0]~0</TD>
+<TD >LABCELL_X42_Y6_N18</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_003|update_grant~0</TD>
+<TD >LABCELL_X48_Y8_N0</TD>
+<TD >3</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_004|altera_merlin_arbitrator:arb|top_priority_reg[0]~0</TD>
+<TD >MLABCELL_X47_Y8_N42</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_004|update_grant~0</TD>
+<TD >MLABCELL_X47_Y8_N0</TD>
+<TD >3</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_ctrl_mem8~1</TD>
+<TD >LABCELL_X57_Y10_N57</TD>
+<TD >20</TD>
+<TD >Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_iw[2]</TD>
+<TD >FF_X50_Y9_N5</TD>
+<TD >35</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_alu_result~1</TD>
+<TD >LABCELL_X51_Y8_N45</TD>
+<TD >66</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_new_inst</TD>
+<TD >FF_X53_Y8_N8</TD>
+<TD >52</TD>
+<TD >Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src1[17]~0</TD>
+<TD >MLABCELL_X59_Y8_N36</TD>
+<TD >18</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src2[12]~0</TD>
+<TD >LABCELL_X57_Y7_N57</TD>
+<TD >11</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_st_data[23]~0</TD>
+<TD >LABCELL_X57_Y10_N54</TD>
+<TD >8</TD>
+<TD >Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_valid_from_R</TD>
+<TD >FF_X53_Y8_N56</TD>
+<TD >11</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|F_valid~0</TD>
+<TD >LABCELL_X51_Y7_N51</TD>
+<TD >38</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|R_ctrl_exception</TD>
+<TD >FF_X56_Y8_N59</TD>
+<TD >20</TD>
+<TD >Sync. clear, Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|R_src2_hi~1</TD>
+<TD >LABCELL_X56_Y9_N30</TD>
+<TD >16</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|R_src2_use_imm</TD>
+<TD >FF_X56_Y8_N32</TD>
+<TD >28</TD>
+<TD >Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg_nxt~0</TD>
+<TD >LABCELL_X55_Y8_N6</TD>
+<TD >3</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_rf_wren</TD>
+<TD >LABCELL_X56_Y8_N3</TD>
+<TD >2</TD>
+<TD >Clock enable, Write enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_valid</TD>
+<TD >FF_X53_Y8_N26</TD>
+<TD >19</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|av_ld_aligning_data</TD>
+<TD >FF_X53_Y8_N14</TD>
+<TD >35</TD>
+<TD >Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|av_ld_byte0_data[0]~0</TD>
+<TD >LABCELL_X51_Y8_N12</TD>
+<TD >9</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|av_ld_byte1_data_en~0</TD>
+<TD >LABCELL_X55_Y11_N57</TD>
+<TD >8</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|av_ld_rshift8~0</TD>
+<TD >LABCELL_X51_Y8_N15</TD>
+<TD >19</TD>
+<TD >Clock enable, Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|hbreak_req~0</TD>
+<TD >MLABCELL_X39_Y6_N21</TD>
+<TD >24</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|address[8]</TD>
+<TD >FF_X56_Y6_N20</TD>
+<TD >35</TD>
+<TD >Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|jxuir</TD>
+<TD >FF_X40_Y7_N11</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|take_action_ocimem_a</TD>
+<TD >LABCELL_X36_Y5_N39</TD>
+<TD >17</TD>
+<TD >Clock enable, Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|take_action_ocimem_a~0</TD>
+<TD >LABCELL_X40_Y7_N27</TD>
+<TD >16</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|take_action_ocimem_b</TD>
+<TD >MLABCELL_X39_Y6_N15</TD>
+<TD >38</TD>
+<TD >Clock enable, Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|update_jdo_strobe</TD>
+<TD >FF_X9_Y4_N17</TD>
+<TD >39</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[19]~19</TD>
+<TD >LABCELL_X16_Y4_N18</TD>
+<TD >18</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[19]~21</TD>
+<TD >LABCELL_X16_Y4_N36</TD>
+<TD >16</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[36]~15</TD>
+<TD >MLABCELL_X3_Y4_N6</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[9]~10</TD>
+<TD >LABCELL_X4_Y4_N39</TD>
+<TD >13</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[9]~9</TD>
+<TD >LABCELL_X2_Y4_N54</TD>
+<TD >13</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:nios_system_nios2_gen2_0_cpu_debug_slave_phy|virtual_state_uir</TD>
+<TD >MLABCELL_X3_Y3_N21</TD>
+<TD >4</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_avalon_reg:the_nios_system_nios2_gen2_0_cpu_nios2_avalon_reg|take_action_oci_intr_mask_reg~0</TD>
+<TD >LABCELL_X45_Y6_N54</TD>
+<TD >5</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break|break_readreg[22]~0</TD>
+<TD >LABCELL_X40_Y7_N0</TD>
+<TD >33</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break|break_readreg[22]~1</TD>
+<TD >MLABCELL_X8_Y6_N36</TD>
+<TD >32</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonDReg[0]~2</TD>
+<TD >MLABCELL_X39_Y6_N12</TD>
+<TD >34</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonDReg[15]~7</TD>
+<TD >MLABCELL_X39_Y6_N51</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonDReg[9]~3</TD>
+<TD >LABCELL_X35_Y6_N51</TD>
+<TD >27</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|ociram_reset_req</TD>
+<TD >LABCELL_X45_Y8_N36</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|ociram_wr_en~1</TD>
+<TD >MLABCELL_X34_Y6_N15</TD>
+<TD >2</TD>
+<TD >Read enable, Write enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_onchip_memory2_0:onchip_memory2_0|wren~1</TD>
+<TD >MLABCELL_X47_Y8_N12</TD>
+<TD >32</TD>
+<TD >Read enable, Write enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_pusbutton:pusbutton|always1~2</TD>
+<TD >LABCELL_X51_Y10_N30</TD>
+<TD >4</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|nios_system_pusbutton:pusbutton|read_mux_out[0]~0</TD>
+<TD >LABCELL_X64_Y8_N0</TD>
+<TD >44</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|servo_controller:servo_motorv2_0|Equal0~6</TD>
+<TD >MLABCELL_X52_Y13_N42</TD>
+<TD >46</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:u0|servo_controller:servo_motorv2_0|angle_count[2]~0</TD>
+<TD >LABCELL_X55_Y13_N36</TD>
+<TD >33</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|clr_reg</TD>
+<TD >FF_X2_Y2_N23</TD>
+<TD >61</TD>
+<TD >Async. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~3</TD>
+<TD >MLABCELL_X3_Y2_N51</TD>
+<TD >4</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_info_reg_ena~0</TD>
+<TD >LABCELL_X1_Y2_N36</TD>
+<TD >6</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|identity_contrib_shift_reg[0]~0</TD>
+<TD >LABCELL_X4_Y2_N54</TD>
+<TD >4</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][0]~5</TD>
+<TD >LABCELL_X2_Y2_N48</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[2]~2</TD>
+<TD >LABCELL_X4_Y2_N9</TD>
+<TD >5</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~1</TD>
+<TD >MLABCELL_X6_Y2_N54</TD>
+<TD >5</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|node_ena~2</TD>
+<TD >MLABCELL_X6_Y2_N12</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|reset_ena_reg_proc~0</TD>
+<TD >LABCELL_X2_Y2_N12</TD>
+<TD >5</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][0]~6</TD>
+<TD >LABCELL_X2_Y2_N24</TD>
+<TD >2</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]~2</TD>
+<TD >MLABCELL_X6_Y2_N24</TD>
+<TD >4</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[3]~1</TD>
+<TD >MLABCELL_X6_Y2_N27</TD>
+<TD >6</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm|state[0]</TD>
+<TD >FF_X1_Y2_N47</TD>
+<TD >16</TD>
+<TD >Async. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm|state[11]</TD>
+<TD >FF_X2_Y2_N29</TD>
+<TD >13</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm|state[3]</TD>
+<TD >FF_X1_Y2_N11</TD>
+<TD >38</TD>
+<TD >Sync. load</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm|state[4]</TD>
+<TD >FF_X2_Y2_N56</TD>
+<TD >54</TD>
+<TD >Sync. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|virtual_ir_dr_scan_proc~0</TD>
+<TD >MLABCELL_X6_Y2_N36</TD>
+<TD >3</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|virtual_ir_scan_reg</TD>
+<TD >FF_X6_Y2_N50</TD>
+<TD >40</TD>
+<TD >Async. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|sldfabric_ident_writedata[0]~0</TD>
+<TD >LABCELL_X2_Y2_N0</TD>
+<TD >4</TD>
+<TD >Clock enable</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

@@ -1,0 +1,22 @@
+15:59:59 **** Incremental Build of configuration Nios II for project l5_sw ****
+make all 
+Info: Building ../l5_sw_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../l5_sw_bsp/
+[BSP build complete]
+Info: Compiling l5_main.c to obj/default/l5_main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../l5_sw_bsp//HAL/inc -I../l5_sw_bsp/ -I../l5_sw_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/l5_main.o l5_main.c
+l5_main.c:21:48: error: 'SERVO_MOTOR_0_BASE' undeclared here (not in a function)
+ uint32 *uintServoComponentBase_Ptr = (uint32*) SERVO_MOTOR_0_BASE;
+                                                ^
+l5_main.c: In function 'main':
+l5_main.c:116:25: error: 'SERVO_MOTOR_0_IRQ_INTERRUPT_CONTROLLER_ID' undeclared (first use in this function)
+     alt_ic_isr_register(SERVO_MOTOR_0_IRQ_INTERRUPT_CONTROLLER_ID,SERVO_MOTOR_0_IRQ,servo_motor_isr,0,0);
+                         ^
+l5_main.c:116:25: note: each undeclared identifier is reported only once for each function it appears in
+l5_main.c:116:67: error: 'SERVO_MOTOR_0_IRQ' undeclared (first use in this function)
+     alt_ic_isr_register(SERVO_MOTOR_0_IRQ_INTERRUPT_CONTROLLER_ID,SERVO_MOTOR_0_IRQ,servo_motor_isr,0,0);
+                                                                   ^
+make: *** [obj/default/l5_main.o] Error 1
+
+16:00:00 Build Finished (took 1s.247ms)
+

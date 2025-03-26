@@ -1,0 +1,6 @@
+22:46:30 **** Clean-only build of configuration Nios II for project l6_sw ****
+make clean 
+[l6_sw clean complete]
+
+22:46:30 Build Finished (took 145ms)
+

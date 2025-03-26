@@ -1,0 +1,121 @@
+
+#include "io.h"
+#include <stdio.h>
+#include "system.h"
+#include "alt_types.h"
+#include "sys/alt_irq.h"
+
+
+typedef   signed char   sint8;              // signed 8 bit values
+typedef unsigned char   uint8;              // unsigned 8 bit values
+typedef   signed short  sint16;             // signed 16 bit values
+typedef unsigned short  uint16;             // unsigned 16 bit values
+typedef   signed long   sint32;             // signed 32 bit values
+typedef unsigned long   uint32;             // unsigned 32 bit values
+typedef         float   real32;             // 32 bit real values
+
+const unsigned char ssdValues[10] = {0x40, 0x79, 0x24, 0x30, 0x19, 0x12, 0x02, 0x78, 0x00, 0x10};
+const char interrupt_offset = 0x02;
+
+uint32 *uintPushbuttonBase_Ptr     = (uint32*) PUSBUTTON_BASE;
+uint32 *uintServoComponentBase_Ptr = (uint32*) SERVO_MOTOR_0_BASE;
+uint32 *switchesBase_ptr           = (uint32 *) SWITCHES_BASE;
+unsigned char *hex0Base_ptr        = (unsigned char *) HEX0_BASE;
+unsigned char *hex1Base_ptr        = (unsigned char *) HEX1_BASE;
+unsigned char *hex2Base_ptr        = (unsigned char *) HEX2_BASE;
+unsigned char *hex4Base_ptr        = (unsigned char *) HEX4_BASE;
+unsigned char *hex5Base_ptr        = (unsigned char *) HEX5_BASE;
+
+uint32 min_angle = 45;
+uint32 max_angle = 135;
+
+
+void pushbutton_isr (void *context){
+	
+	uint32 val_min = 0;
+	uint32 val_max = 0;
+	uint32 min_tens, min_ones = 0;
+    uint32 max_hunds = 0;
+    uint32 max_tens = 0;
+	uint32 max_ones = 0;
+
+	uint32 pushbutton = *(uintPushbuttonBase_Ptr + 3);
+	
+	// split input angle for min angle val when KEY2 is pressed
+	if (pushbutton & 0x0004){
+
+		// read in slideswitch value
+		min_angle = *switchesBase_ptr;
+		// if angle over 35 or above 99 set accordingly
+		if (min_angle <= 45){
+			min_angle = 45;
+		}
+		else if (min_angle >= 99){
+			min_angle = 99;
+		}
+
+		// split into individual digits for hexes
+		val_min = min_angle;
+		min_ones = val_min % 10;
+		min_tens = val_min / 10;
+		// assign to hexes
+		*hex4Base_ptr = ssdValues[min_ones];
+		*hex5Base_ptr = ssdValues[min_tens];
+    }
+	// split output angle for max angle val when KEY3 is pressed
+	else if (pushbutton & 0x0008){
+		// read in slideswitch value
+		max_angle = *switchesBase_ptr;
+		// if angle over 135 rest back to 135
+		if (max_angle >= 135){
+			max_angle = 135;
+		}
+		// split digits into individuals for hexs
+		val_max = max_angle;
+		max_ones = val_max % 10;
+		val_max = val_max / 10;
+		max_tens = val_max % 10;
+		max_hunds = val_max / 10;
+
+		// assign values to hex
+		*hex0Base_ptr = ssdValues[max_ones];
+		*hex1Base_ptr = ssdValues[max_tens];
+		*hex2Base_ptr = ssdValues[max_hunds];
+	}
+
+    *(uintPushbuttonBase_Ptr + 3) &= ~0x0C;
+
+}
+
+void servo_motor_isr (void *context){
+
+
+	// convert to clock cycles (555 is equal to 1 degree)
+	uint32 clk_cycles_min = min_angle * (5000 / 9) + 25000;
+	uint32 clk_cycles_max = max_angle * (5000 / 9) + 25000;
+
+	*(uintServoComponentBase_Ptr + 0) = clk_cycles_min;
+    *(uintServoComponentBase_Ptr + 1) = clk_cycles_max;
+
+	
+}
+
+int main(){
+
+	// set to base values at start
+    *hex0Base_ptr = ssdValues[5];
+    *hex1Base_ptr = ssdValues[3];
+    *hex2Base_ptr = ssdValues[1];
+    *hex4Base_ptr = ssdValues[5];
+    *hex5Base_ptr = ssdValues[4];
+   
+    // enable interrupts on pushbuttons
+    *(uintPushbuttonBase_Ptr + 2) |= 0x0C;
+    *(uintPushbuttonBase_Ptr + 3) = 0x0C;
+
+    alt_ic_isr_register(SERVO_MOTOR_0_IRQ_INTERRUPT_CONTROLLER_ID,SERVO_MOTORV2_0_IRQ,servo_motor_isr,0,0);
+	alt_ic_isr_register(PUSBUTTON_IRQ_INTERRUPT_CONTROLLER_ID,PUSBUTTON_IRQ,pushbutton_isr,0,0);
+	
+	while(1){}
+}
+
