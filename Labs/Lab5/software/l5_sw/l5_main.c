@@ -18,7 +18,7 @@ const unsigned char ssdValues[10] = {0x40, 0x79, 0x24, 0x30, 0x19, 0x12, 0x02, 0
 const char interrupt_offset = 0x02;
 
 uint32 *uintPushbuttonBase_Ptr     = (uint32*) PUSBUTTON_BASE;
-uint32 *uintServoComponentBase_Ptr = (uint32*) SERVO_MOTOR_0_BASE;
+uint32 *uintServoComponentBase_Ptr = (uint32*) SERVO_MOTORV2_0_BASE;
 uint32 *switchesBase_ptr           = (uint32 *) SWITCHES_BASE;
 unsigned char *hex0Base_ptr        = (unsigned char *) HEX0_BASE;
 unsigned char *hex1Base_ptr        = (unsigned char *) HEX1_BASE;
@@ -113,7 +113,7 @@ int main(){
     *(uintPushbuttonBase_Ptr + 2) |= 0x0C;
     *(uintPushbuttonBase_Ptr + 3) = 0x0C;
 
-    alt_ic_isr_register(SERVO_MOTOR_0_IRQ_INTERRUPT_CONTROLLER_ID,SERVO_MOTORV2_0_IRQ,servo_motor_isr,0,0);
+    alt_ic_isr_register(SERVO_MOTORV2_0_IRQ_INTERRUPT_CONTROLLER_ID,SERVO_MOTORV2_0_IRQ,servo_motor_isr,0,0);
 	alt_ic_isr_register(PUSBUTTON_IRQ_INTERRUPT_CONTROLLER_ID,PUSBUTTON_IRQ,pushbutton_isr,0,0);
 	
 	while(1){}

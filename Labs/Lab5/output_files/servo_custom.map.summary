@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Mar 19 15:56:55 2025
+Analysis & Synthesis Status : Successful - Wed Mar 26 12:42:54 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : servo_custom
 Top-level Entity Name : servo_custom
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1132
+Total registers : 1194
 Total pins : 51
 Total virtual pins : 0
 Total block memory bits : 273,408

@@ -1,0 +1,1120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Removed Registers Triggering Further Register Optimizations</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Register name</TH>
+<TH>Reason for Removal</TH>
+<TH>Registers Removed due to This Register</TH>
+</TR>
+</thead><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][44],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][43],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][42],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][41],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][40],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][39],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][38],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][37],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][36],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][35],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][34],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][33],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][32],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][31],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][30],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][29],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][28],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][27],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][21],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_cmd_width_adapter|address_reg[26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][44],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][43],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][42],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][41],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][40],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][39],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][38],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][37],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][36],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][35],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][34],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][33],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][32],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][31],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][30],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][29],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][28],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][27],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][21],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][44],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][43],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][42],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][41],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][40],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][39],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][38],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][37],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][36],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][35],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][34],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][33],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][32],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][31],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][30],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][29],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][28],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][27],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][21],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][44],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][43],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][42],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][41],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][40],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][39],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][38],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][37],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][36],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][35],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][34],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][33],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][32],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][31],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][30],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][29],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][28],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][27],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][21],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][44],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][43],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][42],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][41],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][40],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][39],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][38],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][37],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][36],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][35],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][34],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][33],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][32],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][31],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][30],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][29],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][28],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][27],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][21],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][44],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][43],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][42],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][41],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][40],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][39],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][38],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][37],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][36],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][35],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][34],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][33],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][32],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][31],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][30],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][29],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][28],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][27],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][21],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][44],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][43],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][42],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][41],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][40],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][39],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][38],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][37],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][36],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][35],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][34],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][33],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][32],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][31],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][30],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][29],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][28],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][27],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][21],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][44],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][43],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][42],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][41],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][40],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][39],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][38],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][37],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][36],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][35],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][34],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][33],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][32],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][31],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][30],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][29],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][28],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][27],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][26],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][21],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[20],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[19],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[18],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[17],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[16],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[15],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[14],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[13],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[12],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[11],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[10],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[9],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[8],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[7],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[6],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[5],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[4],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[3],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_use_reg</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_endofpacket,<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[15],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[12],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[11],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[10],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[9],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[8],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[7],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[6],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[5],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[4],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[3],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[2],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[1],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_data_field[0],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_byte_cnt_field[2],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_channel[0],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_ori_burst_size[2],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_ori_burst_size[1],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|p0_reg_ori_burst_size[0],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][58],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][45],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][58],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][45],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][58],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][45],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][58],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][45],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][58],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][45],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][58],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][45],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][58],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][45],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_byte_counter[2],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][18],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][18],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][18],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][18],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][18],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][18],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][18]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][69]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][69],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][69],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][69],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][69],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][69],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][69],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][69]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][68]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][68],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][68],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][68],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][68],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][68],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][68],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][68]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][67]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][67],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][67],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][67],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][67],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][67],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][67],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][67]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[0][66]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[1][66],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[2][66],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[3][66],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[4][66],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[5][66],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[6][66],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][66]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+<TD >Stuck at GND<br>
+due to stuck port clock_enable</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_byte_counter[3],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_byte_counter[1],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_byte_counter[0],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_byte_counter[1],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_byte_counter[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[26]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[25],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[24],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[23],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[22],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[21]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_1_s1_agent_rsp_fifo|mem[1][87]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_1_s1_agent_rsp_fifo|mem[0][63],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_1_s1_agent_rsp_fifo|mem[0][71],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:onchip_memory2_1_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy,<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_1_s1_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|mem[1][87]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|mem[0][63],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|mem[0][71],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:nios2_gen2_0_debug_mem_slave_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy,<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_005|locked[0]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_005|prev_request[0],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_1_s1_agent_rsp_fifo|mem[1][105],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_1_s1_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_004|locked[0]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_004|prev_request[0],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|mem[1][105],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[0][87]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[1][87],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:audio_and_video_config_0_avalon_av_config_slave_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_dbrk:the_nios_system_nios2_gen2_0_cpu_nios2_oci_dbrk|dbrk_break_pulse</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_dbrk:the_nios_system_nios2_gen2_0_cpu_nios2_oci_dbrk|dbrk_break,<br>
+nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break|trigbrktype</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[0][87]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[1][87],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:pin_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[0][87]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[1][87],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:timer_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[0][87]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[1][87],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:pio_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[0][87]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[1][87],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sysid_control_slave_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[0][87]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][87],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:jtag_uart_0_avalon_jtag_slave_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[0][87]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[1][87],<br>
+nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:audio_0_avalon_audio_slave_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[27]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[27]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[26]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[26]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[25]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[25]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[24]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[24]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[23]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[23]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[22]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[22]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[21]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[21]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[20]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[20]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[19]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[19]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[18]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[18]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[17]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[17]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[16]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[16]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[15]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[14]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[14]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[13]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[13]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[12]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[11]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[11]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[10]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[10]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[9]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[9]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[8]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[8]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W1_rf_ecc_recoverable_valid</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_up_ex_mon_state</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[31]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[31]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[30]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[30]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[29]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[29]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[28]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[28]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[27]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[27]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[26]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[26]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[25]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[25]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[24]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[24]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[23]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[23]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[22]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[22]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[21]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[21]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[20]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[20]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[19]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[19]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[18]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[18]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[17]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[17]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[16]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[16]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[15]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[14]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[14]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[13]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[13]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[12]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[11]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[11]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[10]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[10]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[9]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[9]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[8]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[8]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[7]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[7]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[6]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[6]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[5]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[5]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[30]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[30]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[3]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[2]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_dbrk:the_nios_system_nios2_gen2_0_cpu_nios2_oci_dbrk|dbrk_goto1</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break|trigger_state</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[15]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|address_reg[9]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|readdata[9]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_005|locked[1]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_005|prev_request[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[14]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[14]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_004|locked[1]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_004|prev_request[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[13]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[13]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[12]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[0][86]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[1][86]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[0][85]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[1][85]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[0][84]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[1][84]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[11]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[11]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[0][86]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[1][86]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[0][85]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[1][85]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[0][84]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[1][84]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[10]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[10]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[9]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[9]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[8]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[8]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[7]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[7]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[6]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[6]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[0][86]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[1][86]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[0][85]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[1][85]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[0][84]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[1][84]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[5]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[5]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[0][86]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[1][86]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[0][85]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[1][85]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[0][84]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[1][84]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[4]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[4]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[0][86]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][86]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[0][85]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][85]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[0][84]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][84]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[3]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[0][86]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[1][86]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[0][85]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[1][85]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[0][84]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[1][84]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_timer_0:timer_0|readdata[2]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|av_readdata_pre[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[0][86]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[1][86]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[0][85]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[1][85]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[0][84]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[1][84]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_cmd_width_adapter|address_reg[0]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem[7][18]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[1][70]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[0][63]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[1][70]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[0][63]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[1][70]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[0][63]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[31]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[31]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[29]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[29]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[1][70]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[0][63]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][70]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[0][63]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[1][70]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[0][63]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_ienable_reg[4]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_control_rd_data[4]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[0][71]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[0][71]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[0][71]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[0][71]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[0][71]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[0][71]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[0][71]</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[1][71]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_pio_0:pio_0|readdata[28]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|av_readdata_pre[28]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[1][105]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[1][105]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[1][105]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[1][105]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[1][105]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[1][105]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[1][105]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|mem[0][105]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|DRsize~3</TD>
+<TD >Lost Fanouts</TD>
+<TD >nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|DRsize.101</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[1][70]</TD>
+<TD >Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD >nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|mem[0][63]</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

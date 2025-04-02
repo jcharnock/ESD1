@@ -77,7 +77,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  29 .jdi          00005215  00000000  00000000  00017884  2**0
                   CONTENTS, READONLY
- 30 .sopcinfo     0006282d  00000000  00000000  0001ca99  2**0
+ 30 .sopcinfo     0006284b  00000000  00000000  0001ca99  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00008000 l    d  .entry	00000000 .entry
@@ -1001,7 +1001,7 @@ int main(){
     854c:	00c00304 	movi	r3,12
     8550:	10c00015 	stw	r3,0(r2)
 
-    alt_ic_isr_register(SERVO_MOTOR_0_IRQ_INTERRUPT_CONTROLLER_ID,SERVO_MOTOR_0_IRQ,servo_motor_isr,0,0);
+    alt_ic_isr_register(SERVO_MOTORV2_0_IRQ_INTERRUPT_CONTROLLER_ID,SERVO_MOTORV2_0_IRQ,servo_motor_isr,0,0);
     8554:	d8000015 	stw	zero,0(sp)
     8558:	000f883a 	mov	r7,zero
     855c:	01800074 	movhi	r6,1

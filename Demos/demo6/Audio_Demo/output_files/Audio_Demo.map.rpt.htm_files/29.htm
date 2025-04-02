@@ -1,0 +1,744 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Multiplexer Restructuring Statistics (Restructuring Performed)</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Multiplexer Inputs</TH>
+<TH>Bus Width</TH>
+<TH>Baseline Area</TH>
+<TH>Area if Restructured</TH>
+<TH>Saving if Restructured</TH>
+<TH>Registered</TH>
+<TH>Example Multiplexer Output</TH>
+</TR>
+</thead><tbody><TR >
+<TD >3:1</TD>
+<TD >18 bits</TD>
+<TD >36 LEs</TD>
+<TD >0 LEs</TD>
+<TD >36 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_cmd_width_adapter|data_reg[4]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >6 bits</TD>
+<TD >12 LEs</TD>
+<TD >6 LEs</TD>
+<TD >6 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init|rom_address[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >8 bits</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|d_writedata[29]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|control_reg[17]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >6 bits</TD>
+<TD >12 LEs</TD>
+<TD >6 LEs</TD>
+<TD >6 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|mem_used[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >4 bits</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|read_interrupt_en</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >10 bits</TD>
+<TD >20 LEs</TD>
+<TD >0 LEs</TD>
+<TD >20 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|count[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pin_s1_translator|wait_latency_counter[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_control_slave_translator|wait_latency_counter[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator|wait_latency_counter[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator|wait_latency_counter[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >25 bits</TD>
+<TD >50 LEs</TD>
+<TD >50 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src1[22]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >7 bits</TD>
+<TD >14 LEs</TD>
+<TD >14 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src1[27]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >5 bits</TD>
+<TD >10 LEs</TD>
+<TD >10 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src2[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_shift_rot_result[18]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >12 bits</TD>
+<TD >24 LEs</TD>
+<TD >24 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_iw[21]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >20 bits</TD>
+<TD >40 LEs</TD>
+<TD >20 LEs</TD>
+<TD >20 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_iw[9]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >8 bits</TD>
+<TD >16 LEs</TD>
+<TD >0 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|av_ld_byte0_data[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|av_ld_byte2_data[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|device_for_transfer[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|readdata[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >8 bits</TD>
+<TD >16 LEs</TD>
+<TD >0 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|address_reg[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|control_reg[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|data_in_shift_reg[9]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >8 bits</TD>
+<TD >16 LEs</TD>
+<TD >0 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|data_reg[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_alu_result[20]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|td_shift[8]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >22 bits</TD>
+<TD >44 LEs</TD>
+<TD >44 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|F_pc[22]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >11 bits</TD>
+<TD >22 LEs</TD>
+<TD >0 LEs</TD>
+<TD >22 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src2[13]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >15 bits</TD>
+<TD >30 LEs</TD>
+<TD >30 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src2[17]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >19 bits</TD>
+<TD >38 LEs</TD>
+<TD >0 LEs</TD>
+<TD >38 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonDReg[27]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >12 bits</TD>
+<TD >24 LEs</TD>
+<TD >24 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonDReg[11]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >9 bits</TD>
+<TD >18 LEs</TD>
+<TD >0 LEs</TD>
+<TD >18 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonAReg[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >64 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break|break_readreg[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >8 bits</TD>
+<TD >16 LEs</TD>
+<TD >0 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|address_for_transfer[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|readdata[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >5 bits</TD>
+<TD >10 LEs</TD>
+<TD >10 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_audio_bit_counter:Audio_Out_Bit_Counter|bit_counter[4]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|readdata[16]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >2 bits</TD>
+<TD >6 LEs</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|start_external_transfer</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >2 bits</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[37]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >2 bits</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[33]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >13 bits</TD>
+<TD >52 LEs</TD>
+<TD >26 LEs</TD>
+<TD >26 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[14]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >16 bits</TD>
+<TD >64 LEs</TD>
+<TD >32 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[16]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >16 bits</TD>
+<TD >48 LEs</TD>
+<TD >0 LEs</TD>
+<TD >48 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|readdata[29]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >2 bits</TD>
+<TD >6 LEs</TD>
+<TD >6 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|d_byteenable[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >35 bits</TD>
+<TD >105 LEs</TD>
+<TD >70 LEs</TD>
+<TD >35 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|shiftreg_mask[19]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >3 bits</TD>
+<TD >9 LEs</TD>
+<TD >6 LEs</TD>
+<TD >3 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|td_shift[7]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >4 bits</TD>
+<TD >12 LEs</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|td_shift[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >2 bits</TD>
+<TD >8 LEs</TD>
+<TD >0 LEs</TD>
+<TD >8 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|nios_system_new_sdram_controller_0_input_efifo_module:the_nios_system_new_sdram_controller_0_input_efifo_module|entries[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >2 bits</TD>
+<TD >6 LEs</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|i_count[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >5 bits</TD>
+<TD >20 LEs</TD>
+<TD >15 LEs</TD>
+<TD >5 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|readdata[5]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >10 bits</TD>
+<TD >40 LEs</TD>
+<TD >20 LEs</TD>
+<TD >20 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|readdata[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >6 bits</TD>
+<TD >24 LEs</TD>
+<TD >18 LEs</TD>
+<TD >6 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|readdata[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >4 bits</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|m_bank[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >12 bits</TD>
+<TD >48 LEs</TD>
+<TD >24 LEs</TD>
+<TD >24 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|shiftreg_data[4]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >15 bits</TD>
+<TD >60 LEs</TD>
+<TD >30 LEs</TD>
+<TD >30 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|data_out_shift_reg[8]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >3 bits</TD>
+<TD >12 LEs</TD>
+<TD >6 LEs</TD>
+<TD >6 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|m_addr[10]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >7:1</TD>
+<TD >8 bits</TD>
+<TD >32 LEs</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|shiftreg_data[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >7:1</TD>
+<TD >2 bits</TD>
+<TD >8 LEs</TD>
+<TD >6 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|m_addr[5]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >7:1</TD>
+<TD >8 bits</TD>
+<TD >32 LEs</TD>
+<TD >24 LEs</TD>
+<TD >8 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|m_addr[9]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >7:1</TD>
+<TD >44 bits</TD>
+<TD >176 LEs</TD>
+<TD >0 LEs</TD>
+<TD >176 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|active_addr[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|F_pc[24]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|m_data[11]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_logic_result[14]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >30 bits</TD>
+<TD >60 LEs</TD>
+<TD >60 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_rf_wr_data[31]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >5 bits</TD>
+<TD >10 LEs</TD>
+<TD >10 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_dst_regnum[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >9:1</TD>
+<TD >2 bits</TD>
+<TD >12 LEs</TD>
+<TD >12 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_router:router|src_channel[7]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >10:1</TD>
+<TD >2 bits</TD>
+<TD >12 LEs</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >No</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|Selector34</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >12:1</TD>
+<TD >2 bits</TD>
+<TD >16 LEs</TD>
+<TD >10 LEs</TD>
+<TD >6 LEs</TD>
+<TD >No</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|Selector24</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >16:1</TD>
+<TD >2 bits</TD>
+<TD >20 LEs</TD>
+<TD >14 LEs</TD>
+<TD >6 LEs</TD>
+<TD >No</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|Selector27</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >3 bits</TD>
+<TD >6 LEs</TD>
+<TD >3 LEs</TD>
+<TD >3 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >2 LEs</TD>
+<TD >2 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >5 bits</TD>
+<TD >10 LEs</TD>
+<TD >10 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >5 bits</TD>
+<TD >10 LEs</TD>
+<TD >10 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >34:1</TD>
+<TD >4 bits</TD>
+<TD >88 LEs</TD>
+<TD >64 LEs</TD>
+<TD >24 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >28:1</TD>
+<TD >4 bits</TD>
+<TD >72 LEs</TD>
+<TD >52 LEs</TD>
+<TD >20 LEs</TD>
+<TD >Yes</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

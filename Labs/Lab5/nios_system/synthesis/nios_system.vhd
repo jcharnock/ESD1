@@ -118,8 +118,8 @@ architecture rtl of nios_system is
 			write     : in  std_logic                     := 'X';             -- write
 			address   : in  std_logic                     := 'X';             -- address
 			writedata : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
-			irq       : out std_logic;                                        -- irq
-			out_wave  : out std_logic                                         -- out_wave
+			out_wave  : out std_logic;                                        -- out_wave
+			irq       : out std_logic                                         -- irq
 		);
 	end component servo_controller;
 
@@ -527,8 +527,8 @@ begin
 			write     => mm_interconnect_0_servo_motorv2_0_avalon_slave_0_write,      --   avalon_slave_0.write
 			address   => mm_interconnect_0_servo_motorv2_0_avalon_slave_0_address(0), --                 .address
 			writedata => mm_interconnect_0_servo_motorv2_0_avalon_slave_0_writedata,  --                 .writedata
-			irq       => irq_mapper_receiver0_irq,                                    -- interrupt_sender.irq
-			out_wave  => out_wave_out_wave                                            --      conduit_end.out_wave
+			out_wave  => out_wave_out_wave,                                           --      conduit_end.out_wave
+			irq       => irq_mapper_receiver0_irq                                     -- interrupt_sender.irq
 		);
 
 	switches : component nios_system_switches

@@ -39,7 +39,7 @@ architecture arch of servo_custom is
 			hex2_export          : out std_logic_vector(6 downto 0);                    -- export
 			hex4_export          : out std_logic_vector(6 downto 0);                    -- export
 			hex5_export          : out std_logic_vector(6 downto 0);                    -- export
-			out_wave_out_wave : out std_logic                                        -- out_wave
+			out_wave_out_wave    : out std_logic                                        -- out_wave
 		);
 	end component nios_system;
 	
@@ -81,7 +81,7 @@ begin
 			hex2_export          => HEX2,          --        hex2.export
 			hex4_export          => HEX4,          --        hex4.export
 			hex5_export          => HEX5,          --        hex5.export
-			out_wave_out_wave => GPIO0          -- servo_motor.out_wave
+			out_wave_out_wave    => GPIO0          -- servo_motor.out_wave
 		);
   
   end architecture;

@@ -1,5 +1,5 @@
 Flow report for servo_custom
-Wed Mar 19 15:58:36 2025
+Wed Mar 26 12:45:23 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Mar 19 15:58:25 2025           ;
+; Flow Status                     ; Successful - Wed Mar 26 12:45:10 2025           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; servo_custom                                    ;
 ; Top-level Entity Name           ; servo_custom                                    ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 844 / 32,070 ( 3 % )                            ;
-; Total registers                 ; 1210                                            ;
+; Logic utilization (in ALMs)     ; 888 / 32,070 ( 3 % )                            ;
+; Total registers                 ; 1271                                            ;
 ; Total pins                      ; 51 / 457 ( 11 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 273,408 / 4,065,280 ( 7 % )                     ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/19/2025 15:56:19 ;
+; Start date & time ; 03/26/2025 12:41:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; servo_custom        ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 194042949994131.174241417905132                               ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 194042950430821.174300730715888                               ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                            ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                             ; --            ; --          ; --         ;
 ; MISC_FILE                           ; nios_system/synthesis/../nios_system.cmp                      ; --            ; --          ; --         ;
@@ -91,7 +91,7 @@ refer to the applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                  ; --            ; --          ; --         ;
 ; SLD_FILE                            ; nios_system/synthesis/nios_system.regmap                      ; --            ; --          ; --         ;
 ; SLD_FILE                            ; nios_system/synthesis/nios_system.debuginfo                   ; --            ; --          ; --         ;
-; SLD_INFO                            ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1742414000 ; --            ; nios_system ; --         ;
+; SLD_INFO                            ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1743007087 ; --            ; nios_system ; --         ;
 ; SOPCINFO_FILE                       ; nios_system/synthesis/../../nios_system.sopcinfo              ; --            ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                            ; --            ; --          ; --         ;
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
@@ -102,11 +102,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:32     ; 1.0                     ; 5029 MB             ; 00:00:20                           ;
-; Fitter               ; 00:01:11     ; 1.1                     ; 7329 MB             ; 00:01:33                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4875 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:09     ; 1.6                     ; 5290 MB             ; 00:00:09                           ;
-; Total                ; 00:02:00     ; --                      ; --                  ; 00:02:08                           ;
+; Analysis & Synthesis ; 00:01:07     ; 1.0                     ; 5051 MB             ; 00:00:37                           ;
+; Fitter               ; 00:01:56     ; 1.1                     ; 7277 MB             ; 00:01:35                           ;
+; Assembler            ; 00:00:09     ; 1.0                     ; 4871 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:11     ; 1.8                     ; 5292 MB             ; 00:00:11                           ;
+; Total                ; 00:03:23     ; --                      ; --                  ; 00:02:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,10 +115,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; gol-1360-07      ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; gol-1360-07      ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; gol-1360-07      ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; gol-1360-07      ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; gol-1360-15      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; gol-1360-15      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; gol-1360-15      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; gol-1360-15      ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

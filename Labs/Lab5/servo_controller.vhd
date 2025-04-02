@@ -9,8 +9,8 @@ ENTITY servo_controller IS
 	   write      : IN    std_logic;
 	   address    : IN    std_logic;
 	   writedata  : IN    std_logic_vector(31 downto 0);
-      out_wave    : OUT   std_logic;
-      irq         : OUT   std_logic
+       out_wave   : OUT   std_logic;
+       irq        : OUT   std_logic
        );
 END servo_controller;
 
@@ -28,7 +28,7 @@ architecture arch of servo_controller IS
 	
 	-- ram_type is a 2-dimensional array or inferred ram.  
 	-- It stores eight 32-bit values
-	TYPE ram_type IS ARRAY (1 DOWNTO 0) OF std_logic_vector (31 DOWNTO 0);
+	TYPE ram_type IS ARRAY (1 DOWNTO 0) OF unsigned (31 DOWNTO 0);
 	SIGNAL Registers : ram_type; 
 	
 	-- state signals
@@ -64,14 +64,14 @@ begin
 	end process;
 	
 	-- fsm for servo behavior
-	state : process(current_state, write, angle_count)
+	state : process(current_state, write, angle_count, Registers)
 	begin
 		next_state <= current_state;
 		case (current_state) is
 			when sweep_r =>
 				-- if reaching max angle then change to int_r
 				-- else stay at sweep_r
-				if (max_angle_count < angle_count) then 
+				if (Registers(1) < angle_count) then
 					next_state <= int_r;
 				else
 					next_state <= sweep_r;
@@ -87,7 +87,7 @@ begin
 			when sweep_l =>
 				-- if reaching max angle then change to int_l
 				-- else stay at sweep_l
-				if (angle_count < min_angle_count) then
+				if (angle_count < Registers(0)) then
 					next_state <= int_l;
 				else
 					next_state <= sweep_l;
@@ -129,14 +129,14 @@ begin
 	register_logic : process (clk, reset_n, write, address, writedata, next_state) 
 	BEGIN
 		IF (reset_n = '0') THEN
-			Registers(1) <= std_logic_vector(max_angle_count);
-			Registers(0) <= std_logic_vector(min_angle_count);
+			Registers(1) <= max_angle_count;
+			Registers(0) <= min_angle_count;
 		ELSIF (rising_edge(clk)) THEN
 			IF (write = '1') THEN
 				if (address = '0') then
-					Registers(0) <= writedata;
+					Registers(0) <= unsigned(writedata);
 				else
-					Registers(1) <= writedata;
+					Registers(1) <= unsigned(writedata);
 				end if;
         --when write enable is active, the ram location at the given address
         --is loaded with the input data

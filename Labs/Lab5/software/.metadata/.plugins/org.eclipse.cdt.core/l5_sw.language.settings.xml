@@ -1382,7 +1382,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1394,7 +1394,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_wait.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1406,7 +1418,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_printf.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1418,7 +1442,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1430,7 +1454,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1442,7 +1466,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1454,7 +1478,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1466,7 +1490,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1478,7 +1502,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_usleep.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1490,7 +1526,43 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_dev_llist_insert.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_log_printf.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_environ.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1502,7 +1574,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_execve.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1514,7 +1598,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1526,7 +1610,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_stat.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1538,7 +1634,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1550,7 +1646,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_errno.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1562,7 +1670,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1574,7 +1682,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1586,7 +1694,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1598,7 +1706,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1610,7 +1718,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1622,7 +1730,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_putchar.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1634,7 +1754,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1646,7 +1766,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_link.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1658,7 +1790,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1670,7 +1802,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1682,7 +1814,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1694,7 +1826,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1706,7 +1838,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_fork.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1718,7 +1862,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1730,7 +1874,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_settod.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1742,7 +1898,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1754,7 +1910,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1766,7 +1922,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1792,7 +1948,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1804,7 +1960,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1816,7 +1972,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1828,7 +1984,31 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_do_ctors.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_getchar.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1840,7 +2020,31 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_malloc_lock.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_rename.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1852,7 +2056,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1864,7 +2068,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1876,7 +2080,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1888,7 +2092,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1900,7 +2104,19 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_gettod.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1912,7 +2128,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1924,7 +2140,31 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_putcharbuf.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_env_lock.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1936,7 +2176,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1948,7 +2188,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1960,7 +2200,91 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_do_dtors.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_getpid.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_unlink.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_load.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_putstr.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_times.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="HAL/src/alt_kill.c">
+						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1972,7 +2296,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1984,7 +2308,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1996,7 +2320,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2008,7 +2332,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2020,7 +2344,7 @@
 						<entry kind="includePath" name="/l5_sw_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ESD1/labs/lab5/software/l5_sw_bsp"/>
+						<entry kind="includePath" name="C:/ESD1/labs/Lab5/software/l5_sw_bsp"/>
 						<entry kind="includePath" name="/l5_sw_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>

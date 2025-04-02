@@ -129,6 +129,14 @@
          type = "String";
       }
    }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
    element onchip_memory2_0
    {
       datum _sortIndex

@@ -1,0 +1,2004 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Analysis &amp; Synthesis Resource Utilization by Entity</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Compilation Hierarchy Node</TH>
+<TH>Combinational ALUTs</TH>
+<TH>Dedicated Logic Registers</TH>
+<TH>Block Memory Bits</TH>
+<TH>DSP Blocks</TH>
+<TH>Pins</TH>
+<TH>Virtual Pins</TH>
+<TH>Full Hierarchy Name</TH>
+<TH>Entity Name</TH>
+<TH>Library Name</TH>
+</TR>
+</thead><tbody><TR >
+<TD >|audio_demo</TD>
+<TD >2158 (3)</TD>
+<TD >1760 (2)</TD>
+<TD >543872</TD>
+<TD >0</TD>
+<TD >104</TD>
+<TD >0</TD>
+<TD >|audio_demo</TD>
+<TD >audio_demo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|nios_system:NiosII|</TD>
+<TD >2042 (0)</TD>
+<TD >1673 (0)</TD>
+<TD >543872</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII</TD>
+<TD >nios_system</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_reset_controller:rst_controller|</TD>
+<TD >7 (6)</TD>
+<TD >16 (10)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|altera_reset_controller:rst_controller</TD>
+<TD >altera_reset_controller</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_reset_synchronizer:alt_rst_req_sync_uq1|</TD>
+<TD >1 (1)</TD>
+<TD >3 (3)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1</TD>
+<TD >altera_reset_synchronizer</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_reset_synchronizer:alt_rst_sync_uq1|</TD>
+<TD >0 (0)</TD>
+<TD >3 (3)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1</TD>
+<TD >altera_reset_synchronizer</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_audio_0:audio_0|</TD>
+<TD >288 (33)</TD>
+<TD >250 (40)</TD>
+<TD >8192</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0</TD>
+<TD >nios_system_audio_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_audio_in_deserializer:Audio_In_Deserializer|</TD>
+<TD >114 (8)</TD>
+<TD >104 (32)</TD>
+<TD >4096</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer</TD>
+<TD >altera_up_audio_in_deserializer</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_audio_bit_counter:Audio_Out_Bit_Counter|</TD>
+<TD >10 (10)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_audio_bit_counter:Audio_Out_Bit_Counter</TD>
+<TD >altera_up_audio_bit_counter</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO</TD>
+<TD >altera_up_sync_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo:Sync_FIFO|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO</TD>
+<TD >scfifo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo_9ba1:auto_generated|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated</TD>
+<TD >scfifo_9ba1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_dpfifo_s2a1:dpfifo|</TD>
+<TD >48 (25)</TD>
+<TD >33 (13)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo</TD>
+<TD >a_dpfifo_s2a1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_r3i1:FIFOram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram</TD>
+<TD >altsyncram_r3i1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_h2b:rd_ptr_msb|</TD>
+<TD >7 (7)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_h2b:rd_ptr_msb</TD>
+<TD >cntr_h2b</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_i2b:wr_ptr|</TD>
+<TD >8 (8)</TD>
+<TD >7 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_i2b:wr_ptr</TD>
+<TD >cntr_i2b</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_u27:usedw_counter|</TD>
+<TD >8 (8)</TD>
+<TD >7 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_u27:usedw_counter</TD>
+<TD >cntr_u27</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO</TD>
+<TD >altera_up_sync_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo:Sync_FIFO|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO</TD>
+<TD >scfifo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo_9ba1:auto_generated|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated</TD>
+<TD >scfifo_9ba1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_dpfifo_s2a1:dpfifo|</TD>
+<TD >48 (25)</TD>
+<TD >33 (13)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo</TD>
+<TD >a_dpfifo_s2a1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_r3i1:FIFOram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram</TD>
+<TD >altsyncram_r3i1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_h2b:rd_ptr_msb|</TD>
+<TD >7 (7)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_h2b:rd_ptr_msb</TD>
+<TD >cntr_h2b</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_i2b:wr_ptr|</TD>
+<TD >8 (8)</TD>
+<TD >7 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_i2b:wr_ptr</TD>
+<TD >cntr_i2b</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_u27:usedw_counter|</TD>
+<TD >8 (8)</TD>
+<TD >7 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_u27:usedw_counter</TD>
+<TD >cntr_u27</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_audio_out_serializer:Audio_Out_Serializer|</TD>
+<TD >140 (44)</TD>
+<TD >100 (34)</TD>
+<TD >4096</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer</TD>
+<TD >altera_up_audio_out_serializer</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO</TD>
+<TD >altera_up_sync_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo:Sync_FIFO|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO</TD>
+<TD >scfifo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo_9ba1:auto_generated|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated</TD>
+<TD >scfifo_9ba1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_dpfifo_s2a1:dpfifo|</TD>
+<TD >48 (25)</TD>
+<TD >33 (13)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo</TD>
+<TD >a_dpfifo_s2a1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_r3i1:FIFOram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram</TD>
+<TD >altsyncram_r3i1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_h2b:rd_ptr_msb|</TD>
+<TD >7 (7)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_h2b:rd_ptr_msb</TD>
+<TD >cntr_h2b</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_i2b:wr_ptr|</TD>
+<TD >8 (8)</TD>
+<TD >7 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_i2b:wr_ptr</TD>
+<TD >cntr_i2b</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_u27:usedw_counter|</TD>
+<TD >8 (8)</TD>
+<TD >7 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_u27:usedw_counter</TD>
+<TD >cntr_u27</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO</TD>
+<TD >altera_up_sync_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo:Sync_FIFO|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO</TD>
+<TD >scfifo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo_9ba1:auto_generated|</TD>
+<TD >48 (0)</TD>
+<TD >33 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated</TD>
+<TD >scfifo_9ba1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_dpfifo_s2a1:dpfifo|</TD>
+<TD >48 (25)</TD>
+<TD >33 (13)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo</TD>
+<TD >a_dpfifo_s2a1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_r3i1:FIFOram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >2048</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram</TD>
+<TD >altsyncram_r3i1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_h2b:rd_ptr_msb|</TD>
+<TD >7 (7)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_h2b:rd_ptr_msb</TD>
+<TD >cntr_h2b</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_i2b:wr_ptr|</TD>
+<TD >8 (8)</TD>
+<TD >7 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_i2b:wr_ptr</TD>
+<TD >cntr_i2b</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_u27:usedw_counter|</TD>
+<TD >8 (8)</TD>
+<TD >7 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_u27:usedw_counter</TD>
+<TD >cntr_u27</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_clock_edge:ADC_Left_Right_Clock_Edges|</TD>
+<TD >1 (1)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_clock_edge:ADC_Left_Right_Clock_Edges</TD>
+<TD >altera_up_clock_edge</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_clock_edge:Bit_Clock_Edges|</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_clock_edge:Bit_Clock_Edges</TD>
+<TD >altera_up_clock_edge</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_clock_edge:DAC_Left_Right_Clock_Edges|</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_0:audio_0|altera_up_clock_edge:DAC_Left_Right_Clock_Edges</TD>
+<TD >altera_up_clock_edge</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_audio_and_video_config_0:audio_and_video_config_0|</TD>
+<TD >187 (56)</TD>
+<TD >159 (51)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0</TD>
+<TD >nios_system_audio_and_video_config_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_av_config_auto_init:AV_Config_Auto_Init|</TD>
+<TD >13 (13)</TD>
+<TD >27 (27)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init</TD>
+<TD >altera_up_av_config_auto_init</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM|</TD>
+<TD >18 (12)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM</TD>
+<TD >altera_up_av_config_auto_init_ob_de1_soc</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_av_config_auto_init_ob_adv7180:Auto_Init_Video_ROM|</TD>
+<TD >5 (5)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM|altera_up_av_config_auto_init_ob_adv7180:Auto_Init_Video_ROM</TD>
+<TD >altera_up_av_config_auto_init_ob_adv7180</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_av_config_auto_init_ob_audio:Auto_Init_Audio_ROM|</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM|altera_up_av_config_auto_init_ob_audio:Auto_Init_Audio_ROM</TD>
+<TD >altera_up_av_config_auto_init_ob_audio</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|</TD>
+<TD >100 (84)</TD>
+<TD >81 (67)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller</TD>
+<TD >altera_up_av_config_serial_bus_controller</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_up_slow_clock_generator:Serial_Config_Clock_Generator|</TD>
+<TD >16 (16)</TD>
+<TD >14 (14)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|altera_up_slow_clock_generator:Serial_Config_Clock_Generator</TD>
+<TD >altera_up_slow_clock_generator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_jtag_uart_0:jtag_uart_0|</TD>
+<TD >114 (34)</TD>
+<TD >113 (13)</TD>
+<TD >1024</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0</TD>
+<TD >nios_system_jtag_uart_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|</TD>
+<TD >32 (32)</TD>
+<TD >60 (60)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic</TD>
+<TD >alt_jtag_atlantic</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|</TD>
+<TD >24 (0)</TD>
+<TD >20 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r</TD>
+<TD >nios_system_jtag_uart_0_scfifo_r</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo:rfifo|</TD>
+<TD >24 (0)</TD>
+<TD >20 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo</TD>
+<TD >scfifo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo_3291:auto_generated|</TD>
+<TD >24 (0)</TD>
+<TD >20 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated</TD>
+<TD >scfifo_3291</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_dpfifo_5771:dpfifo|</TD>
+<TD >24 (0)</TD>
+<TD >20 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo</TD>
+<TD >a_dpfifo_5771</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_fefifo_7cf:fifo_state|</TD>
+<TD >12 (6)</TD>
+<TD >8 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state</TD>
+<TD >a_fefifo_7cf</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_vg7:count_usedw|</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state|cntr_vg7:count_usedw</TD>
+<TD >cntr_vg7</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_7pu1:FIFOram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram</TD>
+<TD >altsyncram_7pu1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_jgb:rd_ptr_count|</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|cntr_jgb:rd_ptr_count</TD>
+<TD >cntr_jgb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_jgb:wr_ptr|</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|cntr_jgb:wr_ptr</TD>
+<TD >cntr_jgb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|</TD>
+<TD >24 (0)</TD>
+<TD >20 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w</TD>
+<TD >nios_system_jtag_uart_0_scfifo_w</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo:wfifo|</TD>
+<TD >24 (0)</TD>
+<TD >20 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo</TD>
+<TD >scfifo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo_3291:auto_generated|</TD>
+<TD >24 (0)</TD>
+<TD >20 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated</TD>
+<TD >scfifo_3291</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_dpfifo_5771:dpfifo|</TD>
+<TD >24 (0)</TD>
+<TD >20 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo</TD>
+<TD >a_dpfifo_5771</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_fefifo_7cf:fifo_state|</TD>
+<TD >12 (6)</TD>
+<TD >8 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state</TD>
+<TD >a_fefifo_7cf</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_vg7:count_usedw|</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state|cntr_vg7:count_usedw</TD>
+<TD >cntr_vg7</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_7pu1:FIFOram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram</TD>
+<TD >altsyncram_7pu1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_jgb:rd_ptr_count|</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|cntr_jgb:rd_ptr_count</TD>
+<TD >cntr_jgb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_jgb:wr_ptr|</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|cntr_jgb:wr_ptr</TD>
+<TD >cntr_jgb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0:mm_interconnect_0|</TD>
+<TD >432 (0)</TD>
+<TD >249 (0)</TD>
+<TD >128</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0</TD>
+<TD >nios_system_mm_interconnect_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo|</TD>
+<TD >2 (2)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_0_avalon_audio_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo|</TD>
+<TD >5 (5)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:audio_and_video_config_0_avalon_av_config_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|</TD>
+<TD >2 (2)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rdata_fifo|</TD>
+<TD >14 (14)</TD>
+<TD >26 (26)</TD>
+<TD >128</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rdata_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:mem_rtl_0|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >128</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rdata_fifo|altsyncram:mem_rtl_0</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_40n1:auto_generated|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >128</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated</TD>
+<TD >altsyncram_40n1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo|</TD>
+<TD >27 (27)</TD>
+<TD >40 (40)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:new_sdram_controller_0_s1_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|</TD>
+<TD >5 (5)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:onchip_memory2_1_s1_agent_rsp_fifo|</TD>
+<TD >5 (5)</TD>
+<TD >6 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_1_s1_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo|</TD>
+<TD >4 (4)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pin_s1_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo|</TD>
+<TD >4 (4)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:pio_0_s1_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo|</TD>
+<TD >2 (2)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo|</TD>
+<TD >2 (2)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_master_agent:nios2_gen2_0_data_master_agent|</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:nios2_gen2_0_data_master_agent</TD>
+<TD >altera_merlin_master_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_master_translator:nios2_gen2_0_data_master_translator|</TD>
+<TD >12 (12)</TD>
+<TD >3 (3)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:nios2_gen2_0_data_master_translator</TD>
+<TD >altera_merlin_master_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_master_translator:nios2_gen2_0_instruction_master_translator|</TD>
+<TD >6 (6)</TD>
+<TD >1 (1)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:nios2_gen2_0_instruction_master_translator</TD>
+<TD >altera_merlin_master_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:audio_and_video_config_0_avalon_av_config_slave_agent|</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:audio_and_video_config_0_avalon_av_config_slave_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|</TD>
+<TD >12 (9)</TD>
+<TD >3 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_burst_uncompressor:uncompressor|</TD>
+<TD >3 (3)</TD>
+<TD >3 (3)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:new_sdram_controller_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor</TD>
+<TD >altera_merlin_burst_uncompressor</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:nios2_gen2_0_debug_mem_slave_agent|</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:nios2_gen2_0_debug_mem_slave_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:onchip_memory2_1_s1_agent|</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:onchip_memory2_1_s1_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:pin_s1_agent|</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:pin_s1_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:pio_0_s1_agent|</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:pio_0_s1_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:timer_0_s1_agent|</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:timer_0_s1_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:audio_0_avalon_audio_slave_translator|</TD>
+<TD >3 (3)</TD>
+<TD >1 (1)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:audio_0_avalon_audio_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:audio_and_video_config_0_avalon_av_config_slave_translator|</TD>
+<TD >1 (1)</TD>
+<TD >1 (1)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:audio_and_video_config_0_avalon_av_config_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:jtag_uart_0_avalon_jtag_slave_translator|</TD>
+<TD >2 (2)</TD>
+<TD >23 (23)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:jtag_uart_0_avalon_jtag_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:nios2_gen2_0_debug_mem_slave_translator|</TD>
+<TD >1 (1)</TD>
+<TD >33 (33)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:nios2_gen2_0_debug_mem_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:onchip_memory2_1_s1_translator|</TD>
+<TD >2 (2)</TD>
+<TD >1 (1)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:onchip_memory2_1_s1_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:pin_s1_translator|</TD>
+<TD >4 (4)</TD>
+<TD >4 (4)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pin_s1_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:pio_0_s1_translator|</TD>
+<TD >4 (4)</TD>
+<TD >11 (11)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:pio_0_s1_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:sysid_control_slave_translator|</TD>
+<TD >3 (3)</TD>
+<TD >5 (5)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_control_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:timer_0_s1_translator|</TD>
+<TD >4 (4)</TD>
+<TD >5 (5)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_width_adapter:new_sdram_controller_0_s1_cmd_width_adapter|</TD>
+<TD >47 (47)</TD>
+<TD >46 (46)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_cmd_width_adapter</TD>
+<TD >altera_merlin_width_adapter</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter|</TD>
+<TD >19 (19)</TD>
+<TD >16 (16)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:new_sdram_controller_0_s1_rsp_width_adapter</TD>
+<TD >altera_merlin_width_adapter</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_demux:cmd_demux|</TD>
+<TD >18 (18)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_demux:cmd_demux</TD>
+<TD >nios_system_mm_interconnect_0_cmd_demux</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_demux_001:cmd_demux_001|</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_demux_001:cmd_demux_001</TD>
+<TD >nios_system_mm_interconnect_0_cmd_demux_001</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_demux_001:rsp_demux_004|</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_demux_001:rsp_demux_004</TD>
+<TD >nios_system_mm_interconnect_0_cmd_demux_001</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_demux_001:rsp_demux_005|</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_demux_001:rsp_demux_005</TD>
+<TD >nios_system_mm_interconnect_0_cmd_demux_001</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_004|</TD>
+<TD >52 (48)</TD>
+<TD >2 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_004</TD>
+<TD >nios_system_mm_interconnect_0_cmd_mux_004</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_arbitrator:arb|</TD>
+<TD >4 (4)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_004|altera_merlin_arbitrator:arb</TD>
+<TD >altera_merlin_arbitrator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_005|</TD>
+<TD >55 (52)</TD>
+<TD >2 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_005</TD>
+<TD >nios_system_mm_interconnect_0_cmd_mux_004</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_arbitrator:arb|</TD>
+<TD >3 (3)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_004:cmd_mux_005|altera_merlin_arbitrator:arb</TD>
+<TD >altera_merlin_arbitrator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_router:router|</TD>
+<TD >19 (19)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_router:router</TD>
+<TD >nios_system_mm_interconnect_0_router</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_router_001:router_001|</TD>
+<TD >3 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_router_001:router_001</TD>
+<TD >nios_system_mm_interconnect_0_router_001</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_rsp_mux:rsp_mux|</TD>
+<TD >79 (79)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_mux:rsp_mux</TD>
+<TD >nios_system_mm_interconnect_0_rsp_mux</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_new_sdram_controller_0:new_sdram_controller_0|</TD>
+<TD >223 (170)</TD>
+<TD >248 (156)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0</TD>
+<TD >nios_system_new_sdram_controller_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_new_sdram_controller_0_input_efifo_module:the_nios_system_new_sdram_controller_0_input_efifo_module|</TD>
+<TD >53 (53)</TD>
+<TD >92 (92)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_new_sdram_controller_0:new_sdram_controller_0|nios_system_new_sdram_controller_0_input_efifo_module:the_nios_system_new_sdram_controller_0_input_efifo_module</TD>
+<TD >nios_system_new_sdram_controller_0_input_efifo_module</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0:nios2_gen2_0|</TD>
+<TD >729 (0)</TD>
+<TD >588 (0)</TD>
+<TD >10240</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0</TD>
+<TD >nios_system_nios2_gen2_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu:cpu|</TD>
+<TD >729 (563)</TD>
+<TD >588 (318)</TD>
+<TD >10240</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu</TD>
+<TD >nios_system_nios2_gen2_0_cpu</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|</TD>
+<TD >166 (6)</TD>
+<TD >270 (80)</TD>
+<TD >8192</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_oci</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|</TD>
+<TD >63 (0)</TD>
+<TD >96 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper</TD>
+<TD >nios_system_nios2_gen2_0_cpu_debug_slave_wrapper</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|</TD>
+<TD >6 (6)</TD>
+<TD >49 (45)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk</TD>
+<TD >nios_system_nios2_gen2_0_cpu_debug_slave_sysclk</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer3|</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer4|</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|altera_std_synchronizer:the_altera_std_synchronizer4</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|</TD>
+<TD >53 (53)</TD>
+<TD >47 (43)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck</TD>
+<TD >nios_system_nios2_gen2_0_cpu_debug_slave_tck</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer1|</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|altera_std_synchronizer:the_altera_std_synchronizer1</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer2|</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|altera_std_synchronizer:the_altera_std_synchronizer2</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|sld_virtual_jtag_basic:nios_system_nios2_gen2_0_cpu_debug_slave_phy|</TD>
+<TD >4 (4)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:nios_system_nios2_gen2_0_cpu_debug_slave_phy</TD>
+<TD >sld_virtual_jtag_basic</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_avalon_reg:the_nios_system_nios2_gen2_0_cpu_nios2_avalon_reg|</TD>
+<TD >9 (9)</TD>
+<TD >4 (4)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_avalon_reg:the_nios_system_nios2_gen2_0_cpu_nios2_avalon_reg</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_avalon_reg</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break|</TD>
+<TD >2 (2)</TD>
+<TD >32 (32)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_oci_break</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nios_system_nios2_gen2_0_cpu_nios2_oci_debug|</TD>
+<TD >6 (6)</TD>
+<TD >9 (7)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nios_system_nios2_gen2_0_cpu_nios2_oci_debug</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_oci_debug</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer|</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nios_system_nios2_gen2_0_cpu_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|</TD>
+<TD >80 (80)</TD>
+<TD >49 (49)</TD>
+<TD >8192</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_ocimem</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module:nios_system_nios2_gen2_0_cpu_ociram_sp_ram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >8192</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module:nios_system_nios2_gen2_0_cpu_ociram_sp_ram</TD>
+<TD >nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:the_altsyncram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >8192</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module:nios_system_nios2_gen2_0_cpu_ociram_sp_ram|altsyncram:the_altsyncram</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_qid1:auto_generated|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >8192</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module:nios_system_nios2_gen2_0_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated</TD>
+<TD >altsyncram_qid1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_register_bank_a_module:nios_system_nios2_gen2_0_cpu_register_bank_a|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_a_module:nios_system_nios2_gen2_0_cpu_register_bank_a</TD>
+<TD >nios_system_nios2_gen2_0_cpu_register_bank_a_module</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:the_altsyncram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_a_module:nios_system_nios2_gen2_0_cpu_register_bank_a|altsyncram:the_altsyncram</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_msi1:auto_generated|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_a_module:nios_system_nios2_gen2_0_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated</TD>
+<TD >altsyncram_msi1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_register_bank_b_module:nios_system_nios2_gen2_0_cpu_register_bank_b|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_b_module:nios_system_nios2_gen2_0_cpu_register_bank_b</TD>
+<TD >nios_system_nios2_gen2_0_cpu_register_bank_b_module</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:the_altsyncram|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_b_module:nios_system_nios2_gen2_0_cpu_register_bank_b|altsyncram:the_altsyncram</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_msi1:auto_generated|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_b_module:nios_system_nios2_gen2_0_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated</TD>
+<TD >altsyncram_msi1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_onchip_memory2_1:onchip_memory2_1|</TD>
+<TD >10 (2)</TD>
+<TD >1 (0)</TD>
+<TD >524288</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_onchip_memory2_1:onchip_memory2_1</TD>
+<TD >nios_system_onchip_memory2_1</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:the_altsyncram|</TD>
+<TD >8 (0)</TD>
+<TD >1 (0)</TD>
+<TD >524288</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_onchip_memory2_1:onchip_memory2_1|altsyncram:the_altsyncram</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_mtn1:auto_generated|</TD>
+<TD >8 (0)</TD>
+<TD >1 (1)</TD>
+<TD >524288</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_onchip_memory2_1:onchip_memory2_1|altsyncram:the_altsyncram|altsyncram_mtn1:auto_generated</TD>
+<TD >altsyncram_mtn1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|decode_5la:decode3|</TD>
+<TD >3 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_onchip_memory2_1:onchip_memory2_1|altsyncram:the_altsyncram|altsyncram_mtn1:auto_generated|decode_5la:decode3</TD>
+<TD >decode_5la</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|mux_2hb:mux2|</TD>
+<TD >5 (5)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_onchip_memory2_1:onchip_memory2_1|altsyncram:the_altsyncram|altsyncram_mtn1:auto_generated|mux_2hb:mux2</TD>
+<TD >mux_2hb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_pin:pin|</TD>
+<TD >3 (3)</TD>
+<TD >1 (1)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_pin:pin</TD>
+<TD >nios_system_pin</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_pio_0:pio_0|</TD>
+<TD >18 (18)</TD>
+<TD >32 (32)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_pio_0:pio_0</TD>
+<TD >nios_system_pio_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_sys_sdram_pll_0:sys_sdram_pll_0|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_sys_sdram_pll_0:sys_sdram_pll_0</TD>
+<TD >nios_system_sys_sdram_pll_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_sys_sdram_pll_0_sys_pll:sys_pll|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_sys_sdram_pll_0:sys_sdram_pll_0|nios_system_sys_sdram_pll_0_sys_pll:sys_pll</TD>
+<TD >nios_system_sys_sdram_pll_0_sys_pll</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_pll:altera_pll_i|</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_sys_sdram_pll_0:sys_sdram_pll_0|nios_system_sys_sdram_pll_0_sys_pll:sys_pll|altera_pll:altera_pll_i</TD>
+<TD >altera_pll</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_timer_0:timer_0|</TD>
+<TD >31 (31)</TD>
+<TD >16 (16)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|nios_system:NiosII|nios_system_timer_0:timer_0</TD>
+<TD >nios_system_timer_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|sld_hub:auto_hub|</TD>
+<TD >113 (1)</TD>
+<TD >85 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|sld_hub:auto_hub</TD>
+<TD >sld_hub</TD>
+<TD >altera_sld</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|</TD>
+<TD >112 (0)</TD>
+<TD >85 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric</TD>
+<TD >alt_sld_fab_with_jtag_input</TD>
+<TD >altera_sld</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_sld_fab:instrumentation_fabric|</TD>
+<TD >112 (0)</TD>
+<TD >85 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric</TD>
+<TD >alt_sld_fab</TD>
+<TD >alt_sld_fab</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_sld_fab_alt_sld_fab:alt_sld_fab|</TD>
+<TD >112 (1)</TD>
+<TD >85 (6)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab</TD>
+<TD >alt_sld_fab_alt_sld_fab</TD>
+<TD >alt_sld_fab</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|</TD>
+<TD >111 (0)</TD>
+<TD >79 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric</TD>
+<TD >alt_sld_fab_alt_sld_fab_sldfabric</TD>
+<TD >alt_sld_fab</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|</TD>
+<TD >111 (76)</TD>
+<TD >79 (51)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub</TD>
+<TD >sld_jtag_hub</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|sld_rom_sr:hub_info_reg|</TD>
+<TD >16 (16)</TD>
+<TD >9 (9)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg</TD>
+<TD >sld_rom_sr</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|sld_shadow_jsm:shadow_jsm|</TD>
+<TD >19 (19)</TD>
+<TD >19 (19)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|audio_demo|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm</TD>
+<TD >sld_shadow_jsm</TD>
+<TD >altera_sld</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

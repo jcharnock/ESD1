@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Mar 19 15:58:12 2025
+Fitter Status : Successful - Wed Mar 26 12:44:55 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : servo_custom
 Top-level Entity Name : servo_custom
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 844 / 32,070 ( 3 % )
-Total registers : 1210
+Logic utilization (in ALMs) : 888 / 32,070 ( 3 % )
+Total registers : 1271
 Total pins : 51 / 457 ( 11 % )
 Total virtual pins : 0
 Total block memory bits : 273,408 / 4,065,280 ( 7 % )

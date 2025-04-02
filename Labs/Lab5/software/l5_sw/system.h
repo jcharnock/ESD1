@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Wed Mar 19 15:59:24 EDT 2025
+ * Generated: Wed Mar 26 12:47:09 EDT 2025
  */
 
 /*
@@ -404,8 +404,8 @@
 
 #define ALT_MODULE_CLASS_servo_motorv2_0 servo_motorv2
 #define SERVO_MOTORV2_0_BASE 0x11070
-#define SERVO_MOTORV2_0_IRQ -1
-#define SERVO_MOTORV2_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SERVO_MOTORV2_0_IRQ 0
+#define SERVO_MOTORV2_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define SERVO_MOTORV2_0_NAME "/dev/servo_motorv2_0"
 #define SERVO_MOTORV2_0_SPAN 8
 #define SERVO_MOTORV2_0_TYPE "servo_motorv2"
@@ -450,7 +450,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1742414000
+#define SYSID_QSYS_0_TIMESTAMP 1743007087
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */
