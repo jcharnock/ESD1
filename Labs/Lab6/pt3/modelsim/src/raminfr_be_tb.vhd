@@ -1,7 +1,6 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-USE ieee.std_logic_unsigned.ALL;
-use IEEE.numeric_std.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity raminfr_be_tb is
 end raminfr_be_tb;
@@ -61,33 +60,35 @@ tb : process
 	begin
 		report "********* begin test: write to RAM_D *************";
 			wait for 600 ns;
-			write_tb(0) <= '0';
-			writedata_tb <= X"00011B34";
-			wait for 100 ns;
-			write_tb(0) <= '1';
-		report "********* write to RAM_C *************";	
+			writedata_tb <= X"00000009";
+			for i in 0 to 4095 loop
+				write_tb(0) <= '0';
+				address_tb <= std_logic_vector(to_unsigned(i, 12));
+				wait for 20 ns;			
+				write_tb(0) <= '1';
+			end loop;
+			
+		report "********* begin test: write to RAM_B and RAM_C *************";
 			wait for 600 ns;
-			write_tb(1) <= '0';
-			address_tb <= "000000001010";
-			writedata_tb <= X"00000909";
-			wait for 100 ns;			
-			write_tb(1) <= '1';
-			wait;
-		report "********* write to RAM_B and RAM_A *************";	
+			writedata_tb <= X"00044444";
+			for i in 0 to 4095 loop
+				write_tb <= "1001";
+				address_tb <= std_logic_vector(to_unsigned(i, 12));
+				wait for 20 ns;			
+				write_tb <= "1111";
+			end loop;
+			
+		report "********* begin test: write to all *************";
 			wait for 600 ns;
-			write_tb <= "0011";
-			address_tb <= "000000010010";
-			writedata_tb <= X"00000606";
-			wait for 100 ns;			
-			write_tb <= "1111";
-		report "********* write to all *************";	
-			wait for 600 ns;
-			write_tb <= "0000";
-			address_tb <= "000000010010";
-			writedata_tb <= X"00000777";
-			wait for 100 ns;			
-			write_tb <= "1111";	
-			wait;
+			writedata_tb <= X"66666666";
+			for i in 0 to 4095 loop
+				write_tb <= "0000";
+				address_tb <= std_logic_vector(to_unsigned(i, 12));
+				wait for 20 ns;			
+				write_tb <= "1111";
+			end loop;
+			
+		wait;
 	end process;
 end arch;
 			

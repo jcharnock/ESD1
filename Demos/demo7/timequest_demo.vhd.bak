@@ -1,0 +1,51 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity timequest_demo is
+port ( clk    : in std_logic,
+	   A      : in std_logic_vector (15 downto 0),
+	   B      : in std_logic_vector (15 downto 0),  
+	   result : out std_logic_vector(16 downto 0)
+	 );
+end timequest_demo;
+
+architecture arch of timequest_demo is
+
+	A_d1, A_d2, A_d3 : std_logic_vector(15 downto 0);
+	B_d1, B_d2, B_d3 : std_logic_vector(15 downto 0);
+	Res_d1, Res_d2, Res_d3 : std_logic_vector(15 downto 0);
+	add_sig : std_logic_vector(16 downto 0);
+
+begin
+
+  synchA_proc : process (clk) begin
+		if (rising_edge(clk)) then
+				A_d1 <= A;
+				A_d2 <= A_d1;
+				A_d3 <= A_d2;
+		end if;
+  end process synchA_proc;
+
+  synchB_proc : process (clk) begin
+		if (rising_edge(clk)) then
+				B_d1 <= B;
+				B_d2 <= B_d1;
+				B_d3 <= B_d2;
+		end if;
+  end process synchB_proc;
+  
+  add_sig  <= std_logic_vector(unsigned('0' & A_d3) + unsigned('0' & B_d3));
+	
+  synchOut_proc : process (clk) begin
+		if (rising_edge(clk)) then
+				Res_d1 <= add_sig;
+				Res_d2 <= Res_d1;
+				Res_d3 <= Res_d2;
+		end if;
+  end process synchOut_proc;
+  
+  result <= Res_d3;
+  
+end arch;

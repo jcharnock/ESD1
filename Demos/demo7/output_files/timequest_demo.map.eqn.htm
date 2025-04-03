@@ -1,0 +1,663 @@
+<html>
+<head>
+<TITLE>HTML file for equations </TITLE>
+</head>
+<body>
+<p>
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.<br>
+-- Your use of Intel Corporation's design tools, logic functions <br>
+-- and other software and tools, and its AMPP partner logic <br>
+-- functions, and any output files from any of the foregoing <br>
+-- (including device programming or simulation files), and any <br>
+-- associated documentation or information are expressly subject <br>
+-- to the terms and conditions of the Intel Program License <br>
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,<br>
+-- the Intel FPGA IP License Agreement, or other applicable license<br>
+-- agreement, including, without limitation, that your use is for<br>
+-- the sole purpose of programming logic devices manufactured by<br>
+-- Intel and sold by Intel or its authorized distributors.  Please<br>
+-- refer to the applicable agreement for further details.<br>
+<P> --A1L36 is Add0~1
+<P><A NAME="A1L36_adder_eqn">A1L36_adder_eqn</A> = ( <A HREF="#B_d1[0]">B_d1[0]</A> ) + ( <A HREF="#A_d1[0]">A_d1[0]</A> ) + ( !VCC );
+<P><A NAME="A1L36">A1L36</A> = SUM(<A HREF="#A1L36_adder_eqn">A1L36_adder_eqn</A>);
+
+<P> --A1L37 is Add0~2
+<P><A NAME="A1L37_adder_eqn">A1L37_adder_eqn</A> = ( <A HREF="#B_d1[0]">B_d1[0]</A> ) + ( <A HREF="#A_d1[0]">A_d1[0]</A> ) + ( !VCC );
+<P><A NAME="A1L37">A1L37</A> = CARRY(<A HREF="#A1L37_adder_eqn">A1L37_adder_eqn</A>);
+
+
+<P> --A1L40 is Add0~5
+<P><A NAME="A1L40_adder_eqn">A1L40_adder_eqn</A> = ( <A HREF="#A_d1[1]">A_d1[1]</A> ) + ( <A HREF="#B_d1[1]">B_d1[1]</A> ) + ( <A HREF="#A1L37">A1L37</A> );
+<P><A NAME="A1L40">A1L40</A> = SUM(<A HREF="#A1L40_adder_eqn">A1L40_adder_eqn</A>);
+
+<P> --A1L41 is Add0~6
+<P><A NAME="A1L41_adder_eqn">A1L41_adder_eqn</A> = ( <A HREF="#A_d1[1]">A_d1[1]</A> ) + ( <A HREF="#B_d1[1]">B_d1[1]</A> ) + ( <A HREF="#A1L37">A1L37</A> );
+<P><A NAME="A1L41">A1L41</A> = CARRY(<A HREF="#A1L41_adder_eqn">A1L41_adder_eqn</A>);
+
+
+<P> --A1L44 is Add0~9
+<P><A NAME="A1L44_adder_eqn">A1L44_adder_eqn</A> = ( <A HREF="#A_d1[2]">A_d1[2]</A> ) + ( <A HREF="#B_d1[2]">B_d1[2]</A> ) + ( <A HREF="#A1L41">A1L41</A> );
+<P><A NAME="A1L44">A1L44</A> = SUM(<A HREF="#A1L44_adder_eqn">A1L44_adder_eqn</A>);
+
+<P> --A1L45 is Add0~10
+<P><A NAME="A1L45_adder_eqn">A1L45_adder_eqn</A> = ( <A HREF="#A_d1[2]">A_d1[2]</A> ) + ( <A HREF="#B_d1[2]">B_d1[2]</A> ) + ( <A HREF="#A1L41">A1L41</A> );
+<P><A NAME="A1L45">A1L45</A> = CARRY(<A HREF="#A1L45_adder_eqn">A1L45_adder_eqn</A>);
+
+
+<P> --A1L48 is Add0~13
+<P><A NAME="A1L48_adder_eqn">A1L48_adder_eqn</A> = ( <A HREF="#A_d1[3]">A_d1[3]</A> ) + ( <A HREF="#B_d1[3]">B_d1[3]</A> ) + ( <A HREF="#A1L45">A1L45</A> );
+<P><A NAME="A1L48">A1L48</A> = SUM(<A HREF="#A1L48_adder_eqn">A1L48_adder_eqn</A>);
+
+<P> --A1L49 is Add0~14
+<P><A NAME="A1L49_adder_eqn">A1L49_adder_eqn</A> = ( <A HREF="#A_d1[3]">A_d1[3]</A> ) + ( <A HREF="#B_d1[3]">B_d1[3]</A> ) + ( <A HREF="#A1L45">A1L45</A> );
+<P><A NAME="A1L49">A1L49</A> = CARRY(<A HREF="#A1L49_adder_eqn">A1L49_adder_eqn</A>);
+
+
+<P> --A1L52 is Add0~17
+<P><A NAME="A1L52_adder_eqn">A1L52_adder_eqn</A> = ( <A HREF="#A_d1[4]">A_d1[4]</A> ) + ( <A HREF="#B_d1[4]">B_d1[4]</A> ) + ( <A HREF="#A1L49">A1L49</A> );
+<P><A NAME="A1L52">A1L52</A> = SUM(<A HREF="#A1L52_adder_eqn">A1L52_adder_eqn</A>);
+
+<P> --A1L53 is Add0~18
+<P><A NAME="A1L53_adder_eqn">A1L53_adder_eqn</A> = ( <A HREF="#A_d1[4]">A_d1[4]</A> ) + ( <A HREF="#B_d1[4]">B_d1[4]</A> ) + ( <A HREF="#A1L49">A1L49</A> );
+<P><A NAME="A1L53">A1L53</A> = CARRY(<A HREF="#A1L53_adder_eqn">A1L53_adder_eqn</A>);
+
+
+<P> --A1L56 is Add0~21
+<P><A NAME="A1L56_adder_eqn">A1L56_adder_eqn</A> = ( <A HREF="#A_d1[5]">A_d1[5]</A> ) + ( <A HREF="#B_d1[5]">B_d1[5]</A> ) + ( <A HREF="#A1L53">A1L53</A> );
+<P><A NAME="A1L56">A1L56</A> = SUM(<A HREF="#A1L56_adder_eqn">A1L56_adder_eqn</A>);
+
+<P> --A1L57 is Add0~22
+<P><A NAME="A1L57_adder_eqn">A1L57_adder_eqn</A> = ( <A HREF="#A_d1[5]">A_d1[5]</A> ) + ( <A HREF="#B_d1[5]">B_d1[5]</A> ) + ( <A HREF="#A1L53">A1L53</A> );
+<P><A NAME="A1L57">A1L57</A> = CARRY(<A HREF="#A1L57_adder_eqn">A1L57_adder_eqn</A>);
+
+
+<P> --A1L60 is Add0~25
+<P><A NAME="A1L60_adder_eqn">A1L60_adder_eqn</A> = ( <A HREF="#A_d1[6]">A_d1[6]</A> ) + ( <A HREF="#B_d1[6]">B_d1[6]</A> ) + ( <A HREF="#A1L57">A1L57</A> );
+<P><A NAME="A1L60">A1L60</A> = SUM(<A HREF="#A1L60_adder_eqn">A1L60_adder_eqn</A>);
+
+<P> --A1L61 is Add0~26
+<P><A NAME="A1L61_adder_eqn">A1L61_adder_eqn</A> = ( <A HREF="#A_d1[6]">A_d1[6]</A> ) + ( <A HREF="#B_d1[6]">B_d1[6]</A> ) + ( <A HREF="#A1L57">A1L57</A> );
+<P><A NAME="A1L61">A1L61</A> = CARRY(<A HREF="#A1L61_adder_eqn">A1L61_adder_eqn</A>);
+
+
+<P> --A1L64 is Add0~29
+<P><A NAME="A1L64_adder_eqn">A1L64_adder_eqn</A> = ( <A HREF="#A_d1[7]">A_d1[7]</A> ) + ( <A HREF="#B_d1[7]">B_d1[7]</A> ) + ( <A HREF="#A1L61">A1L61</A> );
+<P><A NAME="A1L64">A1L64</A> = SUM(<A HREF="#A1L64_adder_eqn">A1L64_adder_eqn</A>);
+
+<P> --A1L65 is Add0~30
+<P><A NAME="A1L65_adder_eqn">A1L65_adder_eqn</A> = ( <A HREF="#A_d1[7]">A_d1[7]</A> ) + ( <A HREF="#B_d1[7]">B_d1[7]</A> ) + ( <A HREF="#A1L61">A1L61</A> );
+<P><A NAME="A1L65">A1L65</A> = CARRY(<A HREF="#A1L65_adder_eqn">A1L65_adder_eqn</A>);
+
+
+<P> --A1L68 is Add0~33
+<P><A NAME="A1L68_adder_eqn">A1L68_adder_eqn</A> = ( <A HREF="#A_d1[8]">A_d1[8]</A> ) + ( <A HREF="#B_d1[8]">B_d1[8]</A> ) + ( <A HREF="#A1L65">A1L65</A> );
+<P><A NAME="A1L68">A1L68</A> = SUM(<A HREF="#A1L68_adder_eqn">A1L68_adder_eqn</A>);
+
+<P> --A1L69 is Add0~34
+<P><A NAME="A1L69_adder_eqn">A1L69_adder_eqn</A> = ( <A HREF="#A_d1[8]">A_d1[8]</A> ) + ( <A HREF="#B_d1[8]">B_d1[8]</A> ) + ( <A HREF="#A1L65">A1L65</A> );
+<P><A NAME="A1L69">A1L69</A> = CARRY(<A HREF="#A1L69_adder_eqn">A1L69_adder_eqn</A>);
+
+
+<P> --A1L72 is Add0~37
+<P><A NAME="A1L72_adder_eqn">A1L72_adder_eqn</A> = ( <A HREF="#A_d1[9]">A_d1[9]</A> ) + ( <A HREF="#B_d1[9]">B_d1[9]</A> ) + ( <A HREF="#A1L69">A1L69</A> );
+<P><A NAME="A1L72">A1L72</A> = SUM(<A HREF="#A1L72_adder_eqn">A1L72_adder_eqn</A>);
+
+<P> --A1L73 is Add0~38
+<P><A NAME="A1L73_adder_eqn">A1L73_adder_eqn</A> = ( <A HREF="#A_d1[9]">A_d1[9]</A> ) + ( <A HREF="#B_d1[9]">B_d1[9]</A> ) + ( <A HREF="#A1L69">A1L69</A> );
+<P><A NAME="A1L73">A1L73</A> = CARRY(<A HREF="#A1L73_adder_eqn">A1L73_adder_eqn</A>);
+
+
+<P> --A1L76 is Add0~41
+<P><A NAME="A1L76_adder_eqn">A1L76_adder_eqn</A> = ( <A HREF="#A_d1[10]">A_d1[10]</A> ) + ( <A HREF="#B_d1[10]">B_d1[10]</A> ) + ( <A HREF="#A1L73">A1L73</A> );
+<P><A NAME="A1L76">A1L76</A> = SUM(<A HREF="#A1L76_adder_eqn">A1L76_adder_eqn</A>);
+
+<P> --A1L77 is Add0~42
+<P><A NAME="A1L77_adder_eqn">A1L77_adder_eqn</A> = ( <A HREF="#A_d1[10]">A_d1[10]</A> ) + ( <A HREF="#B_d1[10]">B_d1[10]</A> ) + ( <A HREF="#A1L73">A1L73</A> );
+<P><A NAME="A1L77">A1L77</A> = CARRY(<A HREF="#A1L77_adder_eqn">A1L77_adder_eqn</A>);
+
+
+<P> --A1L80 is Add0~45
+<P><A NAME="A1L80_adder_eqn">A1L80_adder_eqn</A> = ( <A HREF="#A_d1[11]">A_d1[11]</A> ) + ( <A HREF="#B_d1[11]">B_d1[11]</A> ) + ( <A HREF="#A1L77">A1L77</A> );
+<P><A NAME="A1L80">A1L80</A> = SUM(<A HREF="#A1L80_adder_eqn">A1L80_adder_eqn</A>);
+
+<P> --A1L81 is Add0~46
+<P><A NAME="A1L81_adder_eqn">A1L81_adder_eqn</A> = ( <A HREF="#A_d1[11]">A_d1[11]</A> ) + ( <A HREF="#B_d1[11]">B_d1[11]</A> ) + ( <A HREF="#A1L77">A1L77</A> );
+<P><A NAME="A1L81">A1L81</A> = CARRY(<A HREF="#A1L81_adder_eqn">A1L81_adder_eqn</A>);
+
+
+<P> --A1L84 is Add0~49
+<P><A NAME="A1L84_adder_eqn">A1L84_adder_eqn</A> = ( <A HREF="#A_d1[12]">A_d1[12]</A> ) + ( <A HREF="#B_d1[12]">B_d1[12]</A> ) + ( <A HREF="#A1L81">A1L81</A> );
+<P><A NAME="A1L84">A1L84</A> = SUM(<A HREF="#A1L84_adder_eqn">A1L84_adder_eqn</A>);
+
+<P> --A1L85 is Add0~50
+<P><A NAME="A1L85_adder_eqn">A1L85_adder_eqn</A> = ( <A HREF="#A_d1[12]">A_d1[12]</A> ) + ( <A HREF="#B_d1[12]">B_d1[12]</A> ) + ( <A HREF="#A1L81">A1L81</A> );
+<P><A NAME="A1L85">A1L85</A> = CARRY(<A HREF="#A1L85_adder_eqn">A1L85_adder_eqn</A>);
+
+
+<P> --A1L88 is Add0~53
+<P><A NAME="A1L88_adder_eqn">A1L88_adder_eqn</A> = ( <A HREF="#A_d1[13]">A_d1[13]</A> ) + ( <A HREF="#B_d1[13]">B_d1[13]</A> ) + ( <A HREF="#A1L85">A1L85</A> );
+<P><A NAME="A1L88">A1L88</A> = SUM(<A HREF="#A1L88_adder_eqn">A1L88_adder_eqn</A>);
+
+<P> --A1L89 is Add0~54
+<P><A NAME="A1L89_adder_eqn">A1L89_adder_eqn</A> = ( <A HREF="#A_d1[13]">A_d1[13]</A> ) + ( <A HREF="#B_d1[13]">B_d1[13]</A> ) + ( <A HREF="#A1L85">A1L85</A> );
+<P><A NAME="A1L89">A1L89</A> = CARRY(<A HREF="#A1L89_adder_eqn">A1L89_adder_eqn</A>);
+
+
+<P> --A1L92 is Add0~57
+<P><A NAME="A1L92_adder_eqn">A1L92_adder_eqn</A> = ( <A HREF="#A_d1[14]">A_d1[14]</A> ) + ( <A HREF="#B_d1[14]">B_d1[14]</A> ) + ( <A HREF="#A1L89">A1L89</A> );
+<P><A NAME="A1L92">A1L92</A> = SUM(<A HREF="#A1L92_adder_eqn">A1L92_adder_eqn</A>);
+
+<P> --A1L93 is Add0~58
+<P><A NAME="A1L93_adder_eqn">A1L93_adder_eqn</A> = ( <A HREF="#A_d1[14]">A_d1[14]</A> ) + ( <A HREF="#B_d1[14]">B_d1[14]</A> ) + ( <A HREF="#A1L89">A1L89</A> );
+<P><A NAME="A1L93">A1L93</A> = CARRY(<A HREF="#A1L93_adder_eqn">A1L93_adder_eqn</A>);
+
+
+<P> --A1L96 is Add0~61
+<P><A NAME="A1L96_adder_eqn">A1L96_adder_eqn</A> = ( <A HREF="#A_d1[15]">A_d1[15]</A> ) + ( <A HREF="#B_d1[15]">B_d1[15]</A> ) + ( <A HREF="#A1L93">A1L93</A> );
+<P><A NAME="A1L96">A1L96</A> = SUM(<A HREF="#A1L96_adder_eqn">A1L96_adder_eqn</A>);
+
+<P> --A1L97 is Add0~62
+<P><A NAME="A1L97_adder_eqn">A1L97_adder_eqn</A> = ( <A HREF="#A_d1[15]">A_d1[15]</A> ) + ( <A HREF="#B_d1[15]">B_d1[15]</A> ) + ( <A HREF="#A1L93">A1L93</A> );
+<P><A NAME="A1L97">A1L97</A> = CARRY(<A HREF="#A1L97_adder_eqn">A1L97_adder_eqn</A>);
+
+
+<P> --A1L100 is Add0~65
+<P><A NAME="A1L100_adder_eqn">A1L100_adder_eqn</A> = ( GND ) + ( GND ) + ( <A HREF="#A1L97">A1L97</A> );
+<P><A NAME="A1L100">A1L100</A> = SUM(<A HREF="#A1L100_adder_eqn">A1L100_adder_eqn</A>);
+
+
+<P> --result[0] is result[0]
+<P><A NAME="result[0]">result[0]</A> = OUTPUT(<A HREF="#Res_d1[0]">Res_d1[0]</A>);
+
+
+<P> --result[1] is result[1]
+<P><A NAME="result[1]">result[1]</A> = OUTPUT(<A HREF="#Res_d1[1]">Res_d1[1]</A>);
+
+
+<P> --result[2] is result[2]
+<P><A NAME="result[2]">result[2]</A> = OUTPUT(<A HREF="#Res_d1[2]">Res_d1[2]</A>);
+
+
+<P> --result[3] is result[3]
+<P><A NAME="result[3]">result[3]</A> = OUTPUT(<A HREF="#Res_d1[3]">Res_d1[3]</A>);
+
+
+<P> --result[4] is result[4]
+<P><A NAME="result[4]">result[4]</A> = OUTPUT(<A HREF="#Res_d1[4]">Res_d1[4]</A>);
+
+
+<P> --result[5] is result[5]
+<P><A NAME="result[5]">result[5]</A> = OUTPUT(<A HREF="#Res_d1[5]">Res_d1[5]</A>);
+
+
+<P> --result[6] is result[6]
+<P><A NAME="result[6]">result[6]</A> = OUTPUT(<A HREF="#Res_d1[6]">Res_d1[6]</A>);
+
+
+<P> --result[7] is result[7]
+<P><A NAME="result[7]">result[7]</A> = OUTPUT(<A HREF="#Res_d1[7]">Res_d1[7]</A>);
+
+
+<P> --result[8] is result[8]
+<P><A NAME="result[8]">result[8]</A> = OUTPUT(<A HREF="#Res_d1[8]">Res_d1[8]</A>);
+
+
+<P> --result[9] is result[9]
+<P><A NAME="result[9]">result[9]</A> = OUTPUT(<A HREF="#Res_d1[9]">Res_d1[9]</A>);
+
+
+<P> --result[10] is result[10]
+<P><A NAME="result[10]">result[10]</A> = OUTPUT(<A HREF="#Res_d1[10]">Res_d1[10]</A>);
+
+
+<P> --result[11] is result[11]
+<P><A NAME="result[11]">result[11]</A> = OUTPUT(<A HREF="#Res_d1[11]">Res_d1[11]</A>);
+
+
+<P> --result[12] is result[12]
+<P><A NAME="result[12]">result[12]</A> = OUTPUT(<A HREF="#Res_d1[12]">Res_d1[12]</A>);
+
+
+<P> --result[13] is result[13]
+<P><A NAME="result[13]">result[13]</A> = OUTPUT(<A HREF="#Res_d1[13]">Res_d1[13]</A>);
+
+
+<P> --result[14] is result[14]
+<P><A NAME="result[14]">result[14]</A> = OUTPUT(<A HREF="#Res_d1[14]">Res_d1[14]</A>);
+
+
+<P> --result[15] is result[15]
+<P><A NAME="result[15]">result[15]</A> = OUTPUT(<A HREF="#Res_d1[15]">Res_d1[15]</A>);
+
+
+<P> --result[16] is result[16]
+<P><A NAME="result[16]">result[16]</A> = OUTPUT(<A HREF="#Res_d1[16]">Res_d1[16]</A>);
+
+
+<P> --Res_d1[0] is Res_d1[0]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[0]">Res_d1[0]</A> = DFFEAS(<A HREF="#A1L36">A1L36</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[1] is Res_d1[1]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[1]">Res_d1[1]</A> = DFFEAS(<A HREF="#A1L40">A1L40</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[2] is Res_d1[2]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[2]">Res_d1[2]</A> = DFFEAS(<A HREF="#A1L44">A1L44</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[3] is Res_d1[3]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[3]">Res_d1[3]</A> = DFFEAS(<A HREF="#A1L48">A1L48</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[4] is Res_d1[4]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[4]">Res_d1[4]</A> = DFFEAS(<A HREF="#A1L52">A1L52</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[5] is Res_d1[5]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[5]">Res_d1[5]</A> = DFFEAS(<A HREF="#A1L56">A1L56</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[6] is Res_d1[6]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[6]">Res_d1[6]</A> = DFFEAS(<A HREF="#A1L60">A1L60</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[7] is Res_d1[7]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[7]">Res_d1[7]</A> = DFFEAS(<A HREF="#A1L64">A1L64</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[8] is Res_d1[8]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[8]">Res_d1[8]</A> = DFFEAS(<A HREF="#A1L68">A1L68</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[9] is Res_d1[9]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[9]">Res_d1[9]</A> = DFFEAS(<A HREF="#A1L72">A1L72</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[10] is Res_d1[10]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[10]">Res_d1[10]</A> = DFFEAS(<A HREF="#A1L76">A1L76</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[11] is Res_d1[11]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[11]">Res_d1[11]</A> = DFFEAS(<A HREF="#A1L80">A1L80</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[12] is Res_d1[12]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[12]">Res_d1[12]</A> = DFFEAS(<A HREF="#A1L84">A1L84</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[13] is Res_d1[13]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[13]">Res_d1[13]</A> = DFFEAS(<A HREF="#A1L88">A1L88</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[14] is Res_d1[14]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[14]">Res_d1[14]</A> = DFFEAS(<A HREF="#A1L92">A1L92</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[15] is Res_d1[15]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[15]">Res_d1[15]</A> = DFFEAS(<A HREF="#A1L96">A1L96</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --Res_d1[16] is Res_d1[16]
+<P> --register power-up is low
+
+<P><A NAME="Res_d1[16]">Res_d1[16]</A> = DFFEAS(<A HREF="#A1L100">A1L100</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --clk is clk
+<P><A NAME="clk">clk</A> = INPUT();
+
+
+<P> --B_d1[0] is B_d1[0]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[0]">B_d1[0]</A> = DFFEAS(<A HREF="#B[0]">B[0]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[0] is A_d1[0]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[0]">A_d1[0]</A> = DFFEAS(<A HREF="#A[0]">A[0]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[1] is A_d1[1]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[1]">A_d1[1]</A> = DFFEAS(<A HREF="#A[1]">A[1]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[1] is B_d1[1]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[1]">B_d1[1]</A> = DFFEAS(<A HREF="#B[1]">B[1]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[2] is A_d1[2]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[2]">A_d1[2]</A> = DFFEAS(<A HREF="#A[2]">A[2]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[2] is B_d1[2]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[2]">B_d1[2]</A> = DFFEAS(<A HREF="#B[2]">B[2]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[3] is A_d1[3]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[3]">A_d1[3]</A> = DFFEAS(<A HREF="#A[3]">A[3]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[3] is B_d1[3]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[3]">B_d1[3]</A> = DFFEAS(<A HREF="#B[3]">B[3]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[4] is A_d1[4]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[4]">A_d1[4]</A> = DFFEAS(<A HREF="#A[4]">A[4]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[4] is B_d1[4]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[4]">B_d1[4]</A> = DFFEAS(<A HREF="#B[4]">B[4]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[5] is A_d1[5]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[5]">A_d1[5]</A> = DFFEAS(<A HREF="#A[5]">A[5]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[5] is B_d1[5]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[5]">B_d1[5]</A> = DFFEAS(<A HREF="#B[5]">B[5]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[6] is A_d1[6]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[6]">A_d1[6]</A> = DFFEAS(<A HREF="#A[6]">A[6]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[6] is B_d1[6]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[6]">B_d1[6]</A> = DFFEAS(<A HREF="#B[6]">B[6]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[7] is A_d1[7]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[7]">A_d1[7]</A> = DFFEAS(<A HREF="#A[7]">A[7]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[7] is B_d1[7]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[7]">B_d1[7]</A> = DFFEAS(<A HREF="#B[7]">B[7]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[8] is A_d1[8]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[8]">A_d1[8]</A> = DFFEAS(<A HREF="#A[8]">A[8]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[8] is B_d1[8]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[8]">B_d1[8]</A> = DFFEAS(<A HREF="#B[8]">B[8]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[9] is A_d1[9]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[9]">A_d1[9]</A> = DFFEAS(<A HREF="#A[9]">A[9]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[9] is B_d1[9]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[9]">B_d1[9]</A> = DFFEAS(<A HREF="#B[9]">B[9]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[10] is A_d1[10]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[10]">A_d1[10]</A> = DFFEAS(<A HREF="#A[10]">A[10]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[10] is B_d1[10]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[10]">B_d1[10]</A> = DFFEAS(<A HREF="#B[10]">B[10]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[11] is A_d1[11]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[11]">A_d1[11]</A> = DFFEAS(<A HREF="#A[11]">A[11]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[11] is B_d1[11]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[11]">B_d1[11]</A> = DFFEAS(<A HREF="#B[11]">B[11]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[12] is A_d1[12]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[12]">A_d1[12]</A> = DFFEAS(<A HREF="#A[12]">A[12]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[12] is B_d1[12]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[12]">B_d1[12]</A> = DFFEAS(<A HREF="#B[12]">B[12]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[13] is A_d1[13]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[13]">A_d1[13]</A> = DFFEAS(<A HREF="#A[13]">A[13]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[13] is B_d1[13]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[13]">B_d1[13]</A> = DFFEAS(<A HREF="#B[13]">B[13]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[14] is A_d1[14]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[14]">A_d1[14]</A> = DFFEAS(<A HREF="#A[14]">A[14]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[14] is B_d1[14]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[14]">B_d1[14]</A> = DFFEAS(<A HREF="#B[14]">B[14]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --A_d1[15] is A_d1[15]
+<P> --register power-up is low
+
+<P><A NAME="A_d1[15]">A_d1[15]</A> = DFFEAS(<A HREF="#A[15]">A[15]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B_d1[15] is B_d1[15]
+<P> --register power-up is low
+
+<P><A NAME="B_d1[15]">B_d1[15]</A> = DFFEAS(<A HREF="#B[15]">B[15]</A>, <A HREF="#clk">clk</A>,  ,  ,  ,  ,  ,  ,  );
+
+
+<P> --B[0] is B[0]
+<P><A NAME="B[0]">B[0]</A> = INPUT();
+
+
+<P> --A[0] is A[0]
+<P><A NAME="A[0]">A[0]</A> = INPUT();
+
+
+<P> --A[1] is A[1]
+<P><A NAME="A[1]">A[1]</A> = INPUT();
+
+
+<P> --B[1] is B[1]
+<P><A NAME="B[1]">B[1]</A> = INPUT();
+
+
+<P> --A[2] is A[2]
+<P><A NAME="A[2]">A[2]</A> = INPUT();
+
+
+<P> --B[2] is B[2]
+<P><A NAME="B[2]">B[2]</A> = INPUT();
+
+
+<P> --A[3] is A[3]
+<P><A NAME="A[3]">A[3]</A> = INPUT();
+
+
+<P> --B[3] is B[3]
+<P><A NAME="B[3]">B[3]</A> = INPUT();
+
+
+<P> --A[4] is A[4]
+<P><A NAME="A[4]">A[4]</A> = INPUT();
+
+
+<P> --B[4] is B[4]
+<P><A NAME="B[4]">B[4]</A> = INPUT();
+
+
+<P> --A[5] is A[5]
+<P><A NAME="A[5]">A[5]</A> = INPUT();
+
+
+<P> --B[5] is B[5]
+<P><A NAME="B[5]">B[5]</A> = INPUT();
+
+
+<P> --A[6] is A[6]
+<P><A NAME="A[6]">A[6]</A> = INPUT();
+
+
+<P> --B[6] is B[6]
+<P><A NAME="B[6]">B[6]</A> = INPUT();
+
+
+<P> --A[7] is A[7]
+<P><A NAME="A[7]">A[7]</A> = INPUT();
+
+
+<P> --B[7] is B[7]
+<P><A NAME="B[7]">B[7]</A> = INPUT();
+
+
+<P> --A[8] is A[8]
+<P><A NAME="A[8]">A[8]</A> = INPUT();
+
+
+<P> --B[8] is B[8]
+<P><A NAME="B[8]">B[8]</A> = INPUT();
+
+
+<P> --A[9] is A[9]
+<P><A NAME="A[9]">A[9]</A> = INPUT();
+
+
+<P> --B[9] is B[9]
+<P><A NAME="B[9]">B[9]</A> = INPUT();
+
+
+<P> --A[10] is A[10]
+<P><A NAME="A[10]">A[10]</A> = INPUT();
+
+
+<P> --B[10] is B[10]
+<P><A NAME="B[10]">B[10]</A> = INPUT();
+
+
+<P> --A[11] is A[11]
+<P><A NAME="A[11]">A[11]</A> = INPUT();
+
+
+<P> --B[11] is B[11]
+<P><A NAME="B[11]">B[11]</A> = INPUT();
+
+
+<P> --A[12] is A[12]
+<P><A NAME="A[12]">A[12]</A> = INPUT();
+
+
+<P> --B[12] is B[12]
+<P><A NAME="B[12]">B[12]</A> = INPUT();
+
+
+<P> --A[13] is A[13]
+<P><A NAME="A[13]">A[13]</A> = INPUT();
+
+
+<P> --B[13] is B[13]
+<P><A NAME="B[13]">B[13]</A> = INPUT();
+
+
+<P> --A[14] is A[14]
+<P><A NAME="A[14]">A[14]</A> = INPUT();
+
+
+<P> --B[14] is B[14]
+<P><A NAME="B[14]">B[14]</A> = INPUT();
+
+
+<P> --A[15] is A[15]
+<P><A NAME="A[15]">A[15]</A> = INPUT();
+
+
+<P> --B[15] is B[15]
+<P><A NAME="B[15]">B[15]</A> = INPUT();
+
+
+</body></html>

@@ -17,9 +17,9 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate /raminfr_be_tb/CLOCK_50_tb
 add wave -noupdate /raminfr_be_tb/reset_tb
 add wave -noupdate -radix Binary /raminfr_be_tb/write_tb
-add wave -noupdate -radix Decimal /raminfr_be_tb/writedata_tb
-add wave -noupdate -radix Decimal /raminfr_be_tb/address_tb
-add wave -noupdate -radix Decimal /raminfr_be_tb/readdata_tb
+add wave -noupdate -radix Unsigned /raminfr_be_tb/writedata_tb
+add wave -noupdate -radix Unsigned /raminfr_be_tb/address_tb
+add wave -noupdate -radix Unsigned /raminfr_be_tb/readdata_tb
 add wave -noupdate /raminfr_be_tb/uut/RAM_A
 add wave -noupdate /raminfr_be_tb/uut/RAM_B
 add wave -noupdate /raminfr_be_tb/uut/RAM_C

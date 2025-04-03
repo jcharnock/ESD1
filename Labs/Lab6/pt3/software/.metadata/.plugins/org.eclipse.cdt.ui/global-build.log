@@ -1,0 +1,3 @@
+00:00:45 **** Clean-only build of configuration Nios II for project l6_pt4_app_bsp ****
+make clean 
+[BSP clean complete]

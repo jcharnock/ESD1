@@ -60,7 +60,7 @@ refer to the applicable agreement for further details.
 		(text "export" (rect 101 147 238 304)(font "Arial" (color 0 0 0)))
 		(text "reset" (rect 67 163 164 339)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset_n" (rect 101 187 244 384)(font "Arial" (color 0 0 0)))
-		(text " system " (rect 221 208 490 426)(font "Arial" ))
+		(text " nios_system " (rect 198 208 474 426)(font "Arial" ))
 		(line (pt 96 32)(pt 160 32)(line_width 1))
 		(line (pt 160 32)(pt 160 208)(line_width 1))
 		(line (pt 96 208)(pt 160 208)(line_width 1))

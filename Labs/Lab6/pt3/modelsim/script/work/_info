@@ -28,29 +28,30 @@ R2
 R3
 n@_opt1
 R4
+R0
 Eraminfr_be
-Z5 w1743622556
+Z5 w1743630034
 Z6 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z7 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-R0
-Z10 8../src/raminfr_be.vhd
-Z11 F../src/raminfr_be.vhd
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 dE:/ESD1/Labs/Lab6/pt3/modelsim/script
+Z11 8../src/raminfr_be.vhd
+Z12 F../src/raminfr_be.vhd
 l0
 L5
 V5KoAkSA1g>2c_=7=R>ej52
 !s100 Xh[5aUYzIL0lL]_48j9Pk1
-Z12 OL;C;2019.2;69
+Z13 OV;C;10.5b;63
 31
-Z13 !s110 1743623046
+Z14 !s110 1743641142
 !i10b 1
-Z14 !s108 1743623046.000000
-Z15 !s90 -reportprogress|300|-93|-work|work|../src/raminfr_be.vhd|
-Z16 !s107 ../src/raminfr_be.vhd|
-!i113 0
-Z17 o-93 -work work
-Z18 tExplicit 1 CvgOpt 0
+Z15 !s108 1743641142.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|../src/raminfr_be.vhd|
+Z17 !s107 ../src/raminfr_be.vhd|
+!i113 1
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
 Artl
 R6
 R7
@@ -59,60 +60,56 @@ R9
 DEx4 work 10 raminfr_be 0 22 5KoAkSA1g>2c_=7=R>ej52
 l24
 L17
-VEgXn0O09>^@;`=o:B28ec0
-!s100 jQ`78nbBLN?RCSf5YLG=?1
-R12
-31
+VEPX4a4=cGUkO?WFTE^?^:0
+!s100 A`U9Zn?_PKEcD6C<TY^id1
 R13
-!i10b 1
+31
 R14
+!i10b 1
 R15
 R16
-!i113 0
 R17
+!i113 1
 R18
+R19
 Eraminfr_be_tb
-Z19 w1743623023
-Z20 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-R6
-R7
+Z20 w1743641114
+Z21 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R8
 R9
-R0
-Z21 8../src/raminfr_be_tb.vhd
-Z22 F../src/raminfr_be_tb.vhd
+R10
+Z22 8../src/raminfr_be_tb.vhd
+Z23 F../src/raminfr_be_tb.vhd
 l0
-L6
-VzS07<mVc;z^PgZ<e]iGWB3
-!s100 PO^m:`BTdz_=l12UH7XLS0
-R12
-31
+L5
+V^01l[k_b_h0>;48U0nGZ[0
+!s100 F]<KC^5U]4GN8aB^E@3An1
 R13
-!i10b 1
+31
 R14
-Z23 !s90 -reportprogress|300|-93|-work|work|../src/raminfr_be_tb.vhd|
-Z24 !s107 ../src/raminfr_be_tb.vhd|
-!i113 0
-R17
+!i10b 1
+R15
+Z24 !s90 -reportprogress|300|-93|-work|work|../src/raminfr_be_tb.vhd|
+Z25 !s107 ../src/raminfr_be_tb.vhd|
+!i113 1
 R18
+R19
 Aarch
-R20
-R6
-R7
+R21
 R8
 R9
-DEx4 work 13 raminfr_be_tb 0 22 zS07<mVc;z^PgZ<e]iGWB3
-l33
-L9
-VY2G80UfH<m?7GOZSl;X^_3
-!s100 M7ed3ezCH4_4e]g_Z:6W21
-R12
-31
+Z26 DEx4 work 13 raminfr_be_tb 0 22 ^01l[k_b_h0>;48U0nGZ[0
+l32
+L8
+VFee?_N`U?YOkS=i5AJmg<3
+!s100 6Fk4[L9h>Z1_cB>;2=P5F1
 R13
-!i10b 1
+31
 R14
-R23
+!i10b 1
+R15
 R24
-!i113 0
-R17
+R25
+!i113 1
 R18
+R19
