@@ -25,9 +25,11 @@ signal reset_tb     : std_logic := '0';
 
 signal write_tb     : std_logic_vector(3 DOWNTO 0) := (others => '1');
 signal address_tb   : std_logic_vector(11 downto 0) := (others => '0');
-signal writedata_tb : std_logic_vector(31 downto 0) := (others => '0');
+signal writedata_tb : std_logic_vector(31 downto 0) :=  X"11111111";
 
 signal readdata_tb  : std_logic_vector(31 downto 0) := (others => '0');
+signal loop_count   : std_logic_vector(3 downto 0) := (others => '0');
+signal add : unsigned(31 downto 0) :=  X"11111111";
 
 begin
 
@@ -55,38 +57,25 @@ uut : raminfr_be
 		writedata         => writedata_tb,
 		readdata          => readdata_tb
 	);
-		
+	
+
 tb : process
 	begin
 		report "********* begin test: write to RAM_D *************";
-			wait for 600 ns;
-			writedata_tb <= X"00000009";
+		for j in 0 to 15 loop
+			loop_count <= std_logic_vector(to_unsigned(j, 4));
+			add <= unsigned(writedata_tb) + X"10067064";
+			writedata_tb <= std_logic_vector(add);
+			wait for 40 ns;
 			for i in 0 to 4095 loop
-				write_tb(0) <= '0';
-				address_tb <= std_logic_vector(to_unsigned(i, 12));
-				wait for 20 ns;			
-				write_tb(0) <= '1';
-			end loop;
-			
-		report "********* begin test: write to RAM_B and RAM_C *************";
-			wait for 600 ns;
-			writedata_tb <= X"00044444";
-			for i in 0 to 4095 loop
-				write_tb <= "1001";
+				write_tb <= loop_count;
 				address_tb <= std_logic_vector(to_unsigned(i, 12));
 				wait for 20 ns;			
 				write_tb <= "1111";
 			end loop;
+		end loop;
 			
-		report "********* begin test: write to all *************";
-			wait for 600 ns;
-			writedata_tb <= X"66666666";
-			for i in 0 to 4095 loop
-				write_tb <= "0000";
-				address_tb <= std_logic_vector(to_unsigned(i, 12));
-				wait for 20 ns;			
-				write_tb <= "1111";
-			end loop;
+
 			
 		wait;
 	end process;
