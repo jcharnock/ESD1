@@ -1,0 +1,1962 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Fitter Resource Utilization by Entity</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Compilation Hierarchy Node</TH>
+<TH>ALMs needed [=A-B+C]</TH>
+<TH>[A] ALMs used in final placement</TH>
+<TH>[B] Estimate of ALMs recoverable by dense packing</TH>
+<TH>[C] Estimate of ALMs unavailable</TH>
+<TH>ALMs used for memory</TH>
+<TH>Combinational ALUTs</TH>
+<TH>Dedicated Logic Registers</TH>
+<TH>I/O Registers</TH>
+<TH>Block Memory Bits</TH>
+<TH>M10Ks</TH>
+<TH>DSP Blocks</TH>
+<TH>Pins</TH>
+<TH>Virtual Pins</TH>
+<TH>Full Hierarchy Name</TH>
+<TH>Entity Name</TH>
+<TH>Library Name</TH>
+</TR>
+</thead><tbody><TR >
+<TD >|Arbitration_part1</TD>
+<TD >759.5 (0.5)</TD>
+<TD >864.5 (0.5)</TD>
+<TD >115.0 (0.0)</TD>
+<TD >10.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1213 (1)</TD>
+<TD >1079 (0)</TD>
+<TD >0 (0)</TD>
+<TD >306176</TD>
+<TD >41</TD>
+<TD >0</TD>
+<TD >15</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1</TD>
+<TD >Arbitration_part1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|RAM_controller:u1|</TD>
+<TD >1.0 (1.0)</TD>
+<TD >1.5 (1.5)</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >3 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|RAM_controller:u1</TD>
+<TD >RAM_controller</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|external_RAM:u2|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >32768</TD>
+<TD >4</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|external_RAM:u2</TD>
+<TD >external_RAM</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:altsyncram_component|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >32768</TD>
+<TD >4</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|external_RAM:u2|altsyncram:altsyncram_component</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_5jv3:auto_generated|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >32768</TD>
+<TD >4</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|external_RAM:u2|altsyncram:altsyncram_component|altsyncram_5jv3:auto_generated</TD>
+<TD >altsyncram_5jv3</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|nios_system:u0|</TD>
+<TD >689.5 (0.0)</TD>
+<TD >782.5 (0.0)</TD>
+<TD >103.0 (0.0)</TD>
+<TD >10.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1098 (0)</TD>
+<TD >988 (0)</TD>
+<TD >0 (0)</TD>
+<TD >273408</TD>
+<TD >37</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0</TD>
+<TD >nios_system</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_reset_controller:rst_controller|</TD>
+<TD >3.5 (3.2)</TD>
+<TD >8.8 (5.4)</TD>
+<TD >5.3 (2.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >8 (6)</TD>
+<TD >16 (10)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|altera_reset_controller:rst_controller</TD>
+<TD >altera_reset_controller</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_reset_synchronizer:alt_rst_req_sync_uq1|</TD>
+<TD >0.3 (0.3)</TD>
+<TD >1.8 (1.8)</TD>
+<TD >1.5 (1.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1 (1)</TD>
+<TD >3 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1</TD>
+<TD >altera_reset_synchronizer</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_reset_synchronizer:alt_rst_sync_uq1|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1.5 (1.5)</TD>
+<TD >1.5 (1.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1 (1)</TD>
+<TD >3 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1</TD>
+<TD >altera_reset_synchronizer</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_LEDR:ledr|</TD>
+<TD >7.8 (7.8)</TD>
+<TD >8.9 (8.9)</TD>
+<TD >1.2 (1.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >14 (14)</TD>
+<TD >10 (10)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_LEDR:ledr</TD>
+<TD >nios_system_LEDR</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_avalon_bridge:avalon_bridge|</TD>
+<TD >24.2 (24.2)</TD>
+<TD >27.3 (27.3)</TD>
+<TD >3.8 (3.8)</TD>
+<TD >0.6 (0.6)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >16 (16)</TD>
+<TD >56 (56)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_avalon_bridge:avalon_bridge</TD>
+<TD >nios_system_avalon_bridge</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_jtag_uart_0:jtag_uart_0|</TD>
+<TD >59.0 (14.7)</TD>
+<TD >71.3 (15.6)</TD>
+<TD >12.4 (1.0)</TD>
+<TD >0.1 (0.1)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >114 (33)</TD>
+<TD >109 (14)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >2</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0</TD>
+<TD >nios_system_jtag_uart_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|</TD>
+<TD >19.7 (19.7)</TD>
+<TD >31.1 (31.1)</TD>
+<TD >11.4 (11.4)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >33 (33)</TD>
+<TD >52 (52)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic</TD>
+<TD >alt_jtag_atlantic</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|</TD>
+<TD >12.5 (0.0)</TD>
+<TD >12.4 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >24 (0)</TD>
+<TD >22 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r</TD>
+<TD >nios_system_jtag_uart_0_scfifo_r</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo:rfifo|</TD>
+<TD >12.5 (0.0)</TD>
+<TD >12.4 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >24 (0)</TD>
+<TD >22 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo</TD>
+<TD >scfifo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo_3291:auto_generated|</TD>
+<TD >12.5 (0.0)</TD>
+<TD >12.4 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >24 (0)</TD>
+<TD >22 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated</TD>
+<TD >scfifo_3291</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_dpfifo_5771:dpfifo|</TD>
+<TD >12.5 (0.0)</TD>
+<TD >12.4 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >24 (0)</TD>
+<TD >22 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo</TD>
+<TD >a_dpfifo_5771</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_fefifo_7cf:fifo_state|</TD>
+<TD >6.5 (3.5)</TD>
+<TD >6.4 (3.4)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >12 (6)</TD>
+<TD >10 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state</TD>
+<TD >a_fefifo_7cf</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_vg7:count_usedw|</TD>
+<TD >3.0 (3.0)</TD>
+<TD >3.0 (3.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >8 (8)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state|cntr_vg7:count_usedw</TD>
+<TD >cntr_vg7</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_7pu1:FIFOram|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram</TD>
+<TD >altsyncram_7pu1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_jgb:rd_ptr_count|</TD>
+<TD >3.0 (3.0)</TD>
+<TD >3.0 (3.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|cntr_jgb:rd_ptr_count</TD>
+<TD >cntr_jgb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_jgb:wr_ptr|</TD>
+<TD >3.0 (3.0)</TD>
+<TD >3.0 (3.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_r:the_nios_system_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|cntr_jgb:wr_ptr</TD>
+<TD >cntr_jgb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|</TD>
+<TD >12.1 (0.0)</TD>
+<TD >12.3 (0.0)</TD>
+<TD >0.2 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >24 (0)</TD>
+<TD >21 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w</TD>
+<TD >nios_system_jtag_uart_0_scfifo_w</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo:wfifo|</TD>
+<TD >12.1 (0.0)</TD>
+<TD >12.3 (0.0)</TD>
+<TD >0.2 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >24 (0)</TD>
+<TD >21 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo</TD>
+<TD >scfifo</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|scfifo_3291:auto_generated|</TD>
+<TD >12.1 (0.0)</TD>
+<TD >12.3 (0.0)</TD>
+<TD >0.2 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >24 (0)</TD>
+<TD >21 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated</TD>
+<TD >scfifo_3291</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_dpfifo_5771:dpfifo|</TD>
+<TD >12.1 (0.0)</TD>
+<TD >12.3 (0.0)</TD>
+<TD >0.2 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >24 (0)</TD>
+<TD >21 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo</TD>
+<TD >a_dpfifo_5771</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|a_fefifo_7cf:fifo_state|</TD>
+<TD >6.1 (3.1)</TD>
+<TD >6.3 (3.3)</TD>
+<TD >0.2 (0.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >12 (6)</TD>
+<TD >9 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state</TD>
+<TD >a_fefifo_7cf</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_vg7:count_usedw|</TD>
+<TD >3.0 (3.0)</TD>
+<TD >3.0 (3.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >7 (7)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|a_fefifo_7cf:fifo_state|cntr_vg7:count_usedw</TD>
+<TD >cntr_vg7</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_7pu1:FIFOram|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >512</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram</TD>
+<TD >altsyncram_7pu1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_jgb:rd_ptr_count|</TD>
+<TD >3.0 (3.0)</TD>
+<TD >3.0 (3.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|cntr_jgb:rd_ptr_count</TD>
+<TD >cntr_jgb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_jgb:wr_ptr|</TD>
+<TD >3.0 (3.0)</TD>
+<TD >3.0 (3.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|nios_system_jtag_uart_0_scfifo_w:the_nios_system_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|cntr_jgb:wr_ptr</TD>
+<TD >cntr_jgb</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0:mm_interconnect_0|</TD>
+<TD >162.2 (0.0)</TD>
+<TD >176.0 (0.0)</TD>
+<TD >14.8 (0.0)</TD>
+<TD >1.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >286 (0)</TD>
+<TD >171 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0</TD>
+<TD >nios_system_mm_interconnect_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:avalon_bridge_avalon_slave_agent_rsp_fifo|</TD>
+<TD >6.6 (6.6)</TD>
+<TD >7.1 (7.1)</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >8 (8)</TD>
+<TD >10 (10)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:avalon_bridge_avalon_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo|</TD>
+<TD >1.2 (1.2)</TD>
+<TD >1.2 (1.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >3 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:ledr_s1_agent_rsp_fifo|</TD>
+<TD >2.3 (2.3)</TD>
+<TD >2.3 (2.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >4 (4)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:ledr_s1_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo|</TD>
+<TD >3.8 (3.8)</TD>
+<TD >3.8 (3.8)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >6 (6)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:onchip_memory2_0_s1_agent_rsp_fifo|</TD>
+<TD >4.5 (4.5)</TD>
+<TD >4.5 (4.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >9 (9)</TD>
+<TD >7 (7)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_0_s1_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_avalon_sc_fifo:sysid_qsys_0_control_slave_agent_rsp_fifo|</TD>
+<TD >1.0 (1.0)</TD>
+<TD >1.0 (1.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_qsys_0_control_slave_agent_rsp_fifo</TD>
+<TD >altera_avalon_sc_fifo</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_master_agent:nios2_gen2_0_instruction_master_agent|</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:nios2_gen2_0_instruction_master_agent</TD>
+<TD >altera_merlin_master_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_master_translator:nios2_gen2_0_data_master_translator|</TD>
+<TD >4.8 (4.8)</TD>
+<TD >5.0 (5.0)</TD>
+<TD >0.2 (0.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >3 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:nios2_gen2_0_data_master_translator</TD>
+<TD >altera_merlin_master_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_master_translator:nios2_gen2_0_instruction_master_translator|</TD>
+<TD >1.7 (1.7)</TD>
+<TD >1.7 (1.7)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:nios2_gen2_0_instruction_master_translator</TD>
+<TD >altera_merlin_master_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:avalon_bridge_avalon_slave_agent|</TD>
+<TD >5.0 (2.5)</TD>
+<TD >5.5 (3.0)</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >8 (5)</TD>
+<TD >3 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:avalon_bridge_avalon_slave_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_burst_uncompressor:uncompressor|</TD>
+<TD >2.5 (2.5)</TD>
+<TD >2.5 (2.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >3 (3)</TD>
+<TD >3 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:avalon_bridge_avalon_slave_agent|altera_merlin_burst_uncompressor:uncompressor</TD>
+<TD >altera_merlin_burst_uncompressor</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:ledr_s1_agent|</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.2 (0.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:ledr_s1_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:nios2_gen2_0_debug_mem_slave_agent|</TD>
+<TD >0.9 (0.9)</TD>
+<TD >0.9 (0.9)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:nios2_gen2_0_debug_mem_slave_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_agent:sysid_qsys_0_control_slave_agent|</TD>
+<TD >0.7 (0.7)</TD>
+<TD >0.7 (0.7)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sysid_qsys_0_control_slave_agent</TD>
+<TD >altera_merlin_slave_agent</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:avalon_bridge_avalon_slave_translator|</TD>
+<TD >1.7 (1.7)</TD>
+<TD >1.7 (1.7)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >3 (3)</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:avalon_bridge_avalon_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:jtag_uart_0_avalon_jtag_slave_translator|</TD>
+<TD >7.7 (7.7)</TD>
+<TD >7.8 (7.8)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.1 (0.1)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >3 (3)</TD>
+<TD >23 (23)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:jtag_uart_0_avalon_jtag_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:ledr_s1_translator|</TD>
+<TD >4.9 (4.9)</TD>
+<TD >4.9 (4.9)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >4 (4)</TD>
+<TD >13 (13)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:ledr_s1_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:nios2_gen2_0_debug_mem_slave_translator|</TD>
+<TD >8.9 (8.9)</TD>
+<TD >9.8 (9.8)</TD>
+<TD >1.1 (1.1)</TD>
+<TD >0.2 (0.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1 (1)</TD>
+<TD >34 (34)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:nios2_gen2_0_debug_mem_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:onchip_memory2_0_s1_translator|</TD>
+<TD >1.0 (1.0)</TD>
+<TD >1.3 (1.3)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:onchip_memory2_0_s1_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator|</TD>
+<TD >2.1 (2.1)</TD>
+<TD >2.1 (2.1)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >3 (3)</TD>
+<TD >4 (4)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator</TD>
+<TD >altera_merlin_slave_translator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_width_adapter:avalon_bridge_avalon_slave_cmd_width_adapter|</TD>
+<TD >12.7 (12.7)</TD>
+<TD >18.4 (18.4)</TD>
+<TD >5.8 (5.8)</TD>
+<TD >0.1 (0.1)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >17 (17)</TD>
+<TD >31 (31)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:avalon_bridge_avalon_slave_cmd_width_adapter</TD>
+<TD >altera_merlin_width_adapter</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_width_adapter:avalon_bridge_avalon_slave_rsp_width_adapter|</TD>
+<TD >9.5 (9.5)</TD>
+<TD >9.8 (9.8)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >19 (19)</TD>
+<TD >16 (16)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:avalon_bridge_avalon_slave_rsp_width_adapter</TD>
+<TD >altera_merlin_width_adapter</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_demux:cmd_demux|</TD>
+<TD >5.5 (5.5)</TD>
+<TD >6.0 (6.0)</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >9 (9)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_demux:cmd_demux</TD>
+<TD >nios_system_mm_interconnect_0_cmd_demux</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_demux_001:cmd_demux_001|</TD>
+<TD >0.8 (0.8)</TD>
+<TD >0.8 (0.8)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_demux_001:cmd_demux_001</TD>
+<TD >nios_system_mm_interconnect_0_cmd_demux_001</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_demux_001:rsp_demux_003|</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.7 (0.7)</TD>
+<TD >0.2 (0.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_demux_001:rsp_demux_003</TD>
+<TD >nios_system_mm_interconnect_0_cmd_demux_001</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_demux_001:rsp_demux_004|</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_demux_001:rsp_demux_004</TD>
+<TD >nios_system_mm_interconnect_0_cmd_demux_001</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_003|</TD>
+<TD >18.1 (16.1)</TD>
+<TD >18.1 (16.1)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >53 (49)</TD>
+<TD >5 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_003</TD>
+<TD >nios_system_mm_interconnect_0_cmd_mux_003</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_arbitrator:arb|</TD>
+<TD >2.0 (2.0)</TD>
+<TD >2.0 (2.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >4 (4)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_003|altera_merlin_arbitrator:arb</TD>
+<TD >altera_merlin_arbitrator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_004|</TD>
+<TD >23.6 (21.6)</TD>
+<TD >27.5 (25.2)</TD>
+<TD >4.1 (3.7)</TD>
+<TD >0.1 (0.1)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >56 (52)</TD>
+<TD >5 (3)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_004</TD>
+<TD >nios_system_mm_interconnect_0_cmd_mux_003</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_merlin_arbitrator:arb|</TD>
+<TD >1.9 (1.9)</TD>
+<TD >2.3 (2.3)</TD>
+<TD >0.4 (0.4)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >4 (4)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_cmd_mux_003:cmd_mux_004|altera_merlin_arbitrator:arb</TD>
+<TD >altera_merlin_arbitrator</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_router:router|</TD>
+<TD >6.8 (6.8)</TD>
+<TD >7.2 (7.2)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >11 (11)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_router:router</TD>
+<TD >nios_system_mm_interconnect_0_router</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_router_001:router_001|</TD>
+<TD >0.7 (0.7)</TD>
+<TD >1.0 (1.0)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_router_001:router_001</TD>
+<TD >nios_system_mm_interconnect_0_router_001</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_mm_interconnect_0_rsp_mux:rsp_mux|</TD>
+<TD >22.2 (22.2)</TD>
+<TD >24.0 (24.0)</TD>
+<TD >2.3 (2.3)</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >46 (46)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_mux:rsp_mux</TD>
+<TD >nios_system_mm_interconnect_0_rsp_mux</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0:nios2_gen2_0|</TD>
+<TD >432.2 (0.0)</TD>
+<TD >489.5 (0.0)</TD>
+<TD >65.6 (0.0)</TD>
+<TD >8.3 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >659 (0)</TD>
+<TD >626 (0)</TD>
+<TD >0 (0)</TD>
+<TD >10240</TD>
+<TD >3</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0</TD>
+<TD >nios_system_nios2_gen2_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu:cpu|</TD>
+<TD >432.2 (306.7)</TD>
+<TD >489.5 (331.4)</TD>
+<TD >65.6 (32.5)</TD>
+<TD >8.3 (7.8)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >659 (498)</TD>
+<TD >626 (349)</TD>
+<TD >0 (0)</TD>
+<TD >10240</TD>
+<TD >3</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu</TD>
+<TD >nios_system_nios2_gen2_0_cpu</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|</TD>
+<TD >125.5 (31.2)</TD>
+<TD >158.2 (31.7)</TD>
+<TD >33.1 (0.5)</TD>
+<TD >0.4 (0.1)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >161 (6)</TD>
+<TD >277 (81)</TD>
+<TD >0 (0)</TD>
+<TD >8192</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_oci</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|</TD>
+<TD >36.8 (0.0)</TD>
+<TD >52.9 (0.0)</TD>
+<TD >16.1 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >64 (0)</TD>
+<TD >96 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper</TD>
+<TD >nios_system_nios2_gen2_0_cpu_debug_slave_wrapper</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|</TD>
+<TD >4.5 (4.5)</TD>
+<TD >18.2 (16.7)</TD>
+<TD >13.8 (12.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >49 (45)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk</TD>
+<TD >nios_system_nios2_gen2_0_cpu_debug_slave_sysclk</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer3|</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.7 (0.7)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer4|</TD>
+<TD >-0.3 (-0.3)</TD>
+<TD >0.8 (0.8)</TD>
+<TD >1.2 (1.2)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nios_system_nios2_gen2_0_cpu_debug_slave_sysclk|altera_std_synchronizer:the_altera_std_synchronizer4</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|</TD>
+<TD >30.8 (30.3)</TD>
+<TD >33.2 (31.8)</TD>
+<TD >2.3 (1.4)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >54 (54)</TD>
+<TD >47 (43)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck</TD>
+<TD >nios_system_nios2_gen2_0_cpu_debug_slave_tck</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer1|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.7 (0.7)</TD>
+<TD >0.7 (0.7)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|altera_std_synchronizer:the_altera_std_synchronizer1</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer2|</TD>
+<TD >0.5 (0.5)</TD>
+<TD >0.8 (0.8)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|altera_std_synchronizer:the_altera_std_synchronizer2</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|sld_virtual_jtag_basic:nios_system_nios2_gen2_0_cpu_debug_slave_phy|</TD>
+<TD >1.5 (1.5)</TD>
+<TD >1.5 (1.5)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >4 (4)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:nios_system_nios2_gen2_0_cpu_debug_slave_phy</TD>
+<TD >sld_virtual_jtag_basic</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_avalon_reg:the_nios_system_nios2_gen2_0_cpu_nios2_avalon_reg|</TD>
+<TD >4.4 (4.4)</TD>
+<TD >5.3 (5.3)</TD>
+<TD >0.9 (0.9)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >9 (9)</TD>
+<TD >4 (4)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_avalon_reg:the_nios_system_nios2_gen2_0_cpu_nios2_avalon_reg</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_avalon_reg</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break|</TD>
+<TD >0.6 (0.6)</TD>
+<TD >15.5 (15.5)</TD>
+<TD >14.9 (14.9)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >2 (2)</TD>
+<TD >32 (32)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_oci_break</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nios_system_nios2_gen2_0_cpu_nios2_oci_debug|</TD>
+<TD >3.6 (3.4)</TD>
+<TD >5.1 (4.5)</TD>
+<TD >1.5 (1.1)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >6 (6)</TD>
+<TD >10 (8)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nios_system_nios2_gen2_0_cpu_nios2_oci_debug</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_oci_debug</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altera_std_synchronizer:the_altera_std_synchronizer|</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.6 (0.6)</TD>
+<TD >0.3 (0.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nios_system_nios2_gen2_0_cpu_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer</TD>
+<TD >altera_std_synchronizer</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|</TD>
+<TD >48.1 (48.1)</TD>
+<TD >47.7 (47.7)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.4 (0.4)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >74 (74)</TD>
+<TD >54 (54)</TD>
+<TD >0 (0)</TD>
+<TD >8192</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem</TD>
+<TD >nios_system_nios2_gen2_0_cpu_nios2_ocimem</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module:nios_system_nios2_gen2_0_cpu_ociram_sp_ram|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >8192</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module:nios_system_nios2_gen2_0_cpu_ociram_sp_ram</TD>
+<TD >nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:the_altsyncram|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >8192</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module:nios_system_nios2_gen2_0_cpu_ociram_sp_ram|altsyncram:the_altsyncram</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_qid1:auto_generated|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >8192</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|nios_system_nios2_gen2_0_cpu_ociram_sp_ram_module:nios_system_nios2_gen2_0_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated</TD>
+<TD >altsyncram_qid1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_register_bank_a_module:nios_system_nios2_gen2_0_cpu_register_bank_a|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_a_module:nios_system_nios2_gen2_0_cpu_register_bank_a</TD>
+<TD >nios_system_nios2_gen2_0_cpu_register_bank_a_module</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:the_altsyncram|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_a_module:nios_system_nios2_gen2_0_cpu_register_bank_a|altsyncram:the_altsyncram</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_msi1:auto_generated|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_a_module:nios_system_nios2_gen2_0_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated</TD>
+<TD >altsyncram_msi1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_nios2_gen2_0_cpu_register_bank_b_module:nios_system_nios2_gen2_0_cpu_register_bank_b|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_b_module:nios_system_nios2_gen2_0_cpu_register_bank_b</TD>
+<TD >nios_system_nios2_gen2_0_cpu_register_bank_b_module</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:the_altsyncram|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_b_module:nios_system_nios2_gen2_0_cpu_register_bank_b|altsyncram:the_altsyncram</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_msi1:auto_generated|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >1024</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_register_bank_b_module:nios_system_nios2_gen2_0_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated</TD>
+<TD >altsyncram_msi1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|nios_system_onchip_memory2_0:onchip_memory2_0|</TD>
+<TD >0.7 (0.7)</TD>
+<TD >0.7 (0.7)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >262144</TD>
+<TD >32</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_onchip_memory2_0:onchip_memory2_0</TD>
+<TD >nios_system_onchip_memory2_0</TD>
+<TD >nios_system</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:the_altsyncram|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >262144</TD>
+<TD >32</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram</TD>
+<TD >altsyncram</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_gqn1:auto_generated|</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >262144</TD>
+<TD >32</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram|altsyncram_gqn1:auto_generated</TD>
+<TD >altsyncram_gqn1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|sld_hub:auto_hub|</TD>
+<TD >68.5 (0.5)</TD>
+<TD >80.0 (0.5)</TD>
+<TD >11.5 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >112 (1)</TD>
+<TD >88 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|sld_hub:auto_hub</TD>
+<TD >sld_hub</TD>
+<TD >altera_sld</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|</TD>
+<TD >68.0 (0.0)</TD>
+<TD >79.5 (0.0)</TD>
+<TD >11.5 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >111 (0)</TD>
+<TD >88 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric</TD>
+<TD >alt_sld_fab_with_jtag_input</TD>
+<TD >altera_sld</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_sld_fab:instrumentation_fabric|</TD>
+<TD >68.0 (0.0)</TD>
+<TD >79.5 (0.0)</TD>
+<TD >11.5 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >111 (0)</TD>
+<TD >88 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric</TD>
+<TD >alt_sld_fab</TD>
+<TD >alt_sld_fab</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_sld_fab_alt_sld_fab:alt_sld_fab|</TD>
+<TD >68.0 (1.2)</TD>
+<TD >79.5 (3.2)</TD>
+<TD >11.5 (2.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >111 (1)</TD>
+<TD >88 (6)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab</TD>
+<TD >alt_sld_fab_alt_sld_fab</TD>
+<TD >alt_sld_fab</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|</TD>
+<TD >66.8 (0.0)</TD>
+<TD >76.3 (0.0)</TD>
+<TD >9.5 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >110 (0)</TD>
+<TD >82 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric</TD>
+<TD >alt_sld_fab_alt_sld_fab_sldfabric</TD>
+<TD >alt_sld_fab</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|</TD>
+<TD >66.8 (44.1)</TD>
+<TD >76.3 (51.7)</TD>
+<TD >9.5 (7.6)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >110 (75)</TD>
+<TD >82 (53)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub</TD>
+<TD >sld_jtag_hub</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|sld_rom_sr:hub_info_reg|</TD>
+<TD >11.7 (11.7)</TD>
+<TD >11.7 (11.7)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >16 (16)</TD>
+<TD >10 (10)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg</TD>
+<TD >sld_rom_sr</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|sld_shadow_jsm:shadow_jsm|</TD>
+<TD >10.7 (10.7)</TD>
+<TD >13.0 (13.0)</TD>
+<TD >2.3 (2.3)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >0.0 (0.0)</TD>
+<TD >19 (19)</TD>
+<TD >19 (19)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >|Arbitration_part1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm</TD>
+<TD >sld_shadow_jsm</TD>
+<TD >altera_sld</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

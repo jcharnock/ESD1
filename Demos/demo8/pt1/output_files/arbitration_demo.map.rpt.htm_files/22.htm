@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Multiplexer Restructuring Statistics (Restructuring Performed)</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Multiplexer Inputs</TH>
+<TH>Bus Width</TH>
+<TH>Baseline Area</TH>
+<TH>Area if Restructured</TH>
+<TH>Saving if Restructured</TH>
+<TH>Registered</TH>
+<TH>Example Multiplexer Output</TH>
+</TR>
+</thead><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:ledr_s1_translator|wait_latency_counter[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_avalon_bridge:avalon_bridge|write_data[6]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >8 bits</TD>
+<TD >16 LEs</TD>
+<TD >0 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_avalon_bridge:avalon_bridge|time_out_counter[6]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >18 bits</TD>
+<TD >36 LEs</TD>
+<TD >0 LEs</TD>
+<TD >36 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:avalon_bridge_avalon_slave_cmd_width_adapter|data_reg[4]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >10 bits</TD>
+<TD >20 LEs</TD>
+<TD >0 LEs</TD>
+<TD >20 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|count[8]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >8 bits</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|d_writedata[27]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator|wait_latency_counter[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >15 bits</TD>
+<TD >30 LEs</TD>
+<TD >30 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src1[7]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >17 bits</TD>
+<TD >34 LEs</TD>
+<TD >0 LEs</TD>
+<TD >34 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src1[30]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >5 bits</TD>
+<TD >10 LEs</TD>
+<TD >10 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src2[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_shift_rot_result[7]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >12 bits</TD>
+<TD >24 LEs</TD>
+<TD >24 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_iw[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >20 bits</TD>
+<TD >40 LEs</TD>
+<TD >20 LEs</TD>
+<TD >20 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_iw[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >8 bits</TD>
+<TD >16 LEs</TD>
+<TD >0 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|av_ld_byte0_data[5]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|av_ld_byte1_data[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|readdata[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_avalon_bridge:avalon_bridge|avalon_readdata[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_alu_result[10]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|td_shift[8]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >11 bits</TD>
+<TD >22 LEs</TD>
+<TD >0 LEs</TD>
+<TD >22 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src2[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >15 bits</TD>
+<TD >30 LEs</TD>
+<TD >30 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_src2[28]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >25 bits</TD>
+<TD >50 LEs</TD>
+<TD >0 LEs</TD>
+<TD >50 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonDReg[16]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >5 bits</TD>
+<TD >10 LEs</TD>
+<TD >10 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonDReg[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >9 bits</TD>
+<TD >18 LEs</TD>
+<TD >0 LEs</TD>
+<TD >18 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_ocimem:the_nios_system_nios2_gen2_0_cpu_nios2_ocimem|MonAReg[5]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >64 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_nios2_oci_break:the_nios_system_nios2_gen2_0_cpu_nios2_oci_break|break_readreg[30]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >13 bits</TD>
+<TD >26 LEs</TD>
+<TD >0 LEs</TD>
+<TD >26 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|F_pc[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >2 bits</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|readdata[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >2 bits</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[37]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >2 bits</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >4 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[34]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >13 bits</TD>
+<TD >52 LEs</TD>
+<TD >26 LEs</TD>
+<TD >26 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[10]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >16 bits</TD>
+<TD >64 LEs</TD>
+<TD >32 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|sr[21]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >3 bits</TD>
+<TD >9 LEs</TD>
+<TD >6 LEs</TD>
+<TD >3 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|td_shift[4]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >4 bits</TD>
+<TD >12 LEs</TD>
+<TD >8 LEs</TD>
+<TD >4 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|td_shift[6]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >5:1</TD>
+<TD >2 bits</TD>
+<TD >6 LEs</TD>
+<TD >6 LEs</TD>
+<TD >0 LEs</TD>
+<TD >Yes</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|d_byteenable[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >6 bits</TD>
+<TD >12 LEs</TD>
+<TD >12 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:avalon_bridge_avalon_slave_agent_rsp_fifo|mem</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|E_logic_result[22]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >30 bits</TD>
+<TD >60 LEs</TD>
+<TD >60 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|W_rf_wr_data[10]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >5 bits</TD>
+<TD >10 LEs</TD>
+<TD >10 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|D_dst_regnum[2]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >6:1</TD>
+<TD >2 bits</TD>
+<TD >8 LEs</TD>
+<TD >8 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|Arbitration_part1|nios_system:u0|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_router:router|src_channel[4]</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>
