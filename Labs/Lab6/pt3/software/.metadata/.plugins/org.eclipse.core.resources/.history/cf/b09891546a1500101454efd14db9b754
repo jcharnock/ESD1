@@ -1,0 +1,82 @@
+
+#include "io.h"
+#include <stdio.h>
+#include "system.h"
+#include "alt_types.h"
+#include "sys/alt_irq.h"
+
+typedef   signed char   sint8;              // signed 8 bit values
+typedef unsigned char   uint8;              // unsigned 8 bit values
+typedef   signed short  sint16;             // signed 16 bit values
+typedef unsigned short  uint16;             // unsigned 16 bit values
+typedef   signed long   sint32;             // signed 32 bit values
+typedef unsigned long   uint32;             // unsigned 32 bit values
+typedef         float   real32;             // 32 bit real values
+
+unsigned char *ledsBase_ptr        = (unsigned char *) LEDS_BASE;
+uint32 *uintPushbuttonBase_Ptr     = (uint32*) KEY1_BASE;
+uint8 *ramBase_ptr                = (uint32*) RAMINFR_BE_0_BASE;
+
+int checkFlag = 1;
+
+uint32 RamTest(uint32 address, uint32 ramSize, uint32 testData){
+	*ledsBase_ptr = 0x0000;
+	uint32 readData[address + 1];
+	// write ram data
+	for(int i = 0; i < ramSize; i++){
+		*(ramBase_ptr + i) = testData;
+	}
+
+	*(ramBase_ptr + 1) = 0xFFFFFFFF;
+
+	// read ram data
+	for(int j = 0; j < address + 1; j++){
+		// read ram data to the temp read array
+		readData[j] = *(ramBase_ptr + j);
+
+		if(j == 1){
+			readData[j] = 0x010101010;
+		}
+
+		// if the readData doesnt equal the testData light
+		// all leds and break function
+		if (readData[j] != testData){
+			*ledsBase_ptr = 0xFFFF;
+			// add addr before readdata idk what 2 do for that </3
+			printf("Data does not match: (Address: 0x%08x, Read: 0x%08x, Expected: 0x%08x) \n", address, readData[j], testData);
+			return 1;
+		}
+		else {
+
+		}
+	}
+	return 0;
+}
+
+void pushbutton_isr (void *context){
+	*ledsBase_ptr = 0x2222;
+	checkFlag = 0;
+	printf("RAM TEST DONE \n");
+	*(uintPushbuttonBase_Ptr + 3) &= ~0x02;
+}
+
+
+int main(){
+
+	*ledsBase_ptr = 0x0000;
+	unsigned char pushbutton;
+
+	// enable irq for key 1
+	*(uintPushbuttonBase_Ptr + 2) |= 0x02;
+	*(uintPushbuttonBase_Ptr + 3) = 0x02;
+
+	while(1){
+		// run ram tests indefinitely until IRQ press
+		while (checkFlag != 0) {
+			RamTest(0x0000, 0x3FFF, 0x00000000);
+			RamTest(0x0000, 16, 0x00001234);
+			RamTest(0x0000, 32, 0xABCDEF90);
+		}
+	}
+
+}

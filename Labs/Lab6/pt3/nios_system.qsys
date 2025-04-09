@@ -118,7 +118,7 @@
          type = "int";
       }
    }
-   element raminfr_be_0.avalon_slave_0_1_1
+   element raminfr_be_0.avalon_slave_0_1_1_1
    {
       datum _lockedAddress
       {
@@ -203,12 +203,12 @@
  <module name="key1" kind="altera_avalon_pio" version="18.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
+  <parameter name="captureEdge" value="true" />
   <parameter name="clockRate" value="50000000" />
   <parameter name="direction" value="Input" />
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="true" />
-  <parameter name="irqType" value="LEVEL" />
+  <parameter name="irqType" value="EDGE" />
   <parameter name="resetValue" value="0" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
@@ -252,7 +252,7 @@
   <parameter name="dataAddrWidth" value="16" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='raminfr_be_0.avalon_slave_0_1_1' start='0x0' end='0x4000' type='raminfr_be.avalon_slave_0_1_1' /><slave name='onchip_memory2_0.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='leds.s1' start='0x9000' end='0x9010' type='altera_avalon_pio.s1' /><slave name='key1.s1' start='0x9010' end='0x9020' type='altera_avalon_pio.s1' /><slave name='sysid_qsys_0.control_slave' start='0x9020' end='0x9028' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9028' end='0x9030' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='raminfr_be_0.avalon_slave_0_1_1_1' start='0x0' end='0x4000' type='raminfr_be.avalon_slave_0_1_1_1' /><slave name='onchip_memory2_0.s1' start='0x4000' end='0x8000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x8800' end='0x9000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='leds.s1' start='0x9000' end='0x9010' type='altera_avalon_pio.s1' /><slave name='key1.s1' start='0x9010' end='0x9020' type='altera_avalon_pio.s1' /><slave name='sysid_qsys_0.control_slave' start='0x9020' end='0x9028' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9028' end='0x9030' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -464,6 +464,15 @@
    version="18.1"
    start="nios2_gen2_0.data_master"
    end="raminfr_be_0.avalon_slave_0_1_1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="nios2_gen2_0.data_master"
+   end="raminfr_be_0.avalon_slave_0_1_1_1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />

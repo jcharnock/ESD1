@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Tue Apr 08 23:11:44 EDT 2025
+ * Generated: Wed Apr 09 14:06:24 EDT 2025
  */
 
 /*
@@ -215,18 +215,18 @@
 #define KEY1_BASE 0x9010
 #define KEY1_BIT_CLEARING_EDGE_REGISTER 0
 #define KEY1_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define KEY1_CAPTURE 0
+#define KEY1_CAPTURE 1
 #define KEY1_DATA_WIDTH 4
 #define KEY1_DO_TEST_BENCH_WIRING 0
 #define KEY1_DRIVEN_SIM_VALUE 0
-#define KEY1_EDGE_TYPE "NONE"
+#define KEY1_EDGE_TYPE "RISING"
 #define KEY1_FREQ 50000000
 #define KEY1_HAS_IN 1
 #define KEY1_HAS_OUT 0
 #define KEY1_HAS_TRI 0
 #define KEY1_IRQ 1
 #define KEY1_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define KEY1_IRQ_TYPE "LEVEL"
+#define KEY1_IRQ_TYPE "EDGE"
 #define KEY1_NAME "/dev/key1"
 #define KEY1_RESET_VALUE 0
 #define KEY1_SPAN 16
@@ -315,7 +315,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1744167673
+#define SYSID_QSYS_0_TIMESTAMP 1744221582
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

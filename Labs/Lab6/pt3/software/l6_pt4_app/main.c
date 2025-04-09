@@ -15,34 +15,55 @@ typedef         float   real32;             // 32 bit real values
 
 unsigned char *ledsBase_ptr        = (unsigned char *) LEDS_BASE;
 uint32 *uintPushbuttonBase_Ptr     = (uint32*) KEY1_BASE;
-uint32 *ramBase_ptr                = (uint32*) RAMINFR_BE_0_BASE;
+uint8 *ramBase8_ptr                = (uint8*) RAMINFR_BE_0_BASE;
+uint16 *ramBase16_ptr                = (uint16*) RAMINFR_BE_0_BASE;
+uint32 *ramBase32_ptr                = (uint32*) RAMINFR_BE_0_BASE;
 
+int checkFlag = 1;
 
-
-uint32 RamTest(uint32 startAddr, uint32 ramSize, uint32 testData){
+uint32 Ram8bTest(uint32 address, uint32 ramSize, uint8 testData){
 	*ledsBase_ptr = 0x0000;
-	uint32 readData[ramSize];
 	// write ram data
 	for(int i = 0; i < ramSize; i++){
-		*(ramBase_ptr + i) = testData;
-	}
+		*(ramBase8_ptr + i) = testData;
+		// *(ramBase8_ptr + 2) = 0xFF; // intentional fail
 
-	*(ramBase_ptr + 1) = 0xFFFFFFFF;
-
-	// read ram data
-	for(int j = 0; j < ramSize; j++){
-		// read ram data to the temp read array
-		readData[j] = *(ramBase_ptr + j);
-		// if the readData doesnt equal the testData light
-		// all leds and break function
-		if (readData[j] != testData){
+		if (*(ramBase8_ptr + i) != testData){
 			*ledsBase_ptr = 0xFFFF;
-			// add addr before readdata idk what 2 do for that </3
-			printf("Data does not match: (Address: %d, Read: %d, Expected: %d) \n", readData[j], testData);
+			printf("Data does not match: (Address: 0x%08x, Read: 0x%08x, Expected: 0x%08x) \n", address, *(ramBase8_ptr + i), testData);
 			return 1;
 		}
-		else {
+	}
+	return 0;
+}
 
+uint32 Ram16bTest(uint32 address, uint32 ramSize, uint16 testData){
+	*ledsBase_ptr = 0x0000;
+	// write ram data
+	for(int i = 0; i < ramSize; i++){
+		*(ramBase16_ptr + i) = testData;
+		// *(ramBase16_ptr + 2) = 0xFFFF; // intentional fail
+
+		if (*(ramBase16_ptr + i) != testData){
+			*ledsBase_ptr = 0xFFFF;
+			printf("Data does not match: (Address: 0x%08x, Read: 0x%08x, Expected: 0x%08x) \n", address, *(ramBase16_ptr + i), testData);
+			return 1;
+		}
+	}
+	return 0;
+}
+
+uint32 Ram32bTest(uint32 address, uint32 ramSize, uint32 testData){
+	*ledsBase_ptr = 0x0000;
+	// write ram data
+	for(int i = 0; i < ramSize; i++){
+		*(ramBase32_ptr + i) = testData;
+		// *(ramBase32_ptr + 2) = 0xFFFFFFFF; // intentional fail
+
+		if (*(ramBase32_ptr + i) != testData){
+			*ledsBase_ptr = 0xFFFF;
+			printf("Data does not match: (Address: 0x%08x, Read: 0x%08x, Expected: 0x%08x) \n", address, *(ramBase32_ptr + i), testData);
+			return 1;
 		}
 	}
 	return 0;
@@ -50,6 +71,7 @@ uint32 RamTest(uint32 startAddr, uint32 ramSize, uint32 testData){
 
 void pushbutton_isr (void *context){
 	*ledsBase_ptr = 0x2222;
+	checkFlag = 0;
 	printf("RAM TEST DONE \n");
 	*(uintPushbuttonBase_Ptr + 3) &= ~0x02;
 }
@@ -59,17 +81,20 @@ int main(){
 
 	*ledsBase_ptr = 0x0000;
 	unsigned char pushbutton;
-	int checkFlag = 0;
 
 	// enable irq for key 1
 	*(uintPushbuttonBase_Ptr + 2) |= 0x02;
 	*(uintPushbuttonBase_Ptr + 3) = 0x02;
 
+	alt_ic_isr_register(KEY1_IRQ_INTERRUPT_CONTROLLER_ID,KEY1_IRQ,pushbutton_isr,0,0);
+
 	while(1){
 		// run ram tests indefinitely until IRQ press
-		RamTest(0x0000, 8, 0x00);
-		RamTest(0x0000, 16, 0x1234);
-		RamTest(0x0000, 32, 0xABCDEF90);
+		while (checkFlag != 0) {
+			Ram8bTest(0x0000, 16384, 0x00);
+			Ram16bTest(0x0000, 8192, 0x1234);
+			Ram32bTest(0x0000, 4096, 0xABCDEF90);
+		}
 	}
 
 }

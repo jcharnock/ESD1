@@ -31,6 +31,29 @@ signal readdata_tb  : std_logic_vector(31 downto 0) := (others => '0');
 signal loop_count   : std_logic_vector(3 downto 0) := (others => '0');
 signal add : unsigned(31 downto 0) :=  X"11111111";
 
+type val_array is array (15 downto 0) of std_logic_vector(31 downto 0);
+constant expected_vals : val_array := (
+	X"11111111", --1
+	X"21178111",
+	X"21178175",
+	X"311D8175",
+	X"311DF1D9",
+	X"411D62D9",
+	X"411D623D",
+	X"511D623D", --8
+	X"512AD2A1",
+	X"513143A1",
+	X"51314305",	
+	X"51374305",
+	X"5137B369",
+	X"51372369",
+	X"513723CD",
+	X"513723CD" 	
+	);
+	
+	
+	
+
 begin
 
 -- clock process
@@ -61,7 +84,7 @@ uut : raminfr_be
 
 tb : process
 	begin
-		report "********* begin test: write to RAM_D *************";
+		report "********* begin test: write to RAM *************";
 		for j in 0 to 15 loop
 			loop_count <= std_logic_vector(to_unsigned(j, 4));
 			add <= unsigned(writedata_tb) + X"10067064";
@@ -71,8 +94,9 @@ tb : process
 				write_tb <= loop_count;
 				address_tb <= std_logic_vector(to_unsigned(i, 12));
 				wait for 20 ns;	
-				if not (address_tb = std_logic_vector(to_unsigned(i, 12))) then
-					assert (address_tb /= std_logic_vector(to_unsigned(i, 12))) report "RAM write error" severity error;
+				if not (readdata_tb = expected_vals(j)) then
+					assert (readdata_tb /= expected_vals(j)) report "RAM write error" severity error;
+				end if;
 				write_tb <= "1111";
 			end loop;
 		end loop;
