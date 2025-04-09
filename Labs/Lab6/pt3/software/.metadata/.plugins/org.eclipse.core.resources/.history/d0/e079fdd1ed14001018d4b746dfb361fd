@@ -1,0 +1,68 @@
+
+#include "io.h"
+#include <stdio.h>
+#include "system.h"
+#include "alt_types.h"
+#include "sys/alt_irq.h"
+
+typedef   signed char   sint8;              // signed 8 bit values
+typedef unsigned char   uint8;              // unsigned 8 bit values
+typedef   signed short  sint16;             // signed 16 bit values
+typedef unsigned short  uint16;             // unsigned 16 bit values
+typedef   signed long   sint32;             // signed 32 bit values
+typedef unsigned long   uint32;             // unsigned 32 bit values
+typedef         float   real32;             // 32 bit real values
+
+unsigned char *ledsBase_ptr        = (unsigned char *) LEDS_BASE;
+unsigned char *pushbuttonsBase_ptr = (unsigned char *) KEY1_BASE;
+uint32 *ramBase_ptr                = (uint32*) INFERRED_RAM_BASE;
+
+uint32 b32RamTest(uint32 startAddr, uint32 numTestBytes, uint32 testData){
+	*ledsBase_ptr = 0x0000;
+	uint32 readData[numTestBytes];
+	// write ram data
+	for(int i = 0; i < numTestBytes; i++){
+		*(ramBase_ptr + i) = testData;
+	}
+
+	*(ramBase_ptr + 1) = 0xFFFFFFFF;
+
+	// read ram data
+	for(int j = 0; j < numTestBytes; j++){
+		// read ram data to the temp read array
+		readData[j] = *(ramBase_ptr + j);
+		// if the readData doesnt equal the testData light
+		// all leds and break function
+		if (readData[j] != testData){
+			*ledsBase_ptr = 0xFFFF;
+			printf("Data does not match: (test data: %d, read data: %d \n", testData, readData);
+			return 1;
+		}
+		else {
+
+		}
+	}
+	return 0;
+}
+
+
+int main(){
+
+	*ledsBase_ptr = 0x0000;
+	unsigned char pushbutton;
+	int checkFlag = 0;
+
+	while(1){
+		// read in pushbutton data
+		pushbutton = *pushbuttonsBase_ptr;
+		if ((pushbutton & 0x0002) == 0){
+	        while((pushbutton & 0x0001) == 0){
+	        	pushbutton = *pushbuttonsBase_ptr;
+	        	if ((pushbutton & 0x0001) != 0) break;
+	        }
+	        checkFlag = b32RamTest(0x0000, 8, 0x12345678);
+	         if (checkFlag == 1) break;
+
+		}
+	}
+}

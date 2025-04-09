@@ -70,7 +70,9 @@ tb : process
 			for i in 0 to 4095 loop
 				write_tb <= loop_count;
 				address_tb <= std_logic_vector(to_unsigned(i, 12));
-				wait for 20 ns;			
+				wait for 20 ns;	
+				if not (address_tb = std_logic_vector(to_unsigned(i, 12))) then
+					assert (address_tb /= std_logic_vector(to_unsigned(i, 12))) report "RAM write error" severity error;
 				write_tb <= "1111";
 			end loop;
 		end loop;

@@ -27,7 +27,7 @@ architecture arch of inferredram_pt3 is
 	component nios_system is
 		port (
 			clk_clk       : in  std_logic                    := 'X'; -- clk
-			key1_export   : in  std_logic                    := 'X'; -- export
+			key1_export   : in  std_logic_vector(3 downto 0) := (others => 'X');
 			leds_export   : out std_logic_vector(7 downto 0);        -- export
 			reset_reset_n : in  std_logic                    := 'X'  -- reset_n
 		);
@@ -65,7 +65,7 @@ begin
 			clk_clk       => CLOCK_50,       --   clk.clk
 			reset_reset_n => reset_n, -- reset.reset_n
 			leds_export   => LEDR,   --  leds.export
-			key1_export   => key0_d3(1)    --  key1.export
+			key1_export   => key0_d3    --  key1.export
 		);
   
   end architecture;

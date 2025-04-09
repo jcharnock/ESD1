@@ -33,9 +33,9 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "key1_export" (rect 0 0 49 12)(font "Arial" (font_size 8)))
-		(text "key1_export" (rect 4 101 70 112)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 96 112)(line_width 1))
+		(text "key1_export[3..0]" (rect 0 0 69 12)(font "Arial" (font_size 8)))
+		(text "key1_export[3..0]" (rect 4 101 106 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 96 112)(line_width 3))
 	)
 	(port
 		(pt 0 192)

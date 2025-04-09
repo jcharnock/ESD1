@@ -6,7 +6,7 @@ module nios_system (
 	reset_reset_n);	
 
 	input		clk_clk;
-	input		key1_export;
+	input	[3:0]	key1_export;
 	output	[7:0]	leds_export;
 	input		reset_reset_n;
 endmodule

@@ -1,6 +1,6 @@
-23:53:57 **** Clean-only build of configuration Nios II for project l6_pt4_app ****
+22:58:35 **** Clean-only build of configuration Nios II for project l6_pt4_app ****
 make clean 
 [l6_pt4_app clean complete]
 
-23:53:57 Build Finished (took 139ms)
+22:58:35 Build Finished (took 142ms)
 
