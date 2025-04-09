@@ -1,0 +1,9 @@
+17:31:28 **** Incremental Build of configuration Nios II for project arb_app ****
+make all 
+Info: Building ../arb_app_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../arb_app_bsp/
+[BSP build complete]
+[arb_app build complete]
+
+17:31:29 Build Finished (took 881ms)
+

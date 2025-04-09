@@ -14,7 +14,7 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 15:59:06 on Apr 09,2025
+# Start time: 17:42:40 on Apr 09,2025
 # vcom -reportprogress 300 -93 -work work ../src/dff.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -24,20 +24,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity dff
 # -- Compiling architecture arch of dff
-# End time: 15:59:06 on Apr 09,2025, Elapsed time: 0:00:00
+# End time: 17:42:40 on Apr 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 15:59:06 on Apr 09,2025
+# Start time: 17:42:40 on Apr 09,2025
 # vcom -reportprogress 300 -93 -work work ../src/multiplier_inst.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity multiplier_inst
 # -- Compiling architecture SYN of multiplier_inst
-# End time: 15:59:06 on Apr 09,2025, Elapsed time: 0:00:00
+# End time: 17:42:40 on Apr 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 15:59:06 on Apr 09,2025
+# Start time: 17:42:40 on Apr 09,2025
 # vcom -reportprogress 300 -93 -work work ../src/high_pass_filter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -47,10 +47,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity high_pass_filter
 # -- Compiling architecture arch of high_pass_filter
-# End time: 15:59:07 on Apr 09,2025, Elapsed time: 0:00:01
+# End time: 17:42:41 on Apr 09,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 15:59:07 on Apr 09,2025
+# Start time: 17:42:41 on Apr 09,2025
 # vcom -reportprogress 300 -93 -work work ../src/high_pass_filter_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -58,11 +58,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity high_pass_filter_tb
 # -- Compiling architecture arch_tb of high_pass_filter_tb
-# End time: 15:59:07 on Apr 09,2025, Elapsed time: 0:00:00
+# End time: 17:42:41 on Apr 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" high_pass_filter_tb 
-# Start time: 15:59:07 on Apr 09,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 17:42:41 on Apr 09,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -84,9 +84,9 @@
 # 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: eec9960  Hostname: GOL-1360-12  ProcessID: 1960
-#           Attempting to use alternate WLF file "./wlft36tavs".
+#           Attempting to use alternate WLF file "./wlftr3cw99".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft36tavs
+#           Using alternate file: ./wlftr3cw99
 # ** Error: (vish-4016) Invalid radix value: update.
 # Usage: radix [-binary | -octal | -decimal | -hexadecimal | -unsigned | -ascii | -time] [-enumnumeric | -enumsymbolic | -showbase | -symbolic]
 # Executing ONERROR command at macro ./wave.do line 27
@@ -1030,5 +1030,5 @@
 #    Time: 18040 ns  Iteration: 0  Instance: /high_pass_filter_tb
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 18080 ns  Iteration: 0  Instance: /high_pass_filter_tb
-# End time: 16:00:23 on Apr 09,2025, Elapsed time: 0:01:16
-# Errors: 2, Warnings: 472
+# End time: 18:06:30 on Apr 09,2025, Elapsed time: 0:23:49
+# Errors: 4, Warnings: 472

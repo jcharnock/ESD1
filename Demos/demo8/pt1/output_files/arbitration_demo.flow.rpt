@@ -1,6 +1,6 @@
 Flow report for arbitration_demo
-Wed Apr 09 02:51:17 2025
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Wed Apr 09 17:25:04 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
 ---------------------
@@ -37,29 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 09 02:51:09 2025       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; arbitration_demo                            ;
-; Top-level Entity Name           ; Arbitration_part1                           ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CSEMA5F31C6                                ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 760 / 32,070 ( 2 % )                        ;
-; Total registers                 ; 1079                                        ;
-; Total pins                      ; 15 / 457 ( 3 % )                            ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 306,176 / 4,065,280 ( 8 % )                 ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Wed Apr 09 17:24:56 2025           ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                   ; arbitration_demo                                ;
+; Top-level Entity Name           ; Arbitration_part1                               ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 758 / 32,070 ( 2 % )                            ;
+; Total registers                 ; 1075                                            ;
+; Total pins                      ; 15 / 457 ( 3 % )                                ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 306,176 / 4,065,280 ( 8 % )                     ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                                   ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/09/2025 02:48:57 ;
+; Start date & time ; 04/09/2025 17:22:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; arbitration_demo    ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------+------------------+-------------------+------------+
 ; Assignment Name                     ; Value                                                         ; Default Value    ; Entity Name       ; Section Id ;
 +-------------------------------------+---------------------------------------------------------------+------------------+-------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 66504346228940.174418133726360                                ; --               ; --                ; --         ;
+; COMPILER_SIGNATURE_ID               ; 224948461072686.174423376912500                               ; --               ; --                ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                            ; --               ; --                ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                             ; --               ; --                ; --         ;
 ; MISC_FILE                           ; nios_system/synthesis/../nios_system.cmp                      ; --               ; --                ; --         ;
@@ -93,7 +93,7 @@ refer to the applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                  ; --               ; --                ; --         ;
 ; SLD_FILE                            ; nios_system/synthesis/nios_system.regmap                      ; --               ; --                ; --         ;
 ; SLD_FILE                            ; nios_system/synthesis/nios_system.debuginfo                   ; --               ; --                ; --         ;
-; SLD_INFO                            ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1744176291 ; --               ; nios_system       ; --         ;
+; SLD_INFO                            ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1744233687 ; --               ; nios_system       ; --         ;
 ; SOPCINFO_FILE                       ; nios_system/synthesis/../../nios_system.sopcinfo              ; --               ; --                ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                            ; --               ; --                ; --         ;
 ; TOP_LEVEL_ENTITY                    ; Arbitration_part1                                             ; arbitration_demo ; --                ; --         ;
@@ -105,11 +105,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 5041 MB             ; 00:00:44                           ;
-; Fitter               ; 00:01:36     ; 1.1                     ; 7939 MB             ; 00:10:22                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4871 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:07     ; 2.3                     ; 5348 MB             ; 00:00:12                           ;
-; Total                ; 00:02:14     ; --                      ; --                  ; 00:11:25                           ;
+; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 5070 MB             ; 00:00:14                           ;
+; Fitter               ; 00:01:12     ; 1.1                     ; 8122 MB             ; 00:01:02                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4881 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.8                     ; 5364 MB             ; 00:00:04                           ;
+; Total                ; 00:02:10     ; --                      ; --                  ; 00:01:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,10 +118,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-42HBS6B  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-42HBS6B  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-42HBS6B  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-42HBS6B  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; gol-1350-10      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; gol-1350-10      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; gol-1350-10      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; gol-1350-10      ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

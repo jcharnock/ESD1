@@ -76,14 +76,15 @@ begin
 		 );
    end generate mult_hpf;
    
-   flip_flop : for j in 0 to 16 generate
+   -- generate statement for 16 shifter components
+   flip_flop : for j in 0 to 15 generate
 		flip_flop : dff
 		port map (
 		  clk => clk,
 		  reset_n => reset_n,
 		  data_in2 => samples(j),
 		  filter_en => filter_en,
-		  data_out2 => shift(j)
+		  data_out2 => shift(j + 1)
 		);
 	end generate flip_flop;
 	
@@ -92,7 +93,7 @@ begin
 		sum <= sum + signed(product(i));
 	end generate gen_add;
 	
-	data_out <= std_logic_vector(sum(31 downto 16));
+	data_out <= std_logic_vector(sum(30 downto 15));
 	
 	
 end arch;

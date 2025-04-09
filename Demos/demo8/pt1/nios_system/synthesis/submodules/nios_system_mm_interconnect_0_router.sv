@@ -217,15 +217,15 @@ module nios_system_mm_interconnect_0_router
     end
 
     // ( 0x1810 .. 0x1818 )
-    if ( {address[RG:PAD3],{PAD3{1'b0}}} == 17'h1810   ) begin
-            src_channel = 6'b000001;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
+    if ( {address[RG:PAD3],{PAD3{1'b0}}} == 17'h1810  && read_transaction  ) begin
+            src_channel = 6'b000100;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
     end
 
     // ( 0x1818 .. 0x1820 )
-    if ( {address[RG:PAD4],{PAD4{1'b0}}} == 17'h1818  && read_transaction  ) begin
-            src_channel = 6'b000100;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
+    if ( {address[RG:PAD4],{PAD4{1'b0}}} == 17'h1818   ) begin
+            src_channel = 6'b000001;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
     end
 
     // ( 0x10000 .. 0x18000 )

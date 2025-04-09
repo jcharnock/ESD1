@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Apr 09 02:51:01 2025
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fitter Status : Successful - Wed Apr 09 17:24:46 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : arbitration_demo
 Top-level Entity Name : Arbitration_part1
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 760 / 32,070 ( 2 % )
-Total registers : 1079
+Logic utilization (in ALMs) : 758 / 32,070 ( 2 % )
+Total registers : 1075
 Total pins : 15 / 457 ( 3 % )
 Total virtual pins : 0
 Total block memory bits : 306,176 / 4,065,280 ( 8 % )
