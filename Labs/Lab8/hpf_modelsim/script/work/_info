@@ -70,10 +70,10 @@ n@_opt5
 R4
 R0
 T_opt6
-!s110 1744234962
-V>6Xl6:^lCFIcH;eOn9D?61
+!s110 1744645810
+V262GnIG9ElXNOK]3PQ5KW3
 R1
-=1-cc96e51d712e-67f6e9d1-3a1-5b60
+=1-b07b251b06e3-67fd2eb0-2e9-341c
 R2
 R3
 n@_opt6
@@ -123,27 +123,72 @@ R17
 !i113 0
 R18
 R19
-Ehigh_pass_filter
-Z20 w1744234946
+Edff_test
+Z20 w1744644810
 R6
 R7
 R8
 R9
 R10
 R0
-Z21 8../src/high_pass_filter.vhd
-Z22 F../src/high_pass_filter.vhd
+Z21 8../src/dff_test.vhd
+Z22 F../src/dff_test.vhd
+l0
+L6
+VR6_5?YjK`;hfhC?zGWS@M1
+!s100 4hFMbz8L_B?;34;fVR?k^3
+R13
+31
+Z23 !s110 1744645807
+!i10b 1
+Z24 !s108 1744645806.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|../src/dff_test.vhd|
+Z26 !s107 ../src/dff_test.vhd|
+!i113 0
+R18
+R19
+Aarch
+R6
+R7
+R8
+R9
+R10
+DEx4 work 8 dff_test 0 22 R6_5?YjK`;hfhC?zGWS@M1
+l17
+L16
+V=We=2Fc2^YIKcB6ed_:Ml1
+!s100 VzYTV<0K4eWKQ1X7@UOC21
+R13
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R18
+R19
+Ehigh_pass_filter
+Z27 w1744645678
+R6
+R7
+R8
+R9
+R10
+R0
+Z28 8../src/high_pass_filter.vhd
+Z29 F../src/high_pass_filter.vhd
 l0
 L6
 V>E>kcJdN<6H2`4oOX4aPT3
 !s100 b9ZFGjaDFzjJ6[nMmfA`T2
 R13
 31
-Z23 !s110 1744234961
+R23
 !i10b 1
-R15
-Z24 !s90 -reportprogress|300|-93|-work|work|../src/high_pass_filter.vhd|
-Z25 !s107 ../src/high_pass_filter.vhd|
+Z30 !s108 1744645807.000000
+Z31 !s90 -reportprogress|300|-93|-work|work|../src/high_pass_filter.vhd|
+Z32 !s107 ../src/high_pass_filter.vhd|
 !i113 0
 R18
 R19
@@ -156,26 +201,26 @@ R10
 DEx4 work 16 high_pass_filter 0 22 >E>kcJdN<6H2`4oOX4aPT3
 l65
 L16
-V;RCg8Lk`febS0BZi;Cz1G2
-!s100 ?=I4kO_iok]PfPCmfLe_D1
+V1XDGkT0daz4CKZk_VTE610
+!s100 F3fHK=J01AJIeR73X2Y7b1
 R13
 31
 R23
 !i10b 1
-R15
-R24
-R25
+R30
+R31
+R32
 !i113 0
 R18
 R19
 Ehigh_pass_filter_tb
-Z26 w1744227201
+Z33 w1744227201
 R6
 R9
 R10
 R0
-Z27 8../src/high_pass_filter_tb.vhd
-Z28 F../src/high_pass_filter_tb.vhd
+Z34 8../src/high_pass_filter_tb.vhd
+Z35 F../src/high_pass_filter_tb.vhd
 l0
 L6
 V>:T<g;@@V252Y`gP60PKQ2
@@ -184,9 +229,9 @@ R13
 31
 R23
 !i10b 1
-Z29 !s108 1744234961.000000
-Z30 !s90 -reportprogress|300|-93|-work|work|../src/high_pass_filter_tb.vhd|
-Z31 !s107 ../src/high_pass_filter_tb.vhd|
+R30
+Z36 !s90 -reportprogress|300|-93|-work|work|../src/high_pass_filter_tb.vhd|
+Z37 !s107 ../src/high_pass_filter_tb.vhd|
 !i113 0
 R18
 R19
@@ -203,31 +248,31 @@ R13
 31
 R23
 !i10b 1
-R29
 R30
-R31
+R36
+R37
 !i113 0
 R18
 R19
 Ehpf_tb
-Z32 w1744225853
+Z38 w1744225853
 R6
 R9
 R10
 R0
-R27
-R28
+R34
+R35
 l0
 L6
 VhjnRT9k]WQ=oaWX4M57gW1
 !s100 j7C>mRGZOzTz;?CHX=<fE1
 R13
 31
-Z33 !s110 1744225864
+Z39 !s110 1744225864
 !i10b 1
-Z34 !s108 1744225864.000000
-R30
-R31
+Z40 !s108 1744225864.000000
+R36
+R37
 !i113 0
 R18
 R19
@@ -242,32 +287,32 @@ V]Wo]ODHZ]WH0_=oXdQ[2W0
 !s100 =6AP_h^Bkigl]0mN>VeLG1
 R13
 31
-R33
+R39
 !i10b 1
-R34
-R30
-R31
+R40
+R36
+R37
 !i113 0
 R18
 R19
 Emultiplier_inst
-Z35 w1744215124
+Z41 w1744215124
 R9
 R10
 R0
-Z36 8../src/multiplier_inst.vhd
-Z37 F../src/multiplier_inst.vhd
+Z42 8../src/multiplier_inst.vhd
+Z43 F../src/multiplier_inst.vhd
 l0
 L42
 VoM6OPTAUh18dZXBm?QI[D1
 !s100 ZjYnfLH`>D=jd<PN0FFW30
 R13
 31
-R14
+R23
 !i10b 1
-R15
-Z38 !s90 -reportprogress|300|-93|-work|work|../src/multiplier_inst.vhd|
-Z39 !s107 ../src/multiplier_inst.vhd|
+R30
+Z44 !s90 -reportprogress|300|-93|-work|work|../src/multiplier_inst.vhd|
+Z45 !s107 ../src/multiplier_inst.vhd|
 !i113 0
 R18
 R19
@@ -281,11 +326,11 @@ VI^kN5aRFRBOfUiLoXLOQ73
 !s100 c;GnkRY9`WY^ecE2JEz6R3
 R13
 31
-R14
+R23
 !i10b 1
-R15
-R38
-R39
+R30
+R44
+R45
 !i113 0
 R18
 R19

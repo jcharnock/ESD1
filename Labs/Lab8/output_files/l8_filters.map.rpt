@@ -1,5 +1,5 @@
 Analysis & Synthesis report for l8_filters
-Wed Apr 09 18:04:11 2025
+Mon Apr 14 11:48:21 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -10,7 +10,49 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:0:mult_hpf|lpm_mult:lpm_mult_component
+ 12. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:1:mult_hpf|lpm_mult:lpm_mult_component
+ 13. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:2:mult_hpf|lpm_mult:lpm_mult_component
+ 14. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:3:mult_hpf|lpm_mult:lpm_mult_component
+ 15. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:4:mult_hpf|lpm_mult:lpm_mult_component
+ 16. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:5:mult_hpf|lpm_mult:lpm_mult_component
+ 17. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:6:mult_hpf|lpm_mult:lpm_mult_component
+ 18. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:7:mult_hpf|lpm_mult:lpm_mult_component
+ 19. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:8:mult_hpf|lpm_mult:lpm_mult_component
+ 20. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:9:mult_hpf|lpm_mult:lpm_mult_component
+ 21. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:10:mult_hpf|lpm_mult:lpm_mult_component
+ 22. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:11:mult_hpf|lpm_mult:lpm_mult_component
+ 23. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:12:mult_hpf|lpm_mult:lpm_mult_component
+ 24. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:13:mult_hpf|lpm_mult:lpm_mult_component
+ 25. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:14:mult_hpf|lpm_mult:lpm_mult_component
+ 26. Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:15:mult_hpf|lpm_mult:lpm_mult_component
+ 27. lpm_mult Parameter Settings by Entity Instance
+ 28. Port Connectivity Checks: "dff_test:\flip_flop:15:flip_flop"
+ 29. Port Connectivity Checks: "multiplier_inst:\mult_hpf:15:mult_hpf"
+ 30. Port Connectivity Checks: "multiplier_inst:\mult_hpf:14:mult_hpf"
+ 31. Port Connectivity Checks: "multiplier_inst:\mult_hpf:13:mult_hpf"
+ 32. Port Connectivity Checks: "multiplier_inst:\mult_hpf:12:mult_hpf"
+ 33. Port Connectivity Checks: "multiplier_inst:\mult_hpf:11:mult_hpf"
+ 34. Port Connectivity Checks: "multiplier_inst:\mult_hpf:10:mult_hpf"
+ 35. Port Connectivity Checks: "multiplier_inst:\mult_hpf:9:mult_hpf"
+ 36. Port Connectivity Checks: "multiplier_inst:\mult_hpf:8:mult_hpf"
+ 37. Port Connectivity Checks: "multiplier_inst:\mult_hpf:7:mult_hpf"
+ 38. Port Connectivity Checks: "multiplier_inst:\mult_hpf:6:mult_hpf"
+ 39. Port Connectivity Checks: "multiplier_inst:\mult_hpf:5:mult_hpf"
+ 40. Port Connectivity Checks: "multiplier_inst:\mult_hpf:4:mult_hpf"
+ 41. Port Connectivity Checks: "multiplier_inst:\mult_hpf:3:mult_hpf"
+ 42. Port Connectivity Checks: "multiplier_inst:\mult_hpf:2:mult_hpf"
+ 43. Port Connectivity Checks: "multiplier_inst:\mult_hpf:1:mult_hpf"
+ 44. Port Connectivity Checks: "multiplier_inst:\mult_hpf:0:mult_hpf"
+ 45. Post-Synthesis Netlist Statistics for Top Partition
+ 46. Elapsed Time Per Partition
+ 47. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +75,27 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Apr 09 18:04:11 2025               ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
-; Revision Name               ; l8_filters                                      ;
-; Top-level Entity Name       ; high_pass_filter                                ;
-; Family                      ; Cyclone V                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
-; Total registers             ; N/A until Partition Merge                       ;
-; Total pins                  ; N/A until Partition Merge                       ;
-; Total virtual pins          ; N/A until Partition Merge                       ;
-; Total block memory bits     ; N/A until Partition Merge                       ;
-; Total PLLs                  ; N/A until Partition Merge                       ;
-; Total DLLs                  ; N/A until Partition Merge                       ;
-+-----------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Apr 14 11:48:21 2025           ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                   ; l8_filters                                      ;
+; Top-level Entity Name           ; high_pass_filter                                ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 240                                             ;
+; Total pins                      ; 35                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 15                                              ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -143,15 +190,1212 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 24          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-10        ;   0.0%      ;
 +----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; dff_test.vhd                     ; yes             ; User VHDL File               ; S:/ESD1/Labs/Lab8/dff_test.vhd                                    ;         ;
+; high_pass_filter.vhd             ; yes             ; User VHDL File               ; S:/ESD1/Labs/Lab8/high_pass_filter.vhd                            ;         ;
+; multiplier_inst.vhd              ; yes             ; User Wizard-Generated File   ; S:/ESD1/Labs/Lab8/multiplier_inst.vhd                             ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/lpm_mult.tdf    ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/aglobal181.inc  ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/multcore.inc    ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/bypassff.inc    ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/altshift.inc    ;         ;
+; db/mult_71n.v                    ; yes             ; Auto-Generated Megafunction  ; S:/ESD1/Labs/Lab8/db/mult_71n.v                                   ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 120       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 0         ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 0         ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 240       ;
+;                                             ;           ;
+; I/O pins                                    ; 35        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 15        ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 240       ;
+; Total fan-out                               ; 1281      ;
+; Average fan-out                             ; 3.94      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                 ;
++--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Entity Name      ; Library Name ;
++--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+------------------+--------------+
+; |high_pass_filter                          ; 0 (0)               ; 240 (0)                   ; 0                 ; 15         ; 35   ; 0            ; |high_pass_filter                                                                                           ; high_pass_filter ; work         ;
+;    |dff_test:\flip_flop:0:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:0:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:10:flip_flop|      ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:10:flip_flop                                                          ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:11:flip_flop|      ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:11:flip_flop                                                          ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:12:flip_flop|      ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:12:flip_flop                                                          ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:13:flip_flop|      ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:13:flip_flop                                                          ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:14:flip_flop|      ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:14:flip_flop                                                          ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:1:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:1:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:2:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:2:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:3:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:3:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:4:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:4:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:5:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:5:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:6:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:6:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:7:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:7:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:8:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:8:flip_flop                                                           ; dff_test         ; work         ;
+;    |dff_test:\flip_flop:9:flip_flop|       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |high_pass_filter|dff_test:\flip_flop:9:flip_flop                                                           ; dff_test         ; work         ;
+;    |multiplier_inst:\mult_hpf:10:mult_hpf| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:10:mult_hpf                                                     ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:10:mult_hpf|lpm_mult:lpm_mult_component                         ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:10:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:11:mult_hpf| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:11:mult_hpf                                                     ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:11:mult_hpf|lpm_mult:lpm_mult_component                         ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:11:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:12:mult_hpf| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:12:mult_hpf                                                     ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:12:mult_hpf|lpm_mult:lpm_mult_component                         ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:12:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:13:mult_hpf| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:13:mult_hpf                                                     ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:13:mult_hpf|lpm_mult:lpm_mult_component                         ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:13:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:14:mult_hpf| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:14:mult_hpf                                                     ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:14:mult_hpf|lpm_mult:lpm_mult_component                         ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:14:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:15:mult_hpf| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:15:mult_hpf                                                     ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:15:mult_hpf|lpm_mult:lpm_mult_component                         ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:15:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:2:mult_hpf|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:2:mult_hpf                                                      ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:2:mult_hpf|lpm_mult:lpm_mult_component                          ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:2:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated  ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:3:mult_hpf|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:3:mult_hpf                                                      ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:3:mult_hpf|lpm_mult:lpm_mult_component                          ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:3:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated  ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:4:mult_hpf|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:4:mult_hpf                                                      ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:4:mult_hpf|lpm_mult:lpm_mult_component                          ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:4:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated  ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:5:mult_hpf|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:5:mult_hpf                                                      ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:5:mult_hpf|lpm_mult:lpm_mult_component                          ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:5:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated  ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:6:mult_hpf|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:6:mult_hpf                                                      ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:6:mult_hpf|lpm_mult:lpm_mult_component                          ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:6:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated  ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:7:mult_hpf|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:7:mult_hpf                                                      ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:7:mult_hpf|lpm_mult:lpm_mult_component                          ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:7:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated  ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:8:mult_hpf|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:8:mult_hpf                                                      ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:8:mult_hpf|lpm_mult:lpm_mult_component                          ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:8:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated  ; mult_71n         ; work         ;
+;    |multiplier_inst:\mult_hpf:9:mult_hpf|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:9:mult_hpf                                                      ; multiplier_inst  ; work         ;
+;       |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:9:mult_hpf|lpm_mult:lpm_mult_component                          ; lpm_mult         ; work         ;
+;          |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |high_pass_filter|multiplier_inst:\mult_hpf:9:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated  ; mult_71n         ; work         ;
++--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary    ;
++-----------------------------------+-------------+
+; Statistic                         ; Number Used ;
++-----------------------------------+-------------+
+; Independent 18x18 plus 36         ; 14          ;
+; Sum of two 18x18                  ; 1           ;
+; Total number of DSP blocks        ; 15          ;
+;                                   ;             ;
+; Fixed Point Signed Multiplier     ; 8           ;
+; Fixed Point Mixed Sign Multiplier ; 8           ;
++-----------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                         ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------+---------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                         ; IP Include File     ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------+---------------------+
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:0:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:1:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:2:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:3:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:4:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:5:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:6:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:7:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:8:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:9:mult_hpf  ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:10:mult_hpf ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:11:mult_hpf ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:12:mult_hpf ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:13:mult_hpf ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:14:mult_hpf ; multiplier_inst.vhd ;
+; Altera ; LPM_MULT     ; 18.1    ; N/A          ; N/A          ; |high_pass_filter|multiplier_inst:\mult_hpf:15:mult_hpf ; multiplier_inst.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------+---------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 240   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 240   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 240   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:0:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:1:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:2:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:3:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:4:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:5:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:6:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:7:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:8:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:9:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                             ;
++------------------------------------------------+-----------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                   ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                   ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                   ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                          ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                          ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                          ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                          ;
+; LATENCY                                        ; 0         ; Untyped                                          ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                          ;
+; USE_EAB                                        ; OFF       ; Untyped                                          ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                          ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                          ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                          ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                              ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                          ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                          ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                          ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                          ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                          ;
++------------------------------------------------+-----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:10:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                              ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                    ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                           ;
+; LATENCY                                        ; 0         ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; USE_EAB                                        ; OFF       ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                           ;
++------------------------------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:11:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                              ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                    ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                           ;
+; LATENCY                                        ; 0         ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; USE_EAB                                        ; OFF       ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                           ;
++------------------------------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:12:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                              ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                    ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                           ;
+; LATENCY                                        ; 0         ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; USE_EAB                                        ; OFF       ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                           ;
++------------------------------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:13:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                              ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                    ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                           ;
+; LATENCY                                        ; 0         ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; USE_EAB                                        ; OFF       ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                           ;
++------------------------------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:14:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                              ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                    ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                           ;
+; LATENCY                                        ; 0         ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; USE_EAB                                        ; OFF       ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                           ;
++------------------------------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier_inst:\mult_hpf:15:mult_hpf|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                              ;
++------------------------------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                    ;
+; LPM_WIDTHP                                     ; 32        ; Signed Integer                                    ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                           ;
+; LATENCY                                        ; 0         ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                           ;
+; USE_EAB                                        ; OFF       ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                           ;
++------------------------------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                            ;
++---------------------------------------+-------------------------------------------------------------------+
+; Name                                  ; Value                                                             ;
++---------------------------------------+-------------------------------------------------------------------+
+; Number of entity instances            ; 16                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:0:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:1:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:2:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:3:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:4:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:5:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:6:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:7:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:8:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:9:mult_hpf|lpm_mult:lpm_mult_component  ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:10:mult_hpf|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:11:mult_hpf|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:12:mult_hpf|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:13:mult_hpf|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:14:mult_hpf|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
+; Entity Instance                       ; multiplier_inst:\mult_hpf:15:mult_hpf|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                ;
+;     -- USE_EAB                        ; OFF                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                ;
++---------------------------------------+-------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dff_test:\flip_flop:15:flip_flop"                                                        ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; data_out2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:15:mult_hpf" ;
++--------------+-------+----------+---------------------------------+
+; Port         ; Type  ; Severity ; Details                         ;
++--------------+-------+----------+---------------------------------+
+; datab[15..7] ; Input ; Info     ; Stuck at VCC                    ;
+; datab[4..3]  ; Input ; Info     ; Stuck at VCC                    ;
+; datab[6..5]  ; Input ; Info     ; Stuck at GND                    ;
+; datab[2]     ; Input ; Info     ; Stuck at GND                    ;
+; datab[1]     ; Input ; Info     ; Stuck at VCC                    ;
+; datab[0]     ; Input ; Info     ; Stuck at GND                    ;
++--------------+-------+----------+---------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:14:mult_hpf" ;
++--------------+-------+----------+---------------------------------+
+; Port         ; Type  ; Severity ; Details                         ;
++--------------+-------+----------+---------------------------------+
+; datab[15..9] ; Input ; Info     ; Stuck at VCC                    ;
+; datab[4..1]  ; Input ; Info     ; Stuck at VCC                    ;
+; datab[6..5]  ; Input ; Info     ; Stuck at GND                    ;
+; datab[8]     ; Input ; Info     ; Stuck at GND                    ;
+; datab[7]     ; Input ; Info     ; Stuck at VCC                    ;
+; datab[0]     ; Input ; Info     ; Stuck at GND                    ;
++--------------+-------+----------+---------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:13:mult_hpf" ;
++-------+-------+----------+----------------------------------------+
+; Port  ; Type  ; Severity ; Details                                ;
++-------+-------+----------+----------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                           ;
++-------+-------+----------+----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:12:mult_hpf" ;
++---------------+-------+----------+--------------------------------+
+; Port          ; Type  ; Severity ; Details                        ;
++---------------+-------+----------+--------------------------------+
+; datab[5..4]   ; Input ; Info     ; Stuck at VCC                   ;
+; datab[2..1]   ; Input ; Info     ; Stuck at VCC                   ;
+; datab[15..11] ; Input ; Info     ; Stuck at GND                   ;
+; datab[7..6]   ; Input ; Info     ; Stuck at GND                   ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                   ;
+; datab[9]      ; Input ; Info     ; Stuck at GND                   ;
+; datab[8]      ; Input ; Info     ; Stuck at VCC                   ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                   ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                   ;
++---------------+-------+----------+--------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:11:mult_hpf" ;
++---------------+-------+----------+--------------------------------+
+; Port          ; Type  ; Severity ; Details                        ;
++---------------+-------+----------+--------------------------------+
+; datab[8..7]   ; Input ; Info     ; Stuck at VCC                   ;
+; datab[5..4]   ; Input ; Info     ; Stuck at VCC                   ;
+; datab[15..11] ; Input ; Info     ; Stuck at GND                   ;
+; datab[3..2]   ; Input ; Info     ; Stuck at GND                   ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                   ;
+; datab[9]      ; Input ; Info     ; Stuck at GND                   ;
+; datab[6]      ; Input ; Info     ; Stuck at GND                   ;
+; datab[1]      ; Input ; Info     ; Stuck at VCC                   ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                   ;
++---------------+-------+----------+--------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:10:mult_hpf" ;
++---------------+-------+----------+--------------------------------+
+; Port          ; Type  ; Severity ; Details                        ;
++---------------+-------+----------+--------------------------------+
+; datab[15..12] ; Input ; Info     ; Stuck at VCC                   ;
+; datab[8..7]   ; Input ; Info     ; Stuck at VCC                   ;
+; datab[3..2]   ; Input ; Info     ; Stuck at VCC                   ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                   ;
+; datab[11]     ; Input ; Info     ; Stuck at GND                   ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                   ;
+; datab[9]      ; Input ; Info     ; Stuck at GND                   ;
+; datab[6]      ; Input ; Info     ; Stuck at GND                   ;
+; datab[5]      ; Input ; Info     ; Stuck at VCC                   ;
+; datab[4]      ; Input ; Info     ; Stuck at GND                   ;
++---------------+-------+----------+--------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:9:mult_hpf" ;
++---------------+-------+----------+-------------------------------+
+; Port          ; Type  ; Severity ; Details                       ;
++---------------+-------+----------+-------------------------------+
+; datab[15..14] ; Input ; Info     ; Stuck at VCC                  ;
+; datab[12..11] ; Input ; Info     ; Stuck at VCC                  ;
+; datab[5..4]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[2..0]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[13]     ; Input ; Info     ; Stuck at GND                  ;
+; datab[10]     ; Input ; Info     ; Stuck at GND                  ;
+; datab[9]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[8]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[7]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[6]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                  ;
++---------------+-------+----------+-------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:8:mult_hpf" ;
++---------------+-------+----------+-------------------------------+
+; Port          ; Type  ; Severity ; Details                       ;
++---------------+-------+----------+-------------------------------+
+; datab[11..10] ; Input ; Info     ; Stuck at VCC                  ;
+; datab[13..12] ; Input ; Info     ; Stuck at GND                  ;
+; datab[9..8]   ; Input ; Info     ; Stuck at GND                  ;
+; datab[6..5]   ; Input ; Info     ; Stuck at GND                  ;
+; datab[3..2]   ; Input ; Info     ; Stuck at GND                  ;
+; datab[15]     ; Input ; Info     ; Stuck at GND                  ;
+; datab[14]     ; Input ; Info     ; Stuck at VCC                  ;
+; datab[7]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[4]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[1]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                  ;
++---------------+-------+----------+-------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:7:mult_hpf" ;
++---------------+-------+----------+-------------------------------+
+; Port          ; Type  ; Severity ; Details                       ;
++---------------+-------+----------+-------------------------------+
+; datab[15..14] ; Input ; Info     ; Stuck at VCC                  ;
+; datab[12..11] ; Input ; Info     ; Stuck at VCC                  ;
+; datab[5..4]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[2..0]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[13]     ; Input ; Info     ; Stuck at GND                  ;
+; datab[10]     ; Input ; Info     ; Stuck at GND                  ;
+; datab[9]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[8]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[7]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[6]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                  ;
++---------------+-------+----------+-------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:6:mult_hpf" ;
++---------------+-------+----------+-------------------------------+
+; Port          ; Type  ; Severity ; Details                       ;
++---------------+-------+----------+-------------------------------+
+; datab[15..12] ; Input ; Info     ; Stuck at VCC                  ;
+; datab[8..7]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[3..2]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                  ;
+; datab[11]     ; Input ; Info     ; Stuck at GND                  ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                  ;
+; datab[9]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[6]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[5]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[4]      ; Input ; Info     ; Stuck at GND                  ;
++---------------+-------+----------+-------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:5:mult_hpf" ;
++---------------+-------+----------+-------------------------------+
+; Port          ; Type  ; Severity ; Details                       ;
++---------------+-------+----------+-------------------------------+
+; datab[8..7]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[5..4]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[15..11] ; Input ; Info     ; Stuck at GND                  ;
+; datab[3..2]   ; Input ; Info     ; Stuck at GND                  ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                  ;
+; datab[9]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[6]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[1]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                  ;
++---------------+-------+----------+-------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:4:mult_hpf" ;
++---------------+-------+----------+-------------------------------+
+; Port          ; Type  ; Severity ; Details                       ;
++---------------+-------+----------+-------------------------------+
+; datab[5..4]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[2..1]   ; Input ; Info     ; Stuck at VCC                  ;
+; datab[15..11] ; Input ; Info     ; Stuck at GND                  ;
+; datab[7..6]   ; Input ; Info     ; Stuck at GND                  ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                  ;
+; datab[9]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[8]      ; Input ; Info     ; Stuck at VCC                  ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                  ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                  ;
++---------------+-------+----------+-------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:3:mult_hpf" ;
++-------+-------+----------+---------------------------------------+
+; Port  ; Type  ; Severity ; Details                               ;
++-------+-------+----------+---------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                          ;
++-------+-------+----------+---------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:2:mult_hpf" ;
++--------------+-------+----------+--------------------------------+
+; Port         ; Type  ; Severity ; Details                        ;
++--------------+-------+----------+--------------------------------+
+; datab[15..9] ; Input ; Info     ; Stuck at VCC                   ;
+; datab[4..1]  ; Input ; Info     ; Stuck at VCC                   ;
+; datab[6..5]  ; Input ; Info     ; Stuck at GND                   ;
+; datab[8]     ; Input ; Info     ; Stuck at GND                   ;
+; datab[7]     ; Input ; Info     ; Stuck at VCC                   ;
+; datab[0]     ; Input ; Info     ; Stuck at GND                   ;
++--------------+-------+----------+--------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:1:mult_hpf" ;
++--------------+-------+----------+--------------------------------+
+; Port         ; Type  ; Severity ; Details                        ;
++--------------+-------+----------+--------------------------------+
+; datab[15..7] ; Input ; Info     ; Stuck at VCC                   ;
+; datab[4..3]  ; Input ; Info     ; Stuck at VCC                   ;
+; datab[6..5]  ; Input ; Info     ; Stuck at GND                   ;
+; datab[2]     ; Input ; Info     ; Stuck at GND                   ;
+; datab[1]     ; Input ; Info     ; Stuck at VCC                   ;
+; datab[0]     ; Input ; Info     ; Stuck at GND                   ;
++--------------+-------+----------+--------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier_inst:\mult_hpf:0:mult_hpf" ;
++--------------+-------+----------+--------------------------------+
+; Port         ; Type  ; Severity ; Details                        ;
++--------------+-------+----------+--------------------------------+
+; datab[5..1]  ; Input ; Info     ; Stuck at VCC                   ;
+; datab[15..6] ; Input ; Info     ; Stuck at GND                   ;
+; datab[0]     ; Input ; Info     ; Stuck at GND                   ;
++--------------+-------+----------+--------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; arriav_ff         ; 240                             ;
+;     ENA CLR       ; 240                             ;
+; arriav_mac        ; 15                              ;
+; boundary_port     ; 35                              ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -160,10 +1404,13 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Apr 09 18:04:06 2025
+    Info: Processing started: Mon Apr 14 11:48:10 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off l8_filters -c l8_filters
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file dff_test.vhd
+    Info (12022): Found design unit 1: dff_test-arch File: S:/ESD1/Labs/Lab8/dff_test.vhd Line: 16
+    Info (12023): Found entity 1: dff_test File: S:/ESD1/Labs/Lab8/dff_test.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file high_pass_filter.vhd
     Info (12022): Found design unit 1: high_pass_filter-arch File: S:/ESD1/Labs/Lab8/high_pass_filter.vhd Line: 16
     Info (12023): Found entity 1: high_pass_filter File: S:/ESD1/Labs/Lab8/high_pass_filter.vhd Line: 6
@@ -171,14 +1418,33 @@ Info (12021): Found 2 design units, including 1 entities, in source file multipl
     Info (12022): Found design unit 1: multiplier_inst-SYN File: S:/ESD1/Labs/Lab8/multiplier_inst.vhd Line: 52
     Info (12023): Found entity 1: multiplier_inst File: S:/ESD1/Labs/Lab8/multiplier_inst.vhd Line: 42
 Info (12127): Elaborating entity "high_pass_filter" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at high_pass_filter.vhd(42): object "shift" assigned a value but never read File: S:/ESD1/Labs/Lab8/high_pass_filter.vhd Line: 42
-Warning (10540): VHDL Signal Declaration warning at high_pass_filter.vhd(46): used explicit default value for signal "coefficents" because signal was never assigned a value File: S:/ESD1/Labs/Lab8/high_pass_filter.vhd Line: 46
-Error (10477): VHDL error at high_pass_filter.vhd(95): name "i" must represent signal File: S:/ESD1/Labs/Lab8/high_pass_filter.vhd Line: 95
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 3 warnings
-    Error: Peak virtual memory: 4852 megabytes
-    Error: Processing ended: Wed Apr 09 18:04:11 2025
-    Error: Elapsed time: 00:00:05
-    Error: Total CPU time (on all processors): 00:00:02
+Warning (10540): VHDL Signal Declaration warning at high_pass_filter.vhd(45): used explicit default value for signal "coefficents" because signal was never assigned a value File: S:/ESD1/Labs/Lab8/high_pass_filter.vhd Line: 45
+Info (12128): Elaborating entity "multiplier_inst" for hierarchy "multiplier_inst:\mult_hpf:0:mult_hpf" File: S:/ESD1/Labs/Lab8/high_pass_filter.vhd Line: 71
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "multiplier_inst:\mult_hpf:0:mult_hpf|lpm_mult:lpm_mult_component" File: S:/ESD1/Labs/Lab8/multiplier_inst.vhd Line: 77
+Info (12130): Elaborated megafunction instantiation "multiplier_inst:\mult_hpf:0:mult_hpf|lpm_mult:lpm_mult_component" File: S:/ESD1/Labs/Lab8/multiplier_inst.vhd Line: 77
+Info (12133): Instantiated megafunction "multiplier_inst:\mult_hpf:0:mult_hpf|lpm_mult:lpm_mult_component" with the following parameter: File: S:/ESD1/Labs/Lab8/multiplier_inst.vhd Line: 77
+    Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
+    Info (12134): Parameter "lpm_representation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_MULT"
+    Info (12134): Parameter "lpm_widtha" = "16"
+    Info (12134): Parameter "lpm_widthb" = "16"
+    Info (12134): Parameter "lpm_widthp" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_71n.v
+    Info (12023): Found entity 1: mult_71n File: S:/ESD1/Labs/Lab8/db/mult_71n.v Line: 28
+Info (12128): Elaborating entity "mult_71n" for hierarchy "multiplier_inst:\mult_hpf:0:mult_hpf|lpm_mult:lpm_mult_component|mult_71n:auto_generated" File: c:/intelfpga/18.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 376
+Info (12128): Elaborating entity "dff_test" for hierarchy "dff_test:\flip_flop:0:flip_flop" File: S:/ESD1/Labs/Lab8/high_pass_filter.vhd Line: 81
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 290 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 240 logic cells
+    Info (21062): Implemented 15 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4928 megabytes
+    Info: Processing ended: Mon Apr 14 11:48:21 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:07
 
 

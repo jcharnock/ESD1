@@ -23,7 +23,7 @@ architecture arch of high_pass_filter is
 	);
 	end component;
 	
-	component dff is
+	component dff_test is
 	port (
 		clk : in std_logic;
 		reset_n : in std_logic;
@@ -34,11 +34,11 @@ architecture arch of high_pass_filter is
 	end component;
 
 
-	type sample_array is array (0 to 16) of std_logic_vector(15 downto 0);
+   type sample_array is array (0 to 16) of std_logic_vector(15 downto 0);
    type coeff_array is array (0 to 16) of std_logic_vector(15 downto 0);
    type prod_array is array (0 to 16) of std_logic_vector (31 downto 0);
    signal product  : prod_array := (others => (others => '0'));
-   signal sum      : signed(31 downto 0);
+   signal sum      : signed(31 downto 0) := (others => '0');
    signal shift    : sample_array := (others => (others => '0'));
 
    signal samples   : sample_array := (others => (others => '0'));
@@ -67,7 +67,7 @@ begin
 	samples(0) <= data_in;
 
 	-- generate statement for 16 LPM_MULT components
-	mult_hpf: for k in 0 to 16 generate
+	mult_hpf: for k in 0 to 15 generate
 		mult_hpf : multiplier_inst 
 		port map (
 		 dataa => samples(k), 
@@ -78,22 +78,23 @@ begin
    
    -- generate statement for 16 shifter components
    flip_flop : for j in 0 to 15 generate
-		flip_flop : dff
+		flip_flop : dff_test
 		port map (
 		  clk => clk,
 		  reset_n => reset_n,
 		  data_in2 => samples(j),
 		  filter_en => filter_en,
-		  data_out2 => shift(j + 1)
+		  data_out2 => samples(j + 1)
 		);
 	end generate flip_flop;
 	
-	gen_add : for i in 1 to 16 generate
-	begin
-		sum <= sum + signed(product(i));
-	end generate gen_add;
+	-- idea: raise flag when generate reaches 16 to prevent multiple drivers?
+	-- current error is sum has multiple drivers
+	sum <= signed(product(0)) + signed(product(1)) + signed(product(2)) + signed(product(3)) + signed(product(4)) + signed(product(5)) + signed(product(6)) + signed(product(7))
+	+ signed(product(8)) + signed(product(9)) + signed(product(10)) + signed(product(11)) + signed(product(12)) + signed(product(13)) + signed(product(14)) + signed(product(15));
 	
 	data_out <= std_logic_vector(sum(30 downto 15));
+
 	
 	
 end arch;
