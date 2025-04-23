@@ -1,5 +1,5 @@
 Flow report for audio_filters
-Wed Apr 16 14:22:04 2025
+Wed Apr 23 13:46:24 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 16 14:21:46 2025           ;
+; Flow Status                     ; Successful - Wed Apr 23 13:46:08 2025           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; audio_filters                                   ;
 ; Top-level Entity Name           ; audio_filt_top                                  ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 1,364 / 32,070 ( 4 % )                          ;
-; Total registers                 ; 2224                                            ;
+; Logic utilization (in ALMs)     ; 1,389 / 32,070 ( 4 % )                          ;
+; Total registers                 ; 2205                                            ;
 ; Total pins                      ; 104 / 457 ( 23 % )                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 543,872 / 4,065,280 ( 13 % )                    ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/16/2025 14:18:22 ;
+; Start date & time ; 04/23/2025 13:42:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; audio_filters       ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------+---------------+----------------+------------+
 ; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name    ; Section Id ;
 +-------------------------------------+---------------------------------------------------------------+---------------+----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 194042949994211.174482750208248                               ; --            ; --             ; --         ;
+; COMPILER_SIGNATURE_ID               ; 194042949994211.174543017202292                               ; --            ; --             ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                            ; --            ; --             ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                             ; --            ; --             ; --         ;
 ; MISC_FILE                           ; nios_system/synthesis/../nios_system.cmp                      ; --            ; --             ; --         ;
@@ -91,7 +91,7 @@ refer to the applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                  ; --            ; --             ; --         ;
 ; SLD_FILE                            ; nios_system/synthesis/nios_system.regmap                      ; --            ; --             ; --         ;
 ; SLD_FILE                            ; nios_system/synthesis/nios_system.debuginfo                   ; --            ; --             ; --         ;
-; SLD_INFO                            ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1744827252 ; --            ; nios_system    ; --         ;
+; SLD_INFO                            ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1745430027 ; --            ; nios_system    ; --         ;
 ; SOPCINFO_FILE                       ; nios_system/synthesis/../../nios_system.sopcinfo              ; --            ; --             ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                            ; --            ; --             ; --         ;
 ; TOP_LEVEL_ENTITY                    ; audio_filt_top                                                ; audio_filters ; --             ; --         ;
@@ -103,11 +103,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:22     ; 1.0                     ; 5091 MB             ; 00:00:28                           ;
-; Fitter               ; 00:01:30     ; 1.1                     ; 7662 MB             ; 00:02:12                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4899 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:16     ; 1.6                     ; 5472 MB             ; 00:00:19                           ;
-; Total                ; 00:03:16     ; --                      ; --                  ; 00:03:06                           ;
+; Analysis & Synthesis ; 00:01:11     ; 1.0                     ; 5095 MB             ; 00:00:28                           ;
+; Fitter               ; 00:01:36     ; 1.1                     ; 7631 MB             ; 00:02:00                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4900 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:15     ; 1.8                     ; 5471 MB             ; 00:00:17                           ;
+; Total                ; 00:03:10     ; --                      ; --                  ; 00:02:52                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

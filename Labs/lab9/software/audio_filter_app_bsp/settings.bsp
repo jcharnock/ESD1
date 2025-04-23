@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Apr 16, 2025 2:55:22 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1744829722574</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Apr 23, 2025 1:46:58 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1745430418823</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>S:\ESD1\Labs\lab9\software\audio_filter_app_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nios_system.sopcinfo</SopcDesignFile>

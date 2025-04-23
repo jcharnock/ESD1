@@ -43,7 +43,7 @@ architecture arch of audio_filter is
    signal shift       : sample_array := (others => (others => '0'));
    signal samples     : sample_array := (others => (others => '0'));
    signal used_coeffs : coeff_array  := (others => (others => '0'));
-   signal filter_en   : std_logic := '0';
+   signal filter_enx  : std_logic := '0';
    signal switch      : std_logic_vector(15 downto 0) := (others => '0');
    signal data_in     : std_logic_vector(15 downto 0) := (others => '0');
    
@@ -87,9 +87,11 @@ architecture arch of audio_filter is
 	);
 
 begin
-	
-	addr_mux : process (write, address, clk) begin
+
+	filter_enx <= write;
+	addr_mux : process (write, address, clk, reset_n) begin
 		if (reset_n = '0') then
+			data_in <= (others => '0');
 			switch <= (others => '0');
 		elsif (rising_edge(clk)) then
 			if (write = '1') then 
@@ -99,6 +101,9 @@ begin
 				else
 					data_in <= writedata;
 				end if;
+			else 
+				switch <= switch;
+				data_in <= data_in;
 			end if;
 		end if;
 	end process;
@@ -130,7 +135,7 @@ begin
 		  clk       => clk,
 		  reset_n   => reset_n,
 		  data_in2  => samples(j),
-		  filter_en => write,
+		  filter_en => filter_enx,
 		  data_out2 => samples(j + 1)
 		);
 	end generate flip_flop;

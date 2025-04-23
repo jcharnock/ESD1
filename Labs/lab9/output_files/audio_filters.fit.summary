@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Apr 16 14:21:30 2025
+Fitter Status : Successful - Wed Apr 23 13:45:53 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : audio_filters
 Top-level Entity Name : audio_filt_top
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1,364 / 32,070 ( 4 % )
-Total registers : 2224
+Logic utilization (in ALMs) : 1,389 / 32,070 ( 4 % )
+Total registers : 2205
 Total pins : 104 / 457 ( 23 % )
 Total virtual pins : 0
 Total block memory bits : 543,872 / 4,065,280 ( 13 % )

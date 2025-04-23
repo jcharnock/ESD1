@@ -43,7 +43,7 @@ uint32* AudioPtr    = (uint32*)AUDIO_0_BASE;
 uint32* TimerPtr    = (uint32*)TIMER_0_BASE;
 uint32* PinPtr      = (uint32*)PIN_BASE;
 uint32* SWPtr       = (uint32*)PIO_0_BASE;
-uint32* FilterPtr   = (uint32*)AUDIO_FILTER_0_BASE;
+uint16* FilterPtr   = (uint16*)AUDIO_FILTER_0_BASE;
 uint8 flag = 1;
 
   //In this ISR, most of the processing is performed.  The timer interrupt is set for 20.83 us which is
@@ -70,7 +70,7 @@ void timer_isr(void *context)
 	    	left_sample = SdramPtr[SAMPLE_CNT++];
 	    	if (CHANNELS == 2)                       //only read right sample if stereo mode
 	    	{
-	    		right_sample = SdramPtr[SAMPLE_CNT++];
+	    		right_sample = SdramPtr[SAMPLE_CNT];
 	    		AudioPtr[3] = right_sample;       //in stereo, output to both sides
 	    	    AudioPtr[2] = left_sample;
 	    	}

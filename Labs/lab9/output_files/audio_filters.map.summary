@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Apr 16 14:19:53 2025
+Analysis & Synthesis Status : Successful - Wed Apr 23 13:44:11 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : audio_filters
 Top-level Entity Name : audio_filt_top
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 2100
+Total registers : 2099
 Total pins : 104
 Total virtual pins : 0
 Total block memory bits : 543,872
